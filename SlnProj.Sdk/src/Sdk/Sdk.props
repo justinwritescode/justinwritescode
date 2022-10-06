@@ -1,8 +1,0 @@
-<Project Sdk="Microsoft.Build.Traversal">
-  <PropertyGroup>
-    <SlnGenLaunchVisualStudio Condition="'$(SlnGenLaunchVisualStudio)' == ''">true</SlnGenLaunchVisualStudio>
-    <SlnGenSolutionFileFullPath Condition="'$(SlnGenSolutionFileFullPath)' == ''">$(MSBuildProjectDirectory)\$(MSBuildProjectName).sln</SlnGenSolutionFileFullPath>
-    <SlnGenDevEnvFullPath />
-    <SlnGenGlobalProperty nclude>
-  </PropertyGroup>
-</Project>
