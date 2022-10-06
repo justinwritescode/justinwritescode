@@ -1,6 +1,6 @@
 [submodule "SlnProk.Sdk"]
-	path = SlnProk.Sdk
+	path = src/SlnProj.Sdk
 	url = https://justinwritescode@github.com/justinwritescode/SlnProj.Sdk.git
 [submodule "git-search"]
-	path = git-search
+	path = src/git-search
 	url = https://justinwritescode@github.com/justinwritescode/dotnet-search.git
