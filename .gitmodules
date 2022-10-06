@@ -1,0 +1,3 @@
+[submodule "SlnProj.Sdk"]
+	path = SlnProj.Sdk
+	url = https://github.com/justinwritescode/SlnProj.Sdk.git

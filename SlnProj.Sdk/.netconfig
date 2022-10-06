@@ -1,0 +1,8 @@
+[file "common/.gitignore"]
+	url = https://raw.githubusercontent.com/justinwritescode/justinwritescode/main/common/.gitignore
+	etag = 5e0e9715f49f8b5ce830bccf095b4aad7dc6f6dedcb8fd5ea5a2dbf9ffdfa895
+	weak
+[file ".gitignore"]
+	url = https://raw.githubusercontent.com/justinwritescode/justinwritescode/main/common/.gitignore
+	etag = 5e0e9715f49f8b5ce830bccf095b4aad7dc6f6dedcb8fd5ea5a2dbf9ffdfa895
+	weak
