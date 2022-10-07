@@ -14,3 +14,23 @@
 	url = https://raw.githubusercontent.com/justinwritescode/justindoesntwriteanycode/main/common/.gitignore
 	etag = 5e0e9715f49f8b5ce830bccf095b4aad7dc6f6dedcb8fd5ea5a2dbf9ffdfa895
 	weak
+[file "common/nuget.config"]
+	url = https://raw.githubusercontent.com/justinwritescode/justinwritescode/main/common/nuget.config
+	etag = 6bbc8e689c9c2d348a230cca4f52bc0f2287ee75b7ff3553cf727eb54196685a
+	weak
+[file "nuget.config"]
+	url = https://raw.githubusercontent.com/justinwritescode/justinwritescode/main/common/nuget.config
+	etag = 6bbc8e689c9c2d348a230cca4f52bc0f2287ee75b7ff3553cf727eb54196685a
+	weak
+[file "src/Build.Include.Sdk/nuget.config"]
+	url = https://raw.githubusercontent.com/justinwritescode/justinwritescode/main/common/nuget.config
+	etag = 6bbc8e689c9c2d348a230cca4f52bc0f2287ee75b7ff3553cf727eb54196685a
+	weak
+[file "src/SlnProj.Sdk/nuget.config"]
+	url = https://raw.githubusercontent.com/justinwritescode/justinwritescode/main/common/nuget.config
+	etag = 6bbc8e689c9c2d348a230cca4f52bc0f2287ee75b7ff3553cf727eb54196685a
+	weak
+[file "src/dotnet-search/nuget.config"]
+	url = https://raw.githubusercontent.com/justinwritescode/justinwritescode/main/common/nuget.config
+	etag = 6bbc8e689c9c2d348a230cca4f52bc0f2287ee75b7ff3553cf727eb54196685a
+	weak
