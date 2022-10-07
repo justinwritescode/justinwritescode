@@ -7,6 +7,9 @@
 [submodule "src/Build.Include.Sdk"]
 	path = src/Build.Include.Sdk
 	url = https://github.com/justinwritescode/Build.Include.Sdk.git
-[submodule "common/assets/nuget-icons"]
-	path = common/assets/nuget-icons
+[submodule "common"]
+	path = common
+	url = https://github.com/justinwritescode/common.git
+[submodule "nuget-icons"]
+	path = nuget-icons
 	url = https://github.com/justinwritescode/nuget-icons.git
