@@ -2,5 +2,11 @@
 	path = src/SlnProj.Sdk
 	url = https://justinwritescode@github.com/justinwritescode/SlnProj.Sdk.git
 [submodule "git-search"]
-	path = src/git-search
+	path = src/dotnet-search
 	url = https://justinwritescode@github.com/justinwritescode/dotnet-search.git
+[submodule "src/Build.Include.Sdk"]
+	path = src/Build.Include.Sdk
+	url = https://github.com/justinwritescode/Build.Include.Sdk.git
+[submodule "common/assets/nuget-icons"]
+	path = common/assets/nuget-icons
+	url = https://github.com/justinwritescode/nuget-icons.git
