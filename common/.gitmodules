@@ -1,0 +1,3 @@
+[submodule "nuget-icons"]
+	path = nuget-icons
+	url = https://github.com/justinwritescode/nuget-icons.git
