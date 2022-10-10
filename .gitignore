@@ -1,6 +1,74 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,executable
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,executable
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,executable,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,archive,archives,azurefunctions,diff,dotenv,dotsettings,git,gitbook,text,textpattern
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,executable,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,archive,archives,azurefunctions,diff,dotenv,dotsettings,git,gitbook,text,textpattern
+
+### Archive ###
+
+### Mostly from https://en.wikipedia.org/wiki/List_of_archive_formats
+
+## Archiving only
+# The traditional archive format on Unix-like systems, now used mainly for the creation of static libraries.
+*.a
+*.ar
+# RPM files consist of metadata concatenated with (usually) a cpio archive. Newer RPM systems also support other archives, as cpio is becoming obsolete. cpio is also used with initramfs.
+*.cpio
+
+# A self-extracting archive that uses the Bourne shell (sh).
+*.shar
+# A system for storing multiple files. LBR archives typically contained files processed by SQ, or the archive itself was compressed with SQ. LBR archives that were compressed with SQ ended with the extension .LQR	
+*.LBR
+# An archive format originally used mainly for archiving and distribution of the exact, nearly-exact, or custom-modified contents of an optical storage medium such as a CD-ROM or DVD-ROM. However, it can be used to archive the contents of other storage media, selected partitions, folders, and/or files. The resulting archive is typically optimized for convenient rendering to (re-)writable CD or DVD media.
+*.iso
+# A library format used primarily on the Commodore 64 and 128 lines of computers. This bears no resemblance to the DOS LBR format. While library files were quick to implement (a number of programs exist to work with them) they are crippled in that they cannot grow with use: once a file has been created it cannot be amended (files added, changed or deleted) without recreating the entire file.
+*.lbr
+# An archive format used by Mozilla for storing binary diffs. Used in conjunction with bzip2.
+*.mar
+# A common archive format used on Unix-like systems. Generally used in conjunction with compressors such as gzip, bzip2, compress or xz to create .tar.gz, .tar.bz2, .tar.Z or tar.xz files.
+*.tar
+
+# Package managers
+# Red Hat Package Manager
+*.rpm
+# Debian package
+*.deb
+# MicroSoft Installer
+*.msi
+*.msm
+*.msp
+# Mozilla package installer
+*.xpi
+# Ruby Package
+*.gem
+
+
+### Archives ###
+# It's better to unpack these files and commit the raw source because
+# git has its own built in compression methods.
+*.7z
+*.jar
+*.rar
+*.zip
+*.gz
+*.gzip
+*.tgz
+*.bzip
+*.bzip2
+*.bz2
+*.xz
+*.lzma
+*.cab
+*.xar
+
+# Packing-only formats
+
+# Package management formats
+*.dmg
+*.egg
+*.txz
+
+### AzureFunctions ###
+# Azure Functions localsettings file
+local.settings.json
 
 ### certificates ###
 *.pem
@@ -11,22 +79,13 @@
 *.priv
 
 ### Compressed ###
-*.7z
-*.deb
-*.gz
 *.pkg
-*.rar
-*.rpm
 *.sit
 *.sitx
-*.tar
-*.zip
 *.zipx
-*.tgz
 
 ### CompressedArchive ###
 
-### Mostly from https://en.wikipedia.org/wiki/List_of_archive_formats
 
 ## Archiving and compression
 # Open source file format. Used by 7-Zip.
@@ -51,7 +110,6 @@
 # Proprietary format from the ZipTV Compression Components
 *.bh
 # The Microsoft Windows native archive format, which is also used by many commercial installers such as InstallShield and WISE.
-*.cab
 # Originally DOS, now DOS and Windows 	Created by Yaakov Gringeler; released last in 2003 (Compressia 1.0.0.1 beta), now apparently defunct. Free trial of 30 days lets user create and extract archives; after that it is possible to extract, but not to create.
 *.car
 # Open source file format.
@@ -65,11 +123,9 @@
 # ??
 *.dgc
 # Apple Disk Image upports "Internet-enabled" disk images, which, once downloaded, are automatically decompressed, mounted, have the contents extracted, and thrown away. Currently, Safari is the only browser that supports this form of extraction; however, the images can be manually extracted as well. This format can also be password-protected or encrypted with 128-bit or 256-bit AES encryption.
-*.dmg
 # Enterprise Java Archive archive
 *.ear
 # ETSoft compressed archive
-*.egg
 # The predecessor of DGCA.
 *.gca
 # Originally DOS 	Yes, but may be covered by patents 	DOS era format; uses arithmetic/Markov coding
@@ -79,7 +135,6 @@
 # Produced by ICEOWS program. Excels at text file compression.
 *.ice
 # Java archive, compatible with ZIP files
-*.jar
 # Open sourced archiver with compression using the PAQ family of algorithms and optional encryption.
 *.kgb
 # Originally DOS, now multiple 	Multiple 	Yes 	The standard format on Amiga.
@@ -141,7 +196,6 @@
 # File-based disk image format developed to deploy Microsoft Windows.
 *.wim
 # XAR
-*.xar
 # Native format of the Open Source KiriKiri Visual Novel engine. Uses combination of block splitting and zlib compression. The filenames and pathes are stored in UTF-16 format. For integrity check, the Adler-32 hashsum is used. For many commercial games, the files are encrypted (and decoded on runtime) via so-called "cxdec" module, which implements xor-based encryption.
 *.xp3
 # Yamazaki zipper archive. Compression format used in DeepFreezer archiver utility created by Yamazaki Satoshi. Read and write support exists in TUGZip, IZArc and ZipZag
@@ -544,10 +598,7 @@ FodyWeavers.xsd
 .history/
 
 # Windows Installer files from build outputs
-*.msi
 *.msix
-*.msm
-*.msp
 
 # JetBrains Rider
 *.sln.iml
@@ -583,23 +634,23 @@ FodyWeavers.xsd
 *.par2
 
 
-### DiskImage ###
-*.iso
-*.toast
-*.vcd
+### Diff ###
+*.patch
+*.diff
+
+### dotenv ###
+.env
 
 ### DotfilesSh ###
 local-patch
 patched-src
 
-### DotnetCore ###
-# .NET Core build folders
-bin/
-obj/
+### DiskImage ###
+*.toast
+*.vcd
 
-# Common node modules locations
-/node_modules
-/wwwroot/node_modules
+### DotSettings ###
+*.DotSettings
 
 ### Executable ###
 *.app
@@ -612,19 +663,47 @@ obj/
 *.vb
 *.wsf
 
-### Linux ###
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
 
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
 
-# KDE directory preferences
-.directory
+### GitBook ###
+# Node rules:
+## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
 
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
+## Dependency directory
+## Commenting this out is preferred by some people, see
+## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
+node_modules
 
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
+# Book build output
+_book
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
+
+### DotnetCore ###
+# .NET Core build folders
+bin/
+obj/
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
 
 ### macOS ###
 # General
@@ -784,6 +863,29 @@ Backup of *.doc*
 *tmpfiles
 *lol
 
+### Text ###
+*.doc
+*.docx
+*.msg
+*.pages
+*.rtf
+*.txt
+*.wpd
+*.wps
+
+### Textpattern ###
+.htaccess
+css.php
+rpc/
+sites/site*/admin/
+sites/site*/private/
+sites/site*/public/admin/
+sites/site*/public/setup/
+sites/site*/public/theme/
+textpattern/
+HISTORY.txt
+README.txt
+
 ### VisualBasic ###
 *.csi
 *.exp
@@ -821,6 +923,20 @@ $RECYCLE.BIN/
 # Files that might appear in the root of a volume
 
 # Directories potentially created on remote AFP share
+
+### Linux ###
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
 ### VisualStudioCode ###
 !.vscode/*.code-snippets
@@ -1021,7 +1137,7 @@ $RECYCLE.BIN/
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,executable
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,visualbasic,test,ssh,spreadsheet,serverless,osx,microsoftoffice,macos,linux,executable,dotnetcore,dotfilessh,diskimage,datarecovery,database,data,csharp,compressedarchive,compressed,certificates,archive,archives,azurefunctions,diff,dotenv,dotsettings,git,gitbook,text,textpattern
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 

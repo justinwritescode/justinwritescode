@@ -26,53 +26,11 @@
     <PackageProjectUrl>https://github.com/justinwritescode/$(MSBuildProjectName)</PackageProjectUrl>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <IncludeBuiltProjectOutputGroup>true</IncludeBuiltProjectOutputGroup>
-    <IncludeComFilesOutputGroup>true</IncludeComFilesOutputGroup>
-    <IncludeContentFilesProjectOutputGroup>true</IncludeContentFilesProjectOutputGroup>
-    <IncludeCopyLocalFilesOutputGroup>true</IncludeCopyLocalFilesOutputGroup>
-    <IncludeCopyWinmdArtifactsOutputGroup>true</IncludeCopyWinmdArtifactsOutputGroup>
-    <IncludeDebugSymbolsProjectOutputGroup>true</IncludeDebugSymbolsProjectOutputGroup>
-    <IncludeDocumentationProjectOutputGroup>true</IncludeDocumentationProjectOutputGroup>
-    <IncludeGetResolvedSDKReferences>true</IncludeGetResolvedSDKReferences>
-    <IncludePriFilesOutputGroup>true</IncludePriFilesOutputGroup>
-    <IncludeSatelliteDllsProjectOutputGroup>true</IncludeSatelliteDllsProjectOutputGroup>
-    <IncludeSDKRedistOutputGroup>true</IncludeSDKRedistOutputGroup>
-    <IncludeSGenFilesOutputGroup>true</IncludeSGenFilesOutputGroup>
-    <IncludeSourceFilesProjectOutputGroup>true</IncludeSourceFilesProjectOutputGroup>
-    <IncludeSymbolsProjectOutputGroup>true</IncludeSymbolsProjectOutputGroup>
-    <IncludeTransitiveProjectReferences>true</IncludeTransitiveProjectReferences>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <EmitNuspec>true</EmitNuspec>
-    <EmbedAllSources>true</EmbedAllSources>
-    <RepositoryType>git</RepositoryType>
-    <IncludeSymbols>true</IncludeSymbols>
-    <IncludeSource>true</IncludeSource>
-    <IsPackable>true</IsPackable>
-    <IsNuGetized>true</IsNuGetized>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
-
-  <PropertyGroup Label="MinVer Git Versioning Tool">
-    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Testing'">test</MinVerDefaultPreReleasePhase>
-    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Local'">alpha</MinVerDefaultPreReleasePhase>
-    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Debug'">beta</MinVerDefaultPreReleasePhase>
-    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Staging'">rc</MinVerDefaultPreReleasePhase>
-    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Release'">preview</MinVerDefaultPreReleasePhase>
-    <MinVerTagPrefix>v</MinVerTagPrefix>
-    <MinVerVerbosity>normal</MinVerVerbosity>
-    <MinVerAutoIncrement>patch</MinVerAutoIncrement>
-    <MinVerMinimumMajorMinor>0.0</MinVerMinimumMajorMinor>
-  </PropertyGroup>
-
- <PropertyGroup Label="CentralPackageVersions Properties">
-    <EnableCentralPackageVersions>true</EnableCentralPackageVersions>
-    <EnableGlobalPackageReferences>true</EnableGlobalPackageReferences>
-    <EnablePackageVersionOverride>true</EnablePackageVersionOverride>
-    <CentralPackagesFile>$(MSBuildThisFileDirectory)/Packages.props</CentralPackagesFile>
-  </PropertyGroup>
+  <Import Project="Directory.Build/NuGetOutputs.props" />
+  <Import Project="Directory.Build/CentralPackageVersions.props" />
+  <Import Project="Directory.Build/NuGetizer.props" />
+  <Import Project="Directory.Build/CodeGeneration.props" />
+  <Import Project="Directory.Build/MinVer.props" />
 
   <ItemGroup>
     <PackageFile Include="$(PackageIcon)" PackagePath="" />

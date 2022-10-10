@@ -1,4 +1,5 @@
 <Project>
+  <Import Project="Packages/*.pkgs" />
   <ItemGroup>
     <GlobalPackageReference Include="MinVer" Version="[4.2.0,)" PrivateAssets="all" IncludeAssets="runtime; build; analyzers" />
     <GlobalPackageReference Include="NuGetizer" Version="[0.9.0,)" PrivateAssets="all" IncludeAssets="build" />
