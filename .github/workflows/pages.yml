@@ -1,10 +1,10 @@
-# Simple workflow for deploying static content to GitHub Pages
+# This workflow builds and deploys an mkdocs site to GitHub Pages
 name: gh-pages cd
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["main", "master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -39,13 +39,16 @@ jobs:
       - run: pip install mkdocs-categories-plugin
       - run: pip install mkdocs-blog-plugin
       - run: pip install mkdocs-schema-reader
+      - run: pip3 install mkpdfs-mkdocs
+      - run: pip install mkdocs-git-authors-plugin
+      - run: pip install mkdocs-pdf-export-plugin
       - run: mkdocs build
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
+          # Upload the contents of the "site" folder
           path: 'site'
       - name: Deploy to GitHub Pages
         id: deployment
