@@ -225,11 +225,6 @@
 	sha = c93a92c933a886cbfcdc037b0ca36af828632322
 	etag = ef21f6dc869339096c6bf188a58d503c11e54b30c73c7090b677a2319236b726
 	weak
-[file "README.md"]
-	url = https://github.com/justinwritescode/common/blob/main/README.md
-	sha = 00b00861cf8e21169bc7a310316ebaaa64b55fe0
-	etag = 1412441d5193efc3eed5aa135195b5fd3e34330233254f25e8cac90eed2ea363
-	weak
 [file "docs/CODE_OF_CONDUCT.md"]
 	url = https://github.com/justinwritescode/common/blob/main/docs/CODE_OF_CONDUCT.md
 	sha = 8ade6d17e34b8d728abdccad62b88dd7ba059341
