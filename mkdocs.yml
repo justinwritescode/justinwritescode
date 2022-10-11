@@ -1,21 +1,22 @@
-site_name: JustinWritesCode Technical Documentation
-site_description: JustinWritesCode Technical Documentation
+site_name: JustinWritesCode Documentation
+site_description: JustinWritesCode Documentation
 site_url: https://justinwritescode.com
 site_author: "Justin Chase"
-repo_url: https://github.com/justinwritescode/justinwritescode.git
+repo_url: https://github.com/justinwritescode/justinwritescode
 repo_name: justinwritescode/justinwritescode
-edit_uri: ""
+edit_uri: "tree/main/docs"
 docs_dir: docs
 theme:
   name: material
+  custom_dir: docs/overrides
+  logo: "./assets/logo.png"
   icon:
-    logo: material/human-male-male
     repo: fontawesome/brands/github
     edit: material/pencil
   palette:
     scheme: slate
-    primary: teal
-    accent: blue
+    primary: blue
+    accent: teal
 features:
   - navigation.instant
   - navigation.tracking
@@ -31,14 +32,49 @@ features:
   - search.share
   - announce.dismiss
 plugins:
-  - rss
+  - rss:
+      categories: 
+        - tags
+      enabled: true
+      feed_ttl: 1440
+      image:  https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png
+      length: 20
+      pretty_print: false
+      comments_path: "#__comments"
+      date_from_meta:
+        as_creation: "date"
+        as_update: false
+        datetime_format: "%Y-%m-%d %H:%M"
+        default_timezone: Eastern Time (US & Canada)
+      url_parameters:
+        utm_source: "documentation"
+        utm_medium: "rss"
+        utm_campaign: "feed-syndication"
   - search
+  - blog
+  - categories
+  - pdf-export
   - tags:
       tags_file: tags.md
   - git-revision-date-localized:
       type: date
       enable_creation_date: true
       fallback_to_build_date: true
+  - multirepo:
+      cleanup: true
+      repos:
+        - section: nuget-icons
+          import_url: 'https://github.com/justinwritescode/nuget-icons?edit_uri=tree/main/docs'
+        - section: commmon
+          import_url: 'https://github.com/justinwritescode/common?edit_uri=tree/main/docs'
+        - section: dotnet-search
+          import_url: 'https://github.com/justinwritescode/dotnet-search?edit_uri=tree/main/docs'
+        - section: MSBuild.XmlDocMd
+          import_url: 'https://github.com/justinwritescode/MSBuild.XmlDocMd?edit_uri=tree/main/docs'
+        - section: MSBuild.IncludeSdk
+          import_url: 'https://github.com/justinwritescode/MSBuild.IncludeSdk?edit_uri=tree/main/docs'
+        - section: Types
+          import_url: 'https://github.com/justinwritescode/Types?edit_uri=tree/main/docs'
 extra:
   homepage: https://justinwritescode.com
   social:
@@ -50,6 +86,29 @@ extra:
       name: Justin Chase on Telegram
   version:
     provider: mike
+  analytics:
+    provider: google
+    property: G-JYQ7NBSP4R
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Yes!
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: justinwritescode/man-shrugging-2
+          name: Meh
+          data: 0
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: No!
+          data: -1
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
 copyright: Copyright &copy; 2022 Justin Chase
 markdown_extensions:
   - meta
@@ -91,7 +150,12 @@ nav:
   - About: README.md
   - Documentation:
       - docs/index.md
-      - nuget-icons: '!import {https://github.com/justinwritescode/nuget-icons}?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      - common: '!import https://github.com/justinwritescode/common?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      - nuget-icons: '!import https://github.com/justinwritescode/nuget-icons?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      - Types: '!import https://github.com/justinwritescode/Types?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      - dotnet-search: '!import https://github.com/justinwritescode/dotnet-search?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      - MSBuild.XmlDocMd: '!import https://github.com/justinwritescode/MSBuild.XmlDocMd?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      - MSBuild.IncludeSdk: '!import https://github.com/justinwritescode/MSBuild.IncludeSdk?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
   - Code of Conduct: CODE_OF_CONDUCT.md
   - License: LICENSE
   - Privacy Policy: PRIVACY_POLICY.md
