@@ -45,7 +45,8 @@ plugins:
         as_creation: "date"
         as_update: false
         datetime_format: "%Y-%m-%d %H:%M"
-        default_timezone: Eastern Time (US & Canada)
+        default_time: "09:30"
+        default_timezone: "America/New_York"
       url_parameters:
         utm_source: "documentation"
         utm_medium: "rss"
