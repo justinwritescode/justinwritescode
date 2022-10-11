@@ -1,0 +1,3 @@
+cp README.md ./docs/about.md;
+cp LICENSE ./docs/LICENSE.md;
+mkdocs build;

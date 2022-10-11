@@ -19,3 +19,6 @@
 [submodule "src/MSBuild.XmlDocMd"]
 	path = src/MSBuild.XmlDocMd
 	url = https://github.com/justinwritescode/MSBuild.XmlDocMd.git
+[submodule "src/Types"]
+	path = src/Types
+	url = https://github.com/justinwritescode/Types.git

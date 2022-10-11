@@ -1,9 +1,9 @@
-### Hi there 👋
+# JustinWritesCode Common Files
 
-- 👋 Hi, I’m Justin!
-- 👀 I’m interested in men, C#, fisting, movies, .NET, & continuous integration!
-- 🌱 I’m currently learning how the fuck to make CI/CD work in Azure
-- 💞️ I’m looking to collaborate on stuff?
-- 😄 Pronouns: I'm a dude.
-- 📫 How to reach me dev@thebackroom.app
-- ⚡ Fun fact: I can fit my entire fist inside my anus!
+This repository contains files that are common to all of my projects. To restore the files, run the following command:
+
+```dotnet file sync```
+
+If you don't have the ```dotnet file``` tool installed, you can install it with the following command:
+
+```dotnet tool install -g dotnet-file```
