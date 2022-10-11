@@ -1,5 +1,5 @@
 echo "Installing mkdocs plugins..."
-pip install mkdocs material
+pip install mkdocs-material
 pip install mkdocs-rss-plugin
 pip install mkdocs-git-revision-date-localized-plugin
 pip install mkdocs-categories-plugin
