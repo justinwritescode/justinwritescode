@@ -9,3 +9,5 @@ pip3 install mkpdfs-mkdocs
 pip install mkdocs-with-pdf
 pip install mkdocs-multirepo-plugin
 pip install mkdocs-section-index
+pip install mkdocs-pdf-export-plugin
+pip install mkdocs-git-authors-plugin
