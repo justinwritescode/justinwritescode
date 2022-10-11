@@ -1,2 +1,4 @@
-github: justinwritescode
-custom: ["https://cash.app/JustinWritesCode", CashApp]
+github: 
+  - justinwritescode
+custom: 
+  - "https://cash.app/JustinWritesCode"
