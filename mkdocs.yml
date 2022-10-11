@@ -60,6 +60,7 @@ plugins:
       type: date
       enable_creation_date: true
       fallback_to_build_date: true
+  - section-index
   - multirepo:
       cleanup: true
       repos:
@@ -153,7 +154,7 @@ nav:
       - common: '!import https://github.com/justinwritescode/common?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
       - nuget-icons: '!import https://github.com/justinwritescode/nuget-icons?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
       - Types: '!import https://github.com/justinwritescode/Types?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      - dotnet-search: '!import https://github.com/justinwritescode/dotnet-search?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      - dotnet-search: '!import https://github.com/justinwritescode/dotnet-search?branch=master&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
       - MSBuild.XmlDocMd: '!import https://github.com/justinwritescode/MSBuild.XmlDocMd?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
       - MSBuild.IncludeSdk: '!import https://github.com/justinwritescode/MSBuild.IncludeSdk?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
   - Code of Conduct: CODE_OF_CONDUCT.md

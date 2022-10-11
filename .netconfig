@@ -22,8 +22,8 @@
 	weak
 [file "Directory.Build.props"]
 	url = https://github.com/justinwritescode/common/blob/main/Directory.Build.props
-	sha = 00b00861cf8e21169bc7a310316ebaaa64b55fe0
-	etag = db5dd8318c9a59f76e5dc06d9ba1098dd5dcdd5be02a78a124429e2fa7c8cfc4
+	sha = bf16280bf45980a4a972f8f3d238ebb950e941d4
+	etag = 387101a80daf269ef377fa9ad148c05a7cbf74fc858846364be394eab4fbaf2c
 	weak
 [file "Directory.Build.targets"]
 	url = https://github.com/justinwritescode/common/blob/main/Directory.Build.targets

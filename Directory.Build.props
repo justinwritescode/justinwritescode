@@ -23,7 +23,7 @@
     <DebugType>portable</DebugType>
     <PackageIcon Condition="Exists('Icon.png')">Icon.png</PackageIcon>
     <PackageIcon Condition="Exists('Icon.jpg')">Icon.jpg</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile Condition="Exists('README.md')">README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/justinwritescode/$(MSBuildProjectName)</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Nullable>enable</Nullable>
