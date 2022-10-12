@@ -11,3 +11,6 @@ pip install mkdocs-multirepo-plugin
 pip install mkdocs-section-index
 pip install mkdocs-pdf-export-plugin
 pip install mkdocs-git-authors-plugin
+pip install mkdocs-macros-plugin
+pip install mkdocs-codeinclude-plugin
+pip install mkdocs-literate-nav

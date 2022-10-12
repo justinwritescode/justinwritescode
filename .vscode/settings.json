@@ -3,5 +3,6 @@
         "activityBar.background": "#541918",
         "titleBar.activeBackground": "#752421",
         "titleBar.activeForeground": "#FEFBFB"
-    }
+    },
+    "files.eol": "\r\n"
 }

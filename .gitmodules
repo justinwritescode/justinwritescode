@@ -22,3 +22,9 @@
 [submodule "src/Types"]
 	path = src/Types
 	url = https://github.com/justinwritescode/Types.git
+[submodule "src/MSBuild.NuGetPush"]
+	path = src/MSBuild.NuGetPush
+	url = https://github.com/justinwritescode/MSBuild.NuGetPush.git
+[submodule "src/NuGetUtils"]
+	path = src/NuGetUtils
+	url = https://github.com/justinwritescode/NuGetUtils.git

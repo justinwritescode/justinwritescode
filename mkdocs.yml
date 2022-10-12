@@ -51,9 +51,11 @@ plugins:
         utm_source: "documentation"
         utm_medium: "rss"
         utm_campaign: "feed-syndication"
+  - macros
   - search
   - blog
   - categories
+  - literate-nav
   - pdf-export
   - tags:
       tags_file: tags.md
@@ -61,6 +63,8 @@ plugins:
       type: date
       enable_creation_date: true
       fallback_to_build_date: true
+  - codeinclude:
+      title_mode: pymdownx.tabbed
   - section-index
   - multirepo:
       cleanup: true
@@ -152,12 +156,12 @@ nav:
   - About: README.md
   - Documentation:
       - docs/index.md
-      - common: '!import https://github.com/justinwritescode/common?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      - nuget-icons: '!import https://github.com/justinwritescode/nuget-icons?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      - Types: '!import https://github.com/justinwritescode/Types?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      - dotnet-search: '!import https://github.com/justinwritescode/dotnet-search?branch=master&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      - MSBuild.XmlDocMd: '!import https://github.com/justinwritescode/MSBuild.XmlDocMd?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      - MSBuild.IncludeSdk: '!import https://github.com/justinwritescode/MSBuild.IncludeSdk?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      #- common: '!import https://github.com/justinwritescode/common?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      #- nuget-icons: '!import https://github.com/justinwritescode/nuget-icons?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      #- Types: '!import https://github.com/justinwritescode/Types?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      #- dotnet-search: '!import https://github.com/justinwritescode/dotnet-search?branch=master&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      #- MSBuild.XmlDocMd: '!import https://github.com/justinwritescode/MSBuild.XmlDocMd?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+      #- MSBuild.IncludeSdk: '!import https://github.com/justinwritescode/MSBuild.IncludeSdk?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
   - Code of Conduct: CODE_OF_CONDUCT.md
   - License: LICENSE
   - Privacy Policy: PRIVACY_POLICY.md
