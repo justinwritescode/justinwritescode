@@ -51,23 +51,24 @@ plugins:
         utm_source: "documentation"
         utm_medium: "rss"
         utm_campaign: "feed-syndication"
-  - macros
   - search
   - blog
-  - categories
-  - literate-nav
-  - pdf-export
   - tags:
       tags_file: tags.md
   - git-revision-date-localized:
       type: date
       enable_creation_date: true
       fallback_to_build_date: true
+  - macros
+  - categories
+#  - literate-nav      
   - codeinclude:
       title_mode: pymdownx.tabbed
   - section-index
+  - mkdocs-nav-enhancements
+  - gitsnippet
   - multirepo:
-      cleanup: true
+      cleanup: false
       repos:
         - section: nuget-icons
           import_url: 'https://github.com/justinwritescode/nuget-icons?edit_uri=tree/main/docs'
@@ -92,6 +93,7 @@ extra:
       name: Justin Chase on Telegram
   version:
     provider: mike
+    default: latest
   analytics:
     provider: google
     property: G-JYQ7NBSP4R
@@ -154,14 +156,14 @@ markdown_extensions:
 nav:
   - Home: index.md
   - About: README.md
-  - Documentation:
-      - docs/index.md
-      #- common: '!import https://github.com/justinwritescode/common?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      #- nuget-icons: '!import https://github.com/justinwritescode/nuget-icons?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      #- Types: '!import https://github.com/justinwritescode/Types?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      #- dotnet-search: '!import https://github.com/justinwritescode/dotnet-search?branch=master&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      #- MSBuild.XmlDocMd: '!import https://github.com/justinwritescode/MSBuild.XmlDocMd?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
-      #- MSBuild.IncludeSdk: '!import https://github.com/justinwritescode/MSBuild.IncludeSdk?branch=main&docs_dir=docs&multi_docs=true&config=mkdocs.yml'
+  # - Documentation:
+  #     - index.md
+  #     - common: '!import https://github.com/justinwritescode/common?branch=main'
+  #     - nuget-icons: '!import https://github.com/justinwritescode/nuget-icons?branch=main'
+  #     - Types: Types
+  #     - dotnet-search: '!import https://github.com/justinwritescode/dotnet-search?branch=1-feat-port-this-to-the-latest-versions-of-net-core'
+  #     - MSBuild.XmlDocMd: '!import https://github.com/justinwritescode/MSBuild.XmlDocMd?branch=main'
+  #     - MSBuild.IncludeSdk: '!import https://github.com/justinwritescode/MSBuild.IncludeSdk?branch=main'
   - Code of Conduct: CODE_OF_CONDUCT.md
   - License: LICENSE
   - Privacy Policy: PRIVACY_POLICY.md

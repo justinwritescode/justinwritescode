@@ -14,3 +14,4 @@ pip install mkdocs-git-authors-plugin
 pip install mkdocs-macros-plugin
 pip install mkdocs-codeinclude-plugin
 pip install mkdocs-literate-nav
+pip install mkdocs-nav-enhancements
