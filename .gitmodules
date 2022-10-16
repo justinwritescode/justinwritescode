@@ -5,13 +5,13 @@
 	path = src/dotnet-search
 	url = https://justinwritescode@github.com/justinwritescode/dotnet-search.git
 [submodule "src/Build.Include.Sdk"]
-	path = src/MSBuild.IncludeSdk
+	path = src/MSBuild.Sdks
 	url = https://github.com/justinwritescode/Build.Include.Sdk.git
 [submodule "common"]
 	path = common
 	url = https://github.com/justinwritescode/common.git
 [submodule "nuget-icons"]
-	path = nuget-icons
+	path = src/nuget-icons
 	url = https://github.com/justinwritescode/nuget-icons.git
 [submodule "src/MSBuild.SlnProj"]
 	path = src/MSBuild.SlnProj
@@ -28,3 +28,9 @@
 [submodule "src/NuGetUtils"]
 	path = src/NuGetUtils
 	url = https://github.com/justinwritescode/NuGetUtils.git
+[submodule "src/Versioning"]
+	path = src/Versioning
+	url = https://github.com/justinwritescode/Versioning.git
+[submodule "docs/docs"]
+	path = docs/docs
+	url = https://github.com/justinwritescode/docs.git
