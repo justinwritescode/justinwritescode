@@ -10,7 +10,7 @@
 [submodule "common"]
 	path = common
 	url = https://github.com/justinwritescode/common.git
-[submodule "nuget-icons"]
+[submodule "src/nuget-icons"]
 	path = src/nuget-icons
 	url = https://github.com/justinwritescode/nuget-icons.git
 [submodule "src/MSBuild.SlnProj"]
@@ -40,7 +40,9 @@
 [submodule "src/EnumerationClassGenerator"]
 	path = src/EnumerationClassGenerator
 	url = https://github.com/justinwritescode/EnumerationClassGenerator.git
-
 [submodule "EnumerationClassGenerator"]
 	path = EnumerationClassGenerator
 	url = https://github.com/justinwritescode/EnumerationClassGenerator.git
+[submodule "docs/deploy-to-docs"]
+	path = docs/deploy-to-docs
+	url = https://github.com/justinwritescode/deploy-to-docs.git
