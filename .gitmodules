@@ -40,3 +40,7 @@
 [submodule "src/EnumerationClassGenerator"]
 	path = src/EnumerationClassGenerator
 	url = https://github.com/justinwritescode/EnumerationClassGenerator.git
+
+[submodule "EnumerationClassGenerator"]
+	path = EnumerationClassGenerator
+	url = https://github.com/justinwritescode/EnumerationClassGenerator.git
