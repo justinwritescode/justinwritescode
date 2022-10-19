@@ -48,5 +48,5 @@
 	url = https://github.com/justinwritescode/deploy-to-docs.git
 
 [submodule "src/EfCore"]
-	path = src/EfCore
+	path = src/EntityFrameworkCore
 	url = https://github.com/justinwritescode/EfCore
