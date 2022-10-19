@@ -46,7 +46,12 @@
 [submodule "docs/deploy-to-docs"]
 	path = docs/deploy-to-docs
 	url = https://github.com/justinwritescode/deploy-to-docs.git
-
 [submodule "src/EfCore"]
 	path = src/EntityFrameworkCore
-	url = https://github.com/justinwritescode/EfCore
+	url = https://github.com/justinwritescode/EntityFrameworkCore.git
+[submodule "src/MSBuild.EnsureFileHeaders"]
+	path = src/MSBuild.EnsureFileHeaders
+	url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
+[submodule "src/MkDocsProjSdk"]
+	path = src/MkDocsProjSdk
+	url = https://github.com/justinwritescode/MSBuild.MkDocsProjSdk.git
