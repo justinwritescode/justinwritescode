@@ -46,3 +46,7 @@
 [submodule "docs/deploy-to-docs"]
 	path = docs/deploy-to-docs
 	url = https://github.com/justinwritescode/deploy-to-docs.git
+
+[submodule "src/EfCore"]
+	path = src/EfCore
+	url = https://github.com/justinwritescode/EfCore
