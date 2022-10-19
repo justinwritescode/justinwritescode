@@ -34,3 +34,9 @@
 [submodule "docs/docs"]
 	path = docs/docs
 	url = https://github.com/justinwritescode/docs.git
+[submodule "src/MSBuild.Utils"]
+	path = src/MSBuild.Utils
+	url = https://github.com/justinwritescode/MSBuild.Utils.git
+[submodule "src/EnumerationClassGenerator"]
+	path = src/EnumerationClassGenerator
+	url = https://github.com/justinwritescode/EnumerationClassGenerator.git

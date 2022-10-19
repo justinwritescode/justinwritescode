@@ -6,10 +6,12 @@
     <JustinWritesCodeCommonRestoreCommonFilesVersion>0.0.0-alpha.0.31</JustinWritesCodeCommonRestoreCommonFilesVersion>
     <JustinWritesCodeCommonRestoreCommonFilesTestsVersion>0.0.1-Local</JustinWritesCodeCommonRestoreCommonFilesTestsVersion>
     <JustinWritesCodeVersioningVersion>0.0.0-alpha.0.28</JustinWritesCodeVersioningVersion>
+    <MSBuildUtilsVersion>0.0.0-alpha.0</MSBuildUtilsVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="JustinWritesCode.Common.RestoreCommonFiles" Version="$(JustinWritesCodeCommonRestoreCommonFilesVersion)" />
     <PackageVersion Include="JustinWritesCode.Common.RestoreCommonFiles.Tests" Version="$(JustinWritesCodeCommonRestoreCommonFilesTestsVersion)" />
     <PackageVersion Include="JustinWritesCode.Versioning" Version="$(JustinWritesCodeVersioningVersion)" />
+    <PackageVersion Include="MSBuild.Utils" Version="$(MSBuildUtilsVersion)" />
   </ItemGroup>
 </Project>
