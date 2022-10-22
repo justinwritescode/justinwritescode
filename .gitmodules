@@ -55,3 +55,6 @@
 [submodule "src/MkDocsProjSdk"]
 	path = src/MkDocsProjSdk
 	url = https://github.com/justinwritescode/MSBuild.MkDocsProjSdk.git
+[submodule "src/MkDocsProjSdk"]
+	path = src/MkDocsProjSdk
+	url = https://github.com/justinwritescode/NuGetUtils/Nu
