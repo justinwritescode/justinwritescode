@@ -1,6 +1,3 @@
-[submodule "SlnProk.Sdk"]
-	path = src/SlnProj.Sdk
-	url = https://justinwritescode@github.com/justinwritescode/SlnProj.Sdk.git
 [submodule "git-search"]
 	path = src/dotnet-search
 	url = https://justinwritescode@github.com/justinwritescode/dotnet-search.git
@@ -31,9 +28,6 @@
 [submodule "src/Versioning"]
 	path = src/Versioning
 	url = https://github.com/justinwritescode/Versioning.git
-[submodule "docs/docs"]
-	path = docs/docs
-	url = https://github.com/justinwritescode/docs.git
 [submodule "src/MSBuild.Utils"]
 	path = src/MSBuild.Utils
 	url = https://github.com/justinwritescode/MSBuild.Utils.git
@@ -43,9 +37,6 @@
 [submodule "EnumerationClassGenerator"]
 	path = EnumerationClassGenerator
 	url = https://github.com/justinwritescode/EnumerationClassGenerator.git
-[submodule "docs/deploy-to-docs"]
-	path = docs/deploy-to-docs
-	url = https://github.com/justinwritescode/deploy-to-docs.git
 [submodule "src/EfCore"]
 	path = src/EntityFrameworkCore
 	url = https://github.com/justinwritescode/EntityFrameworkCore.git
@@ -58,3 +49,6 @@
 [submodule "src/MkDocsProjSdk"]
 	path = src/MkDocsProjSdk
 	url = https://github.com/justinwritescode/NuGetUtils/Nu
+[submodule "src/MSBuild.SolutionSdk"]
+	path = src/MSBuild.SolutionSdk
+	url = https://github.com/justinwritescode/MSBuild.SolutionSdk.git
