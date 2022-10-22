@@ -55,9 +55,6 @@
 [submodule "docs/docs"]
 	path = docs/docs
 	url = https://github.com/justinwritescode/docs.git
-[submodule "dics/deploy-to-docs"]
-	path = dics/deploy-to-docs
-	url = https://github.com/justinwritescode/deploy-to-docs.git
 [submodule "docs/deploy-to-docs"]
 	path = docs/deploy-to-docs
 	url = https://github.com/justinwritescode/deploy-to-docs.git
