@@ -1,0 +1,30 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestoreCommonFiles", "RestoreCommonFiles.restoreproj", "{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Testing|Any CPU = Testing|Any CPU
+		Local|Any CPU = Local|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Local|Any CPU.Build.0 = Local|Any CPU
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0BEE62-4530-4C71-8C6E-29C2FE556A34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {662485C5-E3A4-4345-8F55-70A60B51FEFD}
+	EndGlobalSection
+EndGlobal
