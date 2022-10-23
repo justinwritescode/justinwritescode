@@ -52,3 +52,9 @@
 [submodule "src/NuGetUtils/src/NuGet.Client"]
 	path = src/NuGetUtils/src/NuGet.Client
 	url = https://github.com/NuGet/NuGet.Client.git
+[submodule "src/StringTemplateCodeGenerator"]
+	path = src/StringTemplateCodeGenerator
+	url = https://github.com/justinwritescode/StringTemplateCodeGenerator.git
+[submodule "Shared"]
+	path = Shared
+	url = https://github.com/justinwritescode/Shared.git
