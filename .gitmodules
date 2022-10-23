@@ -10,9 +10,6 @@
 [submodule "src/nuget-icons"]
 	path = src/nuget-icons
 	url = https://github.com/justinwritescode/nuget-icons.git
-[submodule "src/MSBuild.SlnProj"]
-	path = src/MSBuild.SlnProj
-	url = https://github.com/justinwritescode/MSBuild.SlnProj.git
 [submodule "src/MSBuild.XmlDocMd"]
 	path = src/MSBuild.XmlDocMd
 	url = https://github.com/justinwritescode/MSBuild.XmlDocMd.git
@@ -58,3 +55,6 @@
 [submodule "docs/deploy-to-docs"]
 	path = docs/deploy-to-docs
 	url = https://github.com/justinwritescode/deploy-to-docs.git
+[submodule "src/NuGetUtils/src/NuGet.Client"]
+	path = src/NuGetUtils/src/NuGet.Client
+	url = https://github.com/NuGet/NuGet.Client.git

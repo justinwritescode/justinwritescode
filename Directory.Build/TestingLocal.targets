@@ -1,5 +1,11 @@
 <Project>
-   <Target Name="GetPackageVersion" BeforeTargets="GetPackageMetadata" AfterTargets="MinVer" Returns="$(PackageVersion)" Condition="'$(Configuration)' == 'Local'">
+  <PropertyGroup>
+    <GetPackageMetadataDependsOn>
+    $(GetPackageMetadataDependsOn);
+    MinVer
+    </GetPackageMetadataDependsOn>
+  </PropertyGroup>
+   <Target Name="MinVer" BeforeTargets="GetPackageMetadata" Returns="$(PackageVersion)" Condition="'$(Configuration)' == 'Local'">
     <ItemGroup>
       <PackageVersion Update="$(PackageId)" Version="0.0.1-Local" />
     </ItemGroup>
@@ -12,7 +18,7 @@
     </PropertyGroup>
    </Target>
 
-    <Target Name="PushNuGetPackageToLocal" AfterTargets="Pack" Condition="'$(Configuration)' == 'Local' And '$(GeneratePackageOnBuild)' == 'true'">
+    <Target Name="PushLocal" AfterTargets="Pack" Condition="'$(Configuration)' == 'Local' And '$(GeneratePackageOnBuild)' == 'true'">
         <Exec Command="dotnet nuget delete $(PackageId) $(PackageVersion) -s Local --non-interactive" ContinueOnError="true" />
         <Exec Command="dotnet nuget push $(PackageTargetPath) -s Local" Condition="Exists('$(PackageTargetPath)')" />
     </Target>

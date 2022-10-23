@@ -1,0 +1,13 @@
+<Project>
+   <Target Name="GetPackageVersion" BeforeTargets="GetPackageMetadata" AfterTargets="MinVer" Returns="$(PackageVersion)" Condition="'$(PackageVersionOverride)' != ''">
+    <ItemGroup>
+      <PackageVersion Update="$(PackageId)" Version="$(PackageVersionOverride)" />
+    </ItemGroup>
+    <PropertyGroup>
+      <PackageVersion>$(PackageVersionOverride)</PackageVersion>
+      <Version>$(PackageVersionOverride)l</Version>
+      <AssemblyVersion>$(PackageVersionOverride)</AssemblyVersion>
+      <InformationalVersion>$(PackageVersionOverride)</InformationalVersion>
+    </PropertyGroup>
+   </Target>
+</Project>

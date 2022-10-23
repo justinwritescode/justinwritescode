@@ -1,0 +1,5 @@
+<Project InitialTargets="CustomAfterCentralPackageVersions">
+  <Target Name="CustomAfterCentralPackageVersions">
+    <Message Importance="High" Text="CentralPackagesFile: $(CentralPackagesFile)" />
+  </Target>
+</Project>

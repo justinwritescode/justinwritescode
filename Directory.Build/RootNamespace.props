@@ -1,21 +1,40 @@
 <Project InitialTargets="DisplayRootNamespace">
   <PropertyGroup>
-    <_GitRoot>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), ".git/HEAD"))</_GitRoot>
+    <_GitRoot Condition="'$(_GitRoot)' == ''">$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), ".git"))</_GitRoot>
+    <_GitRoot Condition="'$(_GitRoot)' == ''">$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), ".git/HEAD"))</_GitRoot>
     <_RelativePath>$([MSBuild]::MakeRelative($(_GitRoot), $(MSBuildProjectDirectory)))</_RelativePath>
 
     <_RelativeNamespace>$([System.IO.Path]::GetFileName($(_GitRoot))).$(_RelativePath.Replace("\", ".").Replace("/", ".").Replace("src.", "").Replace("tests.", "").Replace($(MSBuildProjectExtension), ""))</_RelativeNamespace>
+    <_RelativeNamespace>$(_RelativeNamespace.Replace("justinwritescode", "JustinWritesCode").Replace("JustinWritesCode.JustinWritesCode.", "JustinWritesCode."))</_RelativeNamespace>
 
     <!-- Remove duplicates, e.g., Microsoft.Microsoft becomes Microsoft. -->
-    <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_RelativeNamespace), "(\w+)\.\1\.", "$1."))</_FixedRelativeNamespace>
+    <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_RelativeNamespace), "\.(\w+)\.\1", "$1"))</_FixedRelativeNamespace>
     <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_FixedRelativeNamespace), "^\.+", ""))</_FixedRelativeNamespace>
-    <RootNamespace Condition="'$(UseJustinWritesCodeNamespace)' != 'false' And !$(RootNamespace.StartsWith('JustinWritesCode'))">JustinWritesCode.$(_FixedRelativeNamespace)</RootNamespace>
-    <RootNamespace Condition="'$(UseJustinWritesCodeNamespace)' == 'false'">$(_FixedRelativeNamespace)</RootNamespace>
-    <PackageId Condition="!$(PackageId.StartsWith('JustinWritesCode'))">$(RootNamespace)</PackageId>
-    <RootNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(RootNamespace), "\-", ""))</RootNamespace>
+    <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_FixedRelativeNamespace), "\.+", "."))</_FixedRelativeNamespace>
+    <RootNamespace Condition="'$(UseJustinWritesCodeNamespace)' != 'false' And !$(_FixedRelativeNamespace.StartsWith('JustinWritesCode'))">JustinWritesCode.$(_FixedRelativeNamespace)</RootNamespace>
+    <RootNamespace Condition="'$(UseJustinWritesCodeNamespace)' == 'false' Or $(_FixedRelativeNamespace.StartsWith('JustinWritesCode'))">$(_FixedRelativeNamespace)</RootNamespace>
+    <RootNamespacePieces>$(RootNamespace.Split('.'))</RootNamespacePieces>
+  </PropertyGroup>
+  <ItemGroup>
+    <RootNamespacePiece Include="$(RootNamespacePieces)" />
+    <RootNamespaceUniquePiece Include="@(RootNamespacePiece->Distinct())" />
+    <RootNamespace Include="@(RootNamespacePiece, '.')" />
+  </ItemGroup>
+  <PropertyGroup>
+    <RootNamespace Condition="'$(RootNamespaceOverride)' != ''">@(RootNamespaceUniquePiece)</RootNamespace>
+    <!-- <RootNamespace>$(RootNamespace.Replace(";", "."))</RootNamespace> -->
+    <PackageId Condition="!$(PackageId.StartsWith('JustinWritesCode')) And '$(PackageIdOverride)' != ''">$(RootNamespace)</PackageId>
+    <RootNamespace Condition="'$(RootNamespaceOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace($(RootNamespace), "\-", ""))</RootNamespace>
+    <PackageId Condition="'$(PackageIdOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace($(RootNamespace), "\-", ""))</PackageId>
     <!-- <PackageId Condition="'$(UseJustinWritesCodeNamespace)' != 'false'">JustinWritesCode.@(RelativeNamespacePiecesNoDups->'%(Identity)', '.')</PackageId>
     <PackageId Condition="'$(UseJustinWritesCodeNamespace)' == 'false'">@(RelativeNamespacePiecesNoDups->'%(Identity)', '.')</PackageId> -->
   </PropertyGroup>
+  <PropertyGroup>
+   <PackageId Condition="'$(PackageIdOverride)' != ''">$(PackageIdOverride)</PackageId>
+   <RootNamespace Condition="'$(RootNamespaceOverride)' != ''"> $(RootNamespaceOverride)</RootNamespace>
+  </PropertyGroup>
   <Target Name="DisplayRootNamespace">
+    <Message Importance="High" Text="_GitRoot: $(_GitRoot)" />
     <Message Importance="High" Text="MSBuildProjectFile: $(MSBuildProjectFullPath)" />
     <Message Importance="High" Text="_RelativeNamespace: $(_RelativeNamespace)" />
     <Message Importance="High" Text="_FixedRelativeNamespace: $(_FixedRelativeNamespace)" />
