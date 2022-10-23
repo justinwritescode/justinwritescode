@@ -1,8 +1,0 @@
-﻿{
-	"Tokens": [
-		{
-			"Token": "./Build.Include.Sdk/src/Build.Include.Sdk/Build.Include.Sdk.sln",
-			"Description": "Enter relative path to solution filename:",			
-		}
-	]
-}

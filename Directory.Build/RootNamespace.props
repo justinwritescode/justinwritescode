@@ -23,15 +23,17 @@
   <PropertyGroup>
     <RootNamespace Condition="'$(RootNamespaceOverride)' != ''">@(RootNamespaceUniquePiece)</RootNamespace>
     <!-- <RootNamespace>$(RootNamespace.Replace(";", "."))</RootNamespace> -->
-    <PackageId Condition="!$(PackageId.StartsWith('JustinWritesCode')) And '$(PackageIdOverride)' != ''">$(RootNamespace)</PackageId>
-    <RootNamespace Condition="'$(RootNamespaceOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace($(RootNamespace), "\-", ""))</RootNamespace>
-    <PackageId Condition="'$(PackageIdOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace($(RootNamespace), "\-", ""))</PackageId>
+    <PackageId Condition="!$(PackageId.StartsWith('JustinWritesCode')) And '$(PackageIdOverride)' == ''">$(RootNamespace)</PackageId>
+    <RootNamespace Condition="'$(RootNamespaceOverride)' == ''">$([System.Text.RegularExpressions.Regex]::Replace($(RootNamespace), "\-", ""))</RootNamespace>
+    <!-- <PackageId Condition="'$(PackageIdOverride)' != ''">$(RootNamespace)</PackageId> -->
+    <AssemblyName Condition="'$(AssemblyNameOverride)' == ''">$(RootNamespace)</AssemblyName>
     <!-- <PackageId Condition="'$(UseJustinWritesCodeNamespace)' != 'false'">JustinWritesCode.@(RelativeNamespacePiecesNoDups->'%(Identity)', '.')</PackageId>
     <PackageId Condition="'$(UseJustinWritesCodeNamespace)' == 'false'">@(RelativeNamespacePiecesNoDups->'%(Identity)', '.')</PackageId> -->
   </PropertyGroup>
   <PropertyGroup>
    <PackageId Condition="'$(PackageIdOverride)' != ''">$(PackageIdOverride)</PackageId>
    <RootNamespace Condition="'$(RootNamespaceOverride)' != ''"> $(RootNamespaceOverride)</RootNamespace>
+   <AssemblyName Condition="'$(AssemblyNameOverride)' != ''"> $(AssemblyNameOverride)</AssemblyName>
   </PropertyGroup>
   <Target Name="DisplayRootNamespace">
     <Message Importance="High" Text="_GitRoot: $(_GitRoot)" />
@@ -40,5 +42,6 @@
     <Message Importance="High" Text="_FixedRelativeNamespace: $(_FixedRelativeNamespace)" />
     <Message Importance="High" Text="RootNamespace: $(RootNamespace)" />
     <Message Importance="High" Text="PackageId: $(PackageId)" />
+    <Message Importance="High" Text="AssemblyName: $(AssemblyName)" />
   </Target>
 </Project>
