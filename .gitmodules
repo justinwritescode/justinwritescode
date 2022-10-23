@@ -22,15 +22,9 @@
 [submodule "src/NuGetUtils"]
 	path = src/NuGetUtils
 	url = https://github.com/justinwritescode/NuGetUtils.git
-[submodule "src/Versioning"]
-	path = src/Versioning
-	url = https://github.com/justinwritescode/Versioning.git
 [submodule "src/MSBuild.Utils"]
 	path = src/MSBuild.Utils
 	url = https://github.com/justinwritescode/MSBuild.Utils.git
-[submodule "src/EnumerationClassGenerator"]
-	path = src/EnumerationClassGenerator
-	url = https://github.com/justinwritescode/EnumerationClassGenerator.git
 [submodule "EnumerationClassGenerator"]
 	path = EnumerationClassGenerator
 	url = https://github.com/justinwritescode/EnumerationClassGenerator.git
@@ -38,7 +32,7 @@
 	path = src/EntityFrameworkCore
 	url = https://github.com/justinwritescode/EntityFrameworkCore.git
 [submodule "src/MSBuild.EnsureFileHeaders"]
-	path = src/MSBuild.EnsureFileHeaders
+	path = src/MSBuild.Utils/MSBuild.EnsureFileHeaders
 	url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
 [submodule "src/MkDocsProjSdk"]
 	path = src/MkDocsProjSdk
