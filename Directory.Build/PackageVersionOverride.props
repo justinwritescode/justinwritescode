@@ -1,0 +1,5 @@
+<Project>
+   <!-- <PropertyGroup Condition="'$(PackageVersionOverride)' != ''">
+    <PackDependsOn>$(PackDependsOn);GetPackageVersion</PackDependsOn>
+   </PropertyGroup> -->
+</Project>

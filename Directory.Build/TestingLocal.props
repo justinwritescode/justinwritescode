@@ -3,10 +3,11 @@
     <Configuration>Local</Configuration>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Local'">
-    <PackageVersion>0.0.1-Local</PackageVersion>
+    <PackageVersionOverride>0.0.1-Local</PackageVersionOverride>
+    <!-- <PackageVersion>0.0.1-Local</PackageVersion>
     <Version>0.0.1-Local</Version>
     <AssemblyVersion>0.0.1</AssemblyVersion>
     <VersionSuffix>-Local</VersionSuffix>
-    <InformationalVersion>0.0.1-Local</InformationalVersion>
+    <InformationalVersion>0.0.1-Local</InformationalVersion> -->
   </PropertyGroup>
 </Project>

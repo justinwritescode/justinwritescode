@@ -1,12 +1,12 @@
 <Project>
-   <Target Name="GetPackageVersion" BeforeTargets="GetPackageMetadata" AfterTargets="MinVer" Returns="$(PackageVersion)" Condition="'$(PackageVersionOverride)' != ''">
+   <Target Name="SetPackageVersionOverridden" AfterTargets="GetPackageVersion;MinVer" BeforeTargets="GetPackageMetadata" Returns="$(PackageVersion)" Condition="'$(PackageVersionOverride)' != ''">
     <ItemGroup>
       <PackageVersion Update="$(PackageId)" Version="$(PackageVersionOverride)" />
     </ItemGroup>
     <PropertyGroup>
       <PackageVersion>$(PackageVersionOverride)</PackageVersion>
       <Version>$(PackageVersionOverride)l</Version>
-      <AssemblyVersion>$(PackageVersionOverride)</AssemblyVersion>
+      <AssemblyVersion>$([System.Text.RegularExpressions.Regex]::Replace("$(PackageVersionOverride)", "\-.*", ""))</AssemblyVersion>
       <InformationalVersion>$(PackageVersionOverride)</InformationalVersion>
     </PropertyGroup>
    </Target>

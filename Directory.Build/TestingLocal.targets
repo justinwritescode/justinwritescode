@@ -5,7 +5,7 @@
     MinVer
     </GetPackageMetadataDependsOn>
   </PropertyGroup>
-   <Target Name="MinVer" BeforeTargets="GetPackageMetadata" Returns="$(PackageVersion)" Condition="'$(Configuration)' == 'Local'">
+   <!-- <Target Name="SetPackageVersionOverridden" AfterTargets="GetPackageVersion" BeforeTargets="GetPackageMetadata" Returns="$(PackageVersion)" Condition="'$(Configuration)' == 'Local'">
     <ItemGroup>
       <PackageVersion Update="$(PackageId)" Version="0.0.1-Local" />
     </ItemGroup>
@@ -16,7 +16,7 @@
       <VersionSuffix>-Local</VersionSuffix>
       <InformationalVersion>0.0.1-Local</InformationalVersion>
     </PropertyGroup>
-   </Target>
+   </Target> -->
 
     <Target Name="PushLocal" AfterTargets="Pack" Condition="'$(Configuration)' == 'Local' And '$(GeneratePackageOnBuild)' == 'true'">
         <Exec Command="dotnet nuget delete $(PackageId) $(PackageVersion) -s Local --non-interactive" ContinueOnError="true" />
