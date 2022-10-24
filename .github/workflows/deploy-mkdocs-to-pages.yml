@@ -36,5 +36,7 @@ jobs:
           python-version: 3.x
       - name: Install MkDocs
         run: pip install mkdocs-material 
+      - name: Install MkDocs Plug-Ins
+        run: install-mkdocs-plugins.sh;
       - name: Deploy to GH Pages
         run: mkdocs gh-deploy --force
