@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "isRoot": true,
+    "tools": {
+        "dotnet-ef": "6.0.10",
+        "Microsoft.VisualStudio.SlnGen.Tool": "8.5.17",
+        "dotnet-file": "1.4.0"
+    }
+}
