@@ -24,7 +24,7 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }, 
+            },
             "problemMatcher": "$msCompile"
         },
         {
@@ -41,7 +41,7 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }, 
+            },
             "problemMatcher": "$msCompile"
         },
         {
@@ -80,22 +80,26 @@
         },
         {
             "label": "Insert Standard Header (C#)",
-            "command":"./insert-standard-header-csharp.sh",
+            "command": "./insert-standard-header-csharp.sh",
             "type": "shell",
-            "args": ["${file}"],
+            "args": [
+                "${file}"
+            ],
             "group": {
                 "kind": "none",
                 "isDefault": false
             },
             "options": {
                 "cwd": "${workspaceFolder}/.vscode"
-            },
+            }
         },
         {
             "label": "Insert Standard Header (XML)",
-            "command":"./insert-standard-header-xml.sh",
+            "command": "ts-node",
             "type": "shell",
-            "args": ["${input:Project}"],
+            "args": [
+                "./insert-standard-header.xml.ts", "${input:Project}"
+            ],
             "group": {
                 "kind": "none",
                 "isDefault": false
@@ -103,32 +107,49 @@
             "options": {
                 "cwd": "${workspaceFolder}/.vscode"
             },
+            "problemMatcher": []
         },
         {
             "label": "Push a NuGet Package",
-            "command":"dotnet",
+            "command": "dotnet",
             "type": "shell",
-            "args": ["nuget", "push", "${input:NuGetPackageFile}", "${input:NuGetApiKey}", "--source",  "${input:NuGetSource}"],
+            "args": [
+                "nuget",
+                "push",
+                "${input:NuGetPackageFile}",
+                "${input:NuGetApiKey}",
+                "--source",
+                "${input:NuGetSource}"
+            ],
             "group": {
                 "kind": "none",
                 "isDefault": false
             },
             "options": {
                 "cwd": "${workspaceFolder}/.vscode"
-            },
+            }
         },
         {
             "label": "Delete a NuGet Package",
-            "command":"dotnet",
+            "command": "dotnet",
             "type": "shell",
-            "args": ["nuget", "delete", "${input:NuGetPackageId}", "${input:NuGetPackageVersion}", "--source", "${input:NuGetSource}", "{input:NuGetApiKey}", "--non-interactive"],
+            "args": [
+                "nuget",
+                "delete",
+                "${input:NuGetPackageId}",
+                "${input:NuGetPackageVersion}",
+                "--source",
+                "${input:NuGetSource}",
+                "{input:NuGetApiKey}",
+                "--non-interactive"
+            ],
             "group": {
                 "kind": "none",
                 "isDefault": false
             },
             "options": {
                 "cwd": "${workspaceFolder}/.vscode"
-            },
+            }
         }
     ],
     "inputs": [
@@ -146,7 +167,7 @@
             "default": "${file}",
             "Description":"Select a project",
             "args": {
-                "include":"**/*.*proj;**/*.props;**/*.targets",
+                "include":["**/*.*proj", "**/*.props", "**/*.targets"],
                 "display":"fileName",
                 "prompt":"Select a project",
                 "keyRemember":"selectedProject",

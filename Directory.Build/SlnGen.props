@@ -10,5 +10,24 @@
     <SlnGenCustomProjectTypeGuid Include=".mkdocsproj" ProjectTypeGuid="6ed95d8c-b464-479b-83ff-4e1a3cefd207" />
     <SlnGenCustomProjectTypeGuid Include=".cstestproj" ProjectTypeGuid="FAE04EC0-301F-11D3-BF4B-00C04F79EFBC" />
     <SlnGenCustomProjectTypeGuid Include=".pkgs" ProjectTypeGuid="20d1492d-f7b2-41f2-a4e9-74a420cc8cd1" />
+    <SlnGenCustomProjectTypeGuid Include=".publishproj" ProjectTypeGuid="35d4bb16-3398-4e2c-8355-2c9c9680e5bd" />
+    <SlnGenCustomProjectTypeGuid Include=".aproj" ProjectTypeGuid="4cd4fd5b-0f23-4623-ba3f-b31cc4ab93ef" />
+    <SlnGenCustomProjectTypeGuid Include=".dwproj" ProjectTypeGuid="013f468b-6b9a-4cbf-a1a7-ae98fe3e05c3" />
+    <SlnGenCustomProjectTypeGuid Include=".dtproj" ProjectTypeGuid="64c8a15c-207e-459d-951d-ad7e7dac7bcf" />
+    <SlnGenCustomProjectTypeGuid Include=".smdlproj" ProjectTypeGuid="ac8c3b70-cd74-4c8e-9ceb-b8d00702bf3e" />
+    <SlnGenCustomProjectTypeGuid Include=".dbproj" ProjectTypeGuid="ac2f40b5-b3bd-4227-938a-6ecfb8c6e06c" />
+    <SlnGenCustomProjectTypeGuid Include=".modelproj" ProjectTypeGuid="cc0c3c51-6a1b-4414-8cd6-9a45a02aec87" />
+    <SlnGenCustomProjectTypeGuid Include=".dxjsproj" ProjectTypeGuid="a9d77286-c18d-461d-83b7-b2fbe1677888" />
+    <SlnGenCustomProjectTypeGuid Include=".cblproj" ProjectTypeGuid="06141aaa-2f82-4232-a3ef-dcb2027764fd" />
+    <SlnGenCustomProjectTypeGuid Include=".dynamicsproj" ProjectTypeGuid="390dbc7b-b3dd-43d4-a958-806d5ce2dd10" />
+    <SlnGenCustomProjectTypeGuid Include=".vfproj" ProjectTypeGuid="aab86bce-e4cc-4bb0-bbc5-83b1a081b6bb" />
+    <SlnGenCustomProjectTypeGuid Include=".isproj" ProjectTypeGuid="f7c9b907-e976-47d6-8ade-5d8c208a472d" />
+    <SlnGenCustomProjectTypeGuid Include=".xsproj" ProjectTypeGuid="60ca03d9-d475-4da7-85b4-dbe70d7f5ae1" />
+    <SlnGenCustomProjectTypeGuid Include=".dynamicsproj" ProjectTypeGuid="390dbc7b-b3dd-43d4-a958-806d5ce2dd10" />
+    <SlnGenCustomProjectTypeGuid Include=".dynamicsproj" ProjectTypeGuid="390dbc7b-b3dd-43d4-a958-806d5ce2dd10" />
   </ItemGroup>
+  <PropertyGroup>
+    <SlnGenSolutionFolder Condition="'$(IsTestProject)' == 'true'">tests</SlnGenSolutionFolder>
+    <SlnGenSolutionFolder Condition="'$(IsSourceProject)' == 'true'">src</SlnGenSolutionFolder>
+  </PropertyGroup>
 </Project>
