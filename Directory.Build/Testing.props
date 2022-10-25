@@ -3,8 +3,4 @@
     <PackageReferences>@(PackageReference)</PackageReferences>
     <IsTestProject>@(PackageReference->AnyHaveMetadataValue("Identity", "Microsoft.NET.Test.Sdk"))</IsTestProject>
   </PropertyGroup>
-
-  <PropertyGroup>
-    <Testing_props>imported</Testing_props>
-  </PropertyGroup>
 </Project>

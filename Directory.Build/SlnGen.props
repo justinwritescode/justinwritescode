@@ -1,0 +1,14 @@
+<Project>
+  <ItemGroup>
+    <SlnGenCustomProjectTypeGuid Include=".proj" ProjectTypeGuid="2ce5b178-8c95-4bdc-a5aa-c9eb6280a366" />
+    <SlnGenCustomProjectTypeGuid Include=".usings" ProjectTypeGuid="dcda4a0a-0a5e-4522-b6c4-80513d0753cd" />
+    <SlnGenCustomProjectTypeGuid Include=".props" ProjectTypeGuid="156a83f1-abef-4e73-abff-c6a1aa437922" />
+    <SlnGenCustomProjectTypeGuid Include=".targets" ProjectTypeGuid="ebca1dae-54cb-40fe-b05b-b52a498fe919" />
+    <SlnGenCustomProjectTypeGuid Include=".restoreproj" ProjectTypeGuid="76eaafad-9fda-4299-b582-8e3c4ced5a18" />
+    <SlnGenCustomProjectTypeGuid Include=".restoreproj" ProjectTypeGuid="76eaafad-9fda-4299-b582-8e3c4ced5a18" />
+    <SlnGenCustomProjectTypeGuid Include=".slnproj" ProjectTypeGuid="34eac930-e0ca-420b-bd8c-86042dd9e676" />
+    <SlnGenCustomProjectTypeGuid Include=".mkdocsproj" ProjectTypeGuid="6ed95d8c-b464-479b-83ff-4e1a3cefd207" />
+    <SlnGenCustomProjectTypeGuid Include=".cstestproj" ProjectTypeGuid="FAE04EC0-301F-11D3-BF4B-00C04F79EFBC" />
+    <SlnGenCustomProjectTypeGuid Include=".pkgs" ProjectTypeGuid="20d1492d-f7b2-41f2-a4e9-74a420cc8cd1" />
+  </ItemGroup>
+</Project>

@@ -6,7 +6,6 @@
     },
     "files.eol": "\r\n",
     "yaml.schemas": {
-        "file:///Users/david/.vscode/extensions/docsmsft.docs-yaml-0.2.9/out/yaml-support/toc.schema.json": "/toc\\.yml/i",
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
         "https://appsemble.app/api.json": "file:///Users/david/GitHub/justinwritescode/mkdocs.yml"
     },

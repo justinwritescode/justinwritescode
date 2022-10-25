@@ -146,8 +146,12 @@
             "default": "${file}",
             "Description":"Select a project",
             "args": {
-                "include":"**/*.*proj",
-                "display":"fileName"
+                "include":"**/*.*proj;**/*.props;**/*.targets",
+                "display":"fileName",
+                "prompt":"Select a project",
+                "keyRemember":"selectedProject",
+                "display": "fileName",
+                "addAsk":true
             }
         },
         {

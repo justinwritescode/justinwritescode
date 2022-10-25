@@ -1,5 +1,5 @@
 <Project InitialTargets="DisplayRootNamespace">
-  <PropertyGroup>
+  <PropertyGroup Condition="'$(PackageIdIsCalculated)' != 'true'">
     <_GitRoot Condition="'$(_GitRoot)' == ''">$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), ".git"))</_GitRoot>
     <_GitRoot Condition="'$(_GitRoot)' == ''">$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), ".git/HEAD"))</_GitRoot>
     <_RelativePath>$([MSBuild]::MakeRelative($(_GitRoot), $(MSBuildProjectDirectory)))</_RelativePath>
@@ -22,19 +22,19 @@
     <RootNamespace Include="@(RootNamespacePiece, '.')" />
   </ItemGroup>
   <PropertyGroup>
-    <RootNamespace Condition="'$(RootNamespaceOverride)' != ''">@(RootNamespaceUniquePiece)</RootNamespace>
+    <RootNamespace Condition="'$(RootNamespace)' != ''">@(RootNamespaceUniquePiece)</RootNamespace>
     <!-- <RootNamespace>$(RootNamespace.Replace(";", "."))</RootNamespace> -->
     <PackageId Condition="!$(PackageId.StartsWith('JustinWritesCode')) And '$(PackageIdOverride)' == ''">$(RootNamespace)</PackageId>
-    <RootNamespace Condition="'$(RootNamespaceOverride)' == ''">$([System.Text.RegularExpressions.Regex]::Replace($(RootNamespace), "\-", ""))</RootNamespace>
-    <!-- <PackageId Condition="'$(PackageIdOverride)' != ''">$(RootNamespace)</PackageId> -->
-    <AssemblyName Condition="'$(AssemblyNameOverride)' == ''">$(RootNamespace)</AssemblyName>
+    <RootNamespace Condition="'$(RootNamespace)' == ''">$([System.Text.RegularExpressions.Regex]::Replace($(RootNamespace), "\-", ""))</RootNamespace>
+    <!-- <PackageId Condition="'$(PackageId)' != ''">$(RootNamespace)</PackageId> -->
+    <AssemblyName Condition="'$(AssemblyName)' == ''">$(RootNamespace)</AssemblyName>
     <!-- <PackageId Condition="'$(UseJustinWritesCodeNamespace)' != 'false'">JustinWritesCode.@(RelativeNamespacePiecesNoDups->'%(Identity)', '.')</PackageId>
     <PackageId Condition="'$(UseJustinWritesCodeNamespace)' == 'false'">@(RelativeNamespacePiecesNoDups->'%(Identity)', '.')</PackageId> -->
   </PropertyGroup>
   <PropertyGroup>
-   <PackageId Condition="'$(PackageIdOverride)' != ''">$(PackageIdOverride)</PackageId>
-   <RootNamespace Condition="'$(RootNamespaceOverride)' != ''"> $(RootNamespaceOverride)</RootNamespace>
-   <AssemblyName Condition="'$(AssemblyNameOverride)' != ''"> $(AssemblyNameOverride)</AssemblyName>
+   <PackageId Condition="'$(PackageId)' != ''">$(PackageIdOverride)</PackageId>
+   <RootNamespace Condition="'$(RootNamespace)' != ''"> $(RootNamespaceOverride)</RootNamespace>
+   <AssemblyName Condition="'$(AssemblyName)' != ''"> $(AssemblyNameOverride)</AssemblyName>
   </PropertyGroup>
   <Target Name="DisplayRootNamespace">
     <Message Importance="High" Text="_GitRoot: $(_GitRoot)" />
