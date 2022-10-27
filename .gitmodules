@@ -55,3 +55,6 @@
 [submodule "MSBuild.EnsureFileHeaders"]
 	path = src/MSBuild.Utils/src/MSBuild.EnsureFileHeaders
 	url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
+[submodule "src/MkDocsProjSdk"]
+	path = src/MkDocsProjSdk
+	url = https://github.com/justinwritescode/MkDocsProjSdk.git
