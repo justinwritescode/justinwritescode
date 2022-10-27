@@ -12,15 +12,16 @@
     <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_FixedRelativeNamespace), "^\.+", ""))</_FixedRelativeNamespace>
     <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_FixedRelativeNamespace), "\.+", "."))</_FixedRelativeNamespace>
     <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_FixedRelativeNamespace), "-(\w)", "\U$1"))</_FixedRelativeNamespace>
+    <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_FixedRelativeNamespace), "(.*)\.+", "$1"))</_FixedRelativeNamespace>
     <RootNamespace Condition="'$(UseJustinWritesCodeNamespace)' != 'false' And !$(_FixedRelativeNamespace.StartsWith('JustinWritesCode'))">JustinWritesCode.$(_FixedRelativeNamespace)</RootNamespace>
     <RootNamespace Condition="'$(UseJustinWritesCodeNamespace)' == 'false' Or $(_FixedRelativeNamespace.StartsWith('JustinWritesCode'))">$(_FixedRelativeNamespace)</RootNamespace>
     <RootNamespacePieces>$(RootNamespace.Split('.'))</RootNamespacePieces>
   </PropertyGroup>
-  <ItemGroup>
+  <!-- <ItemGroup>
     <RootNamespacePiece Include="$(RootNamespacePieces)" />
     <RootNamespaceUniquePiece Include="@(RootNamespacePiece->Distinct())" />
     <RootNamespace Include="@(RootNamespacePiece, '.')" />
-  </ItemGroup>
+  </ItemGroup> -->
   <PropertyGroup>
     <!-- <RootNamespace Condition="'$(RootNamespace)' != ''">@(RootNamespaceUniquePiece)</RootNamespace> -->
     <!-- <RootNamespace>$(RootNamespace.Replace(";", "."))</RootNamespace> -->
