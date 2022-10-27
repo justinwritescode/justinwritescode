@@ -1,18 +1,21 @@
-[submodule "src/git-search"]
+[submodule "dotnet-search"]
 	path = src/dotnet-search
 	url = https://justinwritescode@github.com/justinwritescode/dotnet-search.git
-[submodule "src/MSBuild.Sdks"]
+[submodule "MSBuild.Sdks"]
 	path = src/MSBuild.Sdks
 	url = https://github.com/justinwritescode/MSBuild.Sdks.git
 [submodule "Shared"]
 	path = Shared
 	url = https://github.com/justinwritescode/Shared.git
-[submodule "src/nuget-icons"]
+[submodule "nuget-icons"]
 	path = src/nuget-icons
 	url = https://github.com/justinwritescode/src/nuget-icons.git
 [submodule "src/MSBuild.XmlDocMd"]
 	path = src/MSBuild.XmlDocMd
 	url = https://github.com/justinwritescode/MSBuild.XmlDocMd.git
+[submodule "src/MSBuild.MkDocsProjSdk"]
+	path = src/MSBuild.MkDocsProjSdk
+	url = https://github.com/justinwritescode/MkDocsProjSdk.git
 [submodule "src/Types"]
 	path = src/Types
 	url = https://github.com/justinwritescode/Types.git
@@ -32,12 +35,12 @@
 	path = src/EntityFrameworkCore
 	url = https://github.com/justinwritescode/EntityFrameworkCore.git
 [submodule "src/MSBuild.EnsureFileHeaders"]
-	path = src/MSBuild.Utils/MSBuild.EnsureFileHeaders
+	path = src/MSBuild.EnsureFileHeaders
 	url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
-[submodule "docs/docs"]
+[submodule "docs"]
 	path = docs/docs
 	url = https://github.com/justinwritescode/docs.git
-[submodule "docs/deploy-to-docs"]
+[submodule "deploy-to-docs"]
 	path = docs/deploy-to-docs
 	url = https://github.com/justinwritescode/deploy-to-docs.git
 [submodule "src/NuGetUtils/src/NuGet.Client"]
@@ -49,3 +52,6 @@
 [submodule "Shared"]
 	path = Shared
 	url = https://github.com/justinwritescode/Shared.git
+[submodule "MSBuild.EnsureFileHeaders"]
+	path = src/MSBuild.Utils/src/MSBuild.EnsureFileHeaders
+	url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git

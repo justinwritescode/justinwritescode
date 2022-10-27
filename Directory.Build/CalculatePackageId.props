@@ -8,7 +8,7 @@
     <_RelativeNamespace>$(_RelativeNamespace.Replace("justinwritescode", "JustinWritesCode").Replace("JustinWritesCode.JustinWritesCode.", "JustinWritesCode."))</_RelativeNamespace>
 
     <!-- Remove duplicates, e.g., Microsoft.Microsoft becomes Microsoft. -->
-    <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_RelativeNamespace), "\.(\w+)\.\1", "$1"))</_FixedRelativeNamespace>
+    <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_RelativeNamespace), "\.?(\w+)(.*)\.\1", "$1$2"))</_FixedRelativeNamespace>
     <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_FixedRelativeNamespace), "^\.+", ""))</_FixedRelativeNamespace>
     <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_FixedRelativeNamespace), "\.+", "."))</_FixedRelativeNamespace>
     <_FixedRelativeNamespace>$([System.Text.RegularExpressions.Regex]::Replace($(_FixedRelativeNamespace), "-(\w)", "\U$1"))</_FixedRelativeNamespace>
@@ -22,7 +22,7 @@
     <RootNamespace Include="@(RootNamespacePiece, '.')" />
   </ItemGroup>
   <PropertyGroup>
-    <RootNamespace Condition="'$(RootNamespace)' != ''">@(RootNamespaceUniquePiece)</RootNamespace>
+    <!-- <RootNamespace Condition="'$(RootNamespace)' != ''">@(RootNamespaceUniquePiece)</RootNamespace> -->
     <!-- <RootNamespace>$(RootNamespace.Replace(";", "."))</RootNamespace> -->
     <PackageId Condition="!$(PackageId.StartsWith('JustinWritesCode')) And '$(PackageIdOverride)' == ''">$(RootNamespace)</PackageId>
     <RootNamespace Condition="'$(RootNamespace)' == ''">$([System.Text.RegularExpressions.Regex]::Replace($(RootNamespace), "\-", ""))</RootNamespace>
@@ -32,9 +32,9 @@
     <PackageId Condition="'$(UseJustinWritesCodeNamespace)' == 'false'">@(RelativeNamespacePiecesNoDups->'%(Identity)', '.')</PackageId> -->
   </PropertyGroup>
   <PropertyGroup>
-   <PackageId Condition="'$(PackageId)' != ''">$(PackageIdOverride)</PackageId>
-   <RootNamespace Condition="'$(RootNamespace)' != ''"> $(RootNamespaceOverride)</RootNamespace>
-   <AssemblyName Condition="'$(AssemblyName)' != ''"> $(AssemblyNameOverride)</AssemblyName>
+   <PackageId Condition="'$(PackageIdOverride)' != ''">$(PackageIdOverride)</PackageId>
+   <RootNamespace Condition="'$(RootNamespaceOverride)' != ''"> $(RootNamespaceOverride)</RootNamespace>
+   <AssemblyName Condition="'$(AssemblyNameOverride)' != ''"> $(AssemblyNameOverride)</AssemblyName>
   </PropertyGroup>
   <Target Name="DisplayRootNamespace">
     <Message Importance="High" Text="_GitRoot: $(_GitRoot)" />
