@@ -28,9 +28,6 @@
 [submodule "src/MSBuild.Utils"]
 	path = src/MSBuild.Utils
 	url = https://github.com/justinwritescode/MSBuild.Utils.git
-[submodule "EnumerationClassGenerator"]
-	path = EnumerationClassGenerator
-	url = https://github.com/justinwritescode/EnumerationClassGenerator.git
 [submodule "src/EntityFrameworkCore"]
 	path = src/EntityFrameworkCore
 	url = https://github.com/justinwritescode/EntityFrameworkCore.git
