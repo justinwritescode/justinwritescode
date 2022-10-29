@@ -11,15 +11,21 @@
 -->
 
 <Project>
-   <Target Name="SetPackageVersionOverridden" AfterTargets="GetPackageVersion;MinVer" BeforeTargets="GetPackageMetadata" Returns="$(PackageVersion)" Condition="'$(PackageVersionOverride)' != ''">
-    <ItemGroup>
-      <PackageVersion Update="$(PackageId)" Version="$(PackageVersionOverride)" />
-    </ItemGroup>
-    <PropertyGroup>
-      <PackageVersion>$(PackageVersionOverride)</PackageVersion>
-      <Version>$(PackageVersionOverride)l</Version>
-      <AssemblyVersion>$([System.Text.RegularExpressions.Regex]::Replace("$(PackageVersionOverride)", "\-.*", ""))</AssemblyVersion>
-      <InformationalVersion>$(PackageVersionOverride)</InformationalVersion>
-    </PropertyGroup>
-   </Target>
+    <Target Name="GetPackageVersion2" AfterTargets="GetPackageVersion" Condition="'$(PackageVersionOverride)' != ''" Returns="$(PackageVersion)" >
+     <CallTarget Targets="SetOverriddenPackageVersion" />
+    </Target>
+    <Target Name="MinVer2" AfterTargets="MinVer" Condition="'$(PackageVersionOverride)' != ''">
+     <CallTarget Targets="SetOverriddenPackageVersion" />
+    </Target>
+    <Target Name="SetOverriddenPackageVersion" AfterTargets="MinVer" Returns="$(PackageVersion)" Condition="'$(PackageVersionOverride)' != ''">
+      <ItemGroup>
+        <PackageVersion Update="$(PackageId)" Version="$(PackageVersionOverride)" />
+      </ItemGroup>
+      <PropertyGroup>
+        <PackageVersion Condition="'$(PackageVersionOverride)' != ''">$(PackageVersionOverride)</PackageVersion>
+        <Version Condition="'$(PackageVersionOverride)' != ''">$(PackageVersionOverride)l</Version>
+        <AssemblyVersion Condition="'$(PackageVersionOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace("$(PackageVersionOverride)", "\-.*", ""))</AssemblyVersion>
+        <InformationalVersion Condition="'$(PackageVersionOverride)' != ''">$(PackageVersionOverride)</InformationalVersion>
+      </PropertyGroup>
+    </Target>
 </Project>

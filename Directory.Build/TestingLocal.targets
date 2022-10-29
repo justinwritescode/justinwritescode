@@ -17,7 +17,7 @@
     MinVer
     </GetPackageMetadataDependsOn>
   </PropertyGroup>
-   <!-- <Target Name="SetPackageVersionOverridden" AfterTargets="GetPackageVersion" BeforeTargets="GetPackageMetadata" Returns="$(PackageVersion)" Condition="'$(Configuration)' == 'Local'">
+   <!-- <Target Name="SetOverriddenPackageVersion" AfterTargets="GetPackageVersion" BeforeTargets="GetPackageMetadata" Returns="$(PackageVersion)" Condition="'$(Configuration)' == 'Local'">
     <ItemGroup>
       <PackageVersion Update="$(PackageId)" Version="0.0.1-Local" />
     </ItemGroup>
