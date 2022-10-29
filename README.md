@@ -1,3 +1,14 @@
+<!--
+ README.md
+ 
+   Created: 2022-10-11-06:30:12
+   Modified: 2022-10-29-02:59:48
+ 
+   Author: Justin Chase <justin@justinwritescode.com>
+   
+   Copyright © 2022 Justin Chase, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
 # Welcome to JustinWritesCode!
 
 - 👋 Hi, I’m Justin!

@@ -1,3 +1,15 @@
+# 
+# install-mkdocs-plugins.sh
+# 
+#   Created: 2022-10-11-05:36:57
+#   Modified: 2022-10-29-02:59:25
+# 
+#   Author: Justin Chase <justin@justinwritescode.com>
+#   
+#   Copyright © 2022 Justin Chase, All Rights Reserved
+#      License: MIT (https://opensource.org/licenses/MIT)
+# 
+
 echo "Installing mkdocs plugins..."
 pip install mkdocs-material
 pip install mkdocs-rss-plugin
