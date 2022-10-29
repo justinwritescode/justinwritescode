@@ -1,3 +1,15 @@
+<!--
+ PackageMetadata.targets
+ 
+   Created: 2022-10-21-11:40:42
+   Modified: 2022-10-29-02:48:35
+ 
+   Author: Justin Chase <justin@justinwritescode.com>
+   
+   Copyright © 2022 Justin Chase, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
 <Project>
   <!--
    <UsingTask TaskName="FixNamespace" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">

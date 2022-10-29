@@ -1,3 +1,15 @@
+<!--
+ PackageVersionOverride.targets
+ 
+   Created: 2022-10-24-08:10:51
+   Modified: 2022-10-29-02:49:02
+ 
+   Author: Justin Chase <justin@justinwritescode.com>
+   
+   Copyright © 2022 Justin Chase, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
 <Project>
    <Target Name="SetPackageVersionOverridden" AfterTargets="GetPackageVersion;MinVer" BeforeTargets="GetPackageMetadata" Returns="$(PackageVersion)" Condition="'$(PackageVersionOverride)' != ''">
     <ItemGroup>

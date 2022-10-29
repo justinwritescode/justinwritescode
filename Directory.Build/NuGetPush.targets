@@ -1,3 +1,15 @@
+<!--
+ NuGetPush.targets
+ 
+   Created: 2022-10-22-12:04:42
+   Modified: 2022-10-29-02:48:17
+ 
+   Author: Justin Chase <justin@justinwritescode.com>
+   
+   Copyright © 2022 Justin Chase, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
 <Project>
    <Target Name="PushAzure" DependsOnTargets="Pack;GetPackageMetadata;MinVer" Condition="'$(GeneratePackageOnBuild)' == 'true'">
         <Exec Command="dotnet nuget delete $(PackageId) $(PackageVersion) -s Azure --non-interactive -k 'az'" ContinueOnError="true" />
@@ -5,7 +17,11 @@
     </Target>
 
    <Target Name="PushGitHub" DependsOnTargets="Pack;GetPackageMetadata;MinVer" Condition="'$(GeneratePackageOnBuild)' == 'true'">
-        <Exec Command="gh api %2d%2dmethod DELETE -H %22Accept: application/vnd.github+json%22 /user/packages/nuget/$(PackageId)/versions/$(PackageVersion)"  ContinueOnError="true" />
-        <Exec Command="dotnet nuget push $(PackageTargetPath) -s GitHub" Condition="Exists('$(PackageTargetPath)')" />
+        <PropertyGroup>
+            <DeleteGitHubPackageVersionScript>$(DeleteGitHubPackageVersionScriptName) $(PackageId) $(PackageVersion)</DeleteGitHubPackageVersionScript>
+        </PropertyGroup>
+        <Exec Command="echo '$(DeleteGitHubPackageVersionScript)' " />
+        <Exec Command="$(DeleteGitHubPackageVersionScript)"  ContinueOnError="true" />
+        <Exec Command="dotnet nuget push $(PackageTargetPath) -s GitHub -k $GIT_TOKEN" Condition="Exists('$(PackageTargetPath)')" />
     </Target>
 </Project>

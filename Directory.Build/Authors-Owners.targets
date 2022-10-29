@@ -1,3 +1,15 @@
+<!--
+ Authors-Owners.targets
+ 
+   Created: 2022-10-21-11:40:42
+   Modified: 2022-10-29-02:46:38
+ 
+   Author: Justin Chase <justin@justinwritescode.com>
+   
+   Copyright © 2022 Justin Chase, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
 <Project>
 
   <Target Name="SetPackageAuthors" BeforeTargets="GetPackageMetadata">
