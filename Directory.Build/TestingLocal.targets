@@ -12,10 +12,10 @@
 
 <Project>
   <PropertyGroup>
-    <GetPackageMetadataDependsOn>
+    <!-- <GetPackageMetadataDependsOn>
     $(GetPackageMetadataDependsOn);
     MinVer
-    </GetPackageMetadataDependsOn>
+    </GetPackageMetadataDependsOn> -->
   </PropertyGroup>
    <!-- <Target Name="SetOverriddenPackageVersion" AfterTargets="GetPackageVersion" BeforeTargets="GetPackageMetadata" Returns="$(PackageVersion)" Condition="'$(Configuration)' == 'Local'">
     <ItemGroup>
