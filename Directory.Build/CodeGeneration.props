@@ -16,4 +16,12 @@
 	  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
 	  <CompilerGeneratedFilesOutputPath>$(MSBuildProjectDirectory)/$(BaseIntermediateOutputPath)/GeneratedFiles</CompilerGeneratedFilesOutputPath>
   </PropertyGroup>
+  <!-- <ItemDefinitionGroup>
+    <CodeGenerator ProjectPath="@(CodeGenerator->'$(Identity)')"
+        PackageName="$([System.Text.RegularExpressions.Regex]::Replace('@(CodeGenerator->'$(Identity)')', '\..[a-z]*?proj', ''))"
+        Condition="Exists(@(CodeGenerator->'$(Identity)')) And %22@(CodeGenerator->'$(Identity)')%22 != ''" />
+    <CodeGenerator ProjectPath="@(CodeGenerator->'$(Identity)')"
+        PackageName="$([System.Text.RegularExpressions.Regex]::Replace('@(CodeGenerator->'$(Identity)')', '\..[a-z]*?proj', ''))"
+        Condition="!Exists(@(CodeGenerator->'%(Identity)')" />
+  </ItemDefinitionGroup> -->
 </Project>

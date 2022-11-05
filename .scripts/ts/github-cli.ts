@@ -1,3 +1,15 @@
+// 
+// github-cli.ts
+// 
+//   Created: 2022-10-29-08:02:03
+//   Modified: 2022-11-01-06:05:02
+// 
+//   Author: Justin Chase <justin@justinwritescode.com>
+//   
+//   Copyright © 2022 Justin Chase, All Rights Reserved
+//      License: MIT (https://opensource.org/licenses/MIT)
+// 
+
 import {execSync} from "child_process";
 import * as fs from "fs";
 import * as process from "process";

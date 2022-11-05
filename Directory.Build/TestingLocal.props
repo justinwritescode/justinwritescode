@@ -16,6 +16,16 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Local'">
     <PackageVersionOverride>0.0.1-Local</PackageVersionOverride>
+    <MinVerVersionOverride>0.0.1-Local</MinVerVersionOverride>
+    <!-- <PackageVersion>0.0.1-Local</PackageVersion>
+    <Version>0.0.1-Local</Version>
+    <AssemblyVersion>0.0.1</AssemblyVersion>
+    <VersionSuffix>-Local</VersionSuffix>
+    <InformationalVersion>0.0.1-Local</InformationalVersion> -->
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Testing'">
+    <PackageVersionOverride>0.0.1-Testing</PackageVersionOverride>
+    <MinVerVersionOverride>0.0.1-Testing</MinVerVersionOverride>
     <!-- <PackageVersion>0.0.1-Local</PackageVersion>
     <Version>0.0.1-Local</Version>
     <AssemblyVersion>0.0.1</AssemblyVersion>

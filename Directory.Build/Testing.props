@@ -13,6 +13,6 @@
 <Project>
   <PropertyGroup>
     <PackageReferences>@(PackageReference)</PackageReferences>
-    <IsTestProject>@(PackageReference->AnyHaveMetadataValue("Identity", "Microsoft.NET.Test.Sdk"))</IsTestProject>
+    <Configuration Condition="'$(IsTestProject)' == 'true'">Testing</Configuration>
   </PropertyGroup>
 </Project>

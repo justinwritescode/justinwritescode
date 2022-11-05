@@ -14,7 +14,8 @@
   <Target Name="SetPackageDescription" BeforeTargets="GetPackageMetadata" DependsOnTargets="SetLastMinutePackageMetadata">
     <PropertyGroup>
       <GitBranchUrl>$(GitRepositoryUrl.Replace(".git", ""))/tree/$(GitSha)</GitBranchUrl>
-      <BuildMessage>Built from [commit $(GitCommit) on branch $(GitBranch) at $(GitCommitDate)]($(GitBranchUrl))</BuildMessage>
+      <BuildMessage>Built from [commit $(GitCommit) on branch $(GitBranch) at $(GitCommitDate)]
+($(GitBranchUrl))</BuildMessage>
       <Description>$(Description)
       
 $(BuildMessage)</Description>

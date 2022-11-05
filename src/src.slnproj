@@ -1,0 +1,18 @@
+<!--
+ src.slnproj
+ 
+   Created: 2022-11-04-08:57:09
+   Modified: 2022-11-04-08:57:09
+ 
+   Author: Justin Chase <justin@justinwritescode.com>
+   
+   Copyright © 2022 Justin Chase, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+<Project Sdk="Microsoft.Build.Traversal">
+  <ItemGroup>
+    <ProjectReference Include="./**/*proj" />
+    <ProjectReference Remove="./**/*.restoreproj" />
+    <ProjectReference Remove="./NuGetUtils/lib/**/*proj" />
+  </ItemGroup>
+</Project>

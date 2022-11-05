@@ -11,7 +11,7 @@
 -->
 
 <Project>
-  <Target Name="SetPackageTags" BeforeTargets="GetPackageMetadata">
+  <Target Name="SetPackageTags" BeforeTargets="GetPackageMetadata;GenerateMSBuildEditorConfigFileShouldRun">
     <PropertyGroup>
       <PackageTags>@(PackageTag->Distinct())</PackageTags>
       <PackageTags>$([System.String]::Copy($(PackageTags)).Replace(";", " "))</PackageTags>

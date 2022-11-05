@@ -11,7 +11,8 @@
 -->
 
 <Project>
-  <PropertyGroup>
+  <PropertyGroup>    
+    <IsTestProject>@(PackageReference->AnyHaveMetadataValue("Identity", "Microsoft.NET.Test.Sdk"))</IsTestProject>
     <IsSourceProject Condition="'$(IsSourceProject)' == '' And $(MSBuildProjectFullPath.LastIndexOf('/src/')) > $(MSBuildProjectFullPath.LastIndexOf('/tests/'))">true</IsSourceProject>
   </PropertyGroup>
 </Project>

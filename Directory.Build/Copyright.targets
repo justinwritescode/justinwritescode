@@ -17,7 +17,7 @@
       SetPackageCopyright
     </GetPackageMetadataDependsOn>
   </PropertyGroup>
-  <Target Name="SetPackageCopyright" BeforeTargets="GetPackageMetadata" AfterTargets="SetPackageOwners">
+  <Target Name="SetPackageCopyright" BeforeTargets="GetPackageMetadata;GenerateMSBuildEditorConfigFileShouldRun" AfterTargets="SetPackageOwners">
     <PropertyGroup>
       <Copyright Condition="'$(Copyright)' == ''">© $([System.DateTime]::Now.Year) $(Owners), All Rights Reserved</Copyright>
     </PropertyGroup>

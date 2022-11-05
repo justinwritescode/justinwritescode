@@ -55,3 +55,9 @@
 [submodule "src/MkDocsProjSdk"]
 	path = src/MkDocsProjSdk
 	url = https://github.com/justinwritescode/MkDocsProjSdk.git
+[submodule "src/CodeGeneration"]
+	path = src/CodeGeneration
+	url = https://github.com/justinwritescode/CodeGeneration.git
+[submodule "testing/Testing"]
+	path = testing/Testing
+	url = https://github.com/justinwritescode/Testing.git

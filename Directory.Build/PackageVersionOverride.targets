@@ -10,14 +10,15 @@
       License: MIT (https://opensource.org/licenses/MIT)
 -->
 
-<Project>
-    <Target Name="GetPackageVersion2" AfterTargets="GetPackageVersion" Condition="'$(PackageVersionOverride)' != ''" Returns="$(PackageVersion)" >
-     <CallTarget Targets="SetOverriddenPackageVersion" />
-    </Target>
-    <Target Name="MinVer2" AfterTargets="MinVer" Condition="'$(PackageVersionOverride)' != ''">
-     <CallTarget Targets="SetOverriddenPackageVersion" />
-    </Target>
-    <Target Name="SetOverriddenPackageVersion" AfterTargets="MinVer" Returns="$(PackageVersion)" Condition="'$(PackageVersionOverride)' != ''">
+<Project Condition="'$(PackageVersionOverride)' != ''">
+  <!-- <PropertyGroup>
+    <GetPackageVersionDependsOn>
+      $(GetPackageVersionDependsOn);
+      _SetDefaultPackageVersion
+    </GetPackageVersionDependsOn>
+  </PropertyGroup>
+    <Target Name="MinVer" BeforeTargets="BeforeCompile;GetAssemblyVersion;CoreCompile" />
+    <Target Name="GetPackageVersion" Returns="$(PackageVersion)" DependsOnTargets="$(GetPackageVersionDependsOn)">
       <ItemGroup>
         <PackageVersion Update="$(PackageId)" Version="$(PackageVersionOverride)" />
       </ItemGroup>
@@ -27,5 +28,5 @@
         <AssemblyVersion Condition="'$(PackageVersionOverride)' != ''">$([System.Text.RegularExpressions.Regex]::Replace("$(PackageVersionOverride)", "\-.*", ""))</AssemblyVersion>
         <InformationalVersion Condition="'$(PackageVersionOverride)' != ''">$(PackageVersionOverride)</InformationalVersion>
       </PropertyGroup>
-    </Target>
+    </Target> -->
 </Project>

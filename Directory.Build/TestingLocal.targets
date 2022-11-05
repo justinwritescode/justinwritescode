@@ -30,7 +30,7 @@
     </PropertyGroup>
    </Target> -->
 
-    <Target Name="PushLocal" AfterTargets="Pack" Condition="'$(Configuration)' == 'Local' And '$(GeneratePackageOnBuild)' == 'true'">
+    <Target Name="PushLocal" AfterTargets="Pack" Condition="('$(Configuration)' == 'Local' Or '$(Configuration)' == 'Testing') And '$(GeneratePackageOnBuild)' == 'true'">
         <Exec Command="dotnet nuget delete $(PackageId) $(PackageVersion) -s Local --non-interactive" ContinueOnError="true" />
         <Exec Command="dotnet nuget push $(PackageTargetPath) -s Local" Condition="Exists('$(PackageTargetPath)')" />
     </Target>

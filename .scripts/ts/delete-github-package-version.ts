@@ -1,3 +1,15 @@
+// 
+// delete-github-package-version.ts
+// 
+//   Created: 2022-10-29-11:35:39
+//   Modified: 2022-11-01-06:03:58
+// 
+//   Author: Justin Chase <justin@justinwritescode.com>
+//   
+//   Copyright © 2022 Justin Chase, All Rights Reserved
+//      License: MIT (https://opensource.org/licenses/MIT)
+// 
+
 #!/usr/bin/env ts-node
 
 //

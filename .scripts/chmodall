@@ -1,0 +1,18 @@
+# 
+# chmodall
+# 
+#   Created: 2022-10-19-03:06:00
+#   Modified: 2022-11-01-06:05:50
+# 
+#   Author: Justin Chase <justin@justinwritescode.com>
+#   
+#   Copyright © 2022 Justin Chase, All Rights Reserved
+#      License: MIT (https://opensource.org/licenses/MIT)
+# 
+
+#!/bin/sh
+
+for FILE in **/*.* 
+do 
+    sudo chmod +rw $FILE;
+done;

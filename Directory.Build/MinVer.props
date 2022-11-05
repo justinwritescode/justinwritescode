@@ -13,9 +13,9 @@
 <Project>
   <PropertyGroup Label="MinVer Git Versioning Tool">
     <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Testing'">test</MinVerDefaultPreReleasePhase>
-    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Local'">alpha</MinVerDefaultPreReleasePhase>
-    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Debug'">beta</MinVerDefaultPreReleasePhase>
-    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Staging'">rc</MinVerDefaultPreReleasePhase>
+    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Local'">Local</MinVerDefaultPreReleasePhase>
+    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Debug' Or '$(Configuration)' == 'Dev'">beta</MinVerDefaultPreReleasePhase>
+    <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Staging' Or '$(Configuration)' == 'Stage'">rc</MinVerDefaultPreReleasePhase>
     <MinVerDefaultPreReleasePhase Condition="'$(Configuration)' == 'Release'">preview</MinVerDefaultPreReleasePhase>
     <MinVerVerbosity>normal</MinVerVerbosity>
     <MinVerAutoIncrement>patch</MinVerAutoIncrement>

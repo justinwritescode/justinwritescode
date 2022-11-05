@@ -12,13 +12,13 @@
 
 <Project>
 
-  <Target Name="SetPackageAuthors" BeforeTargets="GetPackageMetadata">
+  <Target Name="SetPackageAuthors" BeforeTargets="GetPackageMetadata;GenerateMSBuildEditorConfigFileShouldRun">
     <PropertyGroup>
       <Authors>@(Author->Distinct(), ', ')</Authors> 
     </PropertyGroup>
   </Target>
 
-  <Target Name="SetPackageOwners" BeforeTargets="GetPackageMetadata">
+  <Target Name="SetPackageOwners" BeforeTargets="GetPackageMetadata;GenerateMSBuildEditorConfigFileShouldRun">
     <PropertyGroup>
       <Owners>@(Owner->Distinct(), ', ')</Owners> 
     </PropertyGroup>

@@ -46,7 +46,7 @@
   </PropertyGroup>
   <PropertyGroup>
    <PackageId Condition="'$(PackageIdOverride)' != ''">$(PackageIdOverride)</PackageId>
-   <RootNamespace Condition="'$(RootNamespaceOverride)' != ''"> $(RootNamespaceOverride)</RootNamespace>
+   <RootNamespace Condition="'$(RootNamespaceOverride)' != ''">$(RootNamespaceOverride)</RootNamespace>
    <AssemblyName Condition="'$(AssemblyNameOverride)' != ''"> $(AssemblyNameOverride)</AssemblyName>
   </PropertyGroup>
   <Target Name="DisplayRootNamespace">
