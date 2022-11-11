@@ -12,7 +12,10 @@
 <Project>
   <ItemGroup>
     <CompilerVisibleProperty Include="Authors" />
+    <CompilerVisibleProperty Include="Owners" />
     <CompilerVisibleProperty Include="Copyright" />
+    <CompilerVisibleProperty Include="PackageProjectUrl" />
+    <CompilerVisibleProperty Include="PackageLicenseExpression" />
     <!-- <CompilerVisibleProperty Include="Copyright" /> -->
   </ItemGroup>
 </Project>
