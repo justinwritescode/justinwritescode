@@ -12,8 +12,15 @@
         "https://taskfile.dev/schema.json": "file:///Users/david/GitHub/justinwritescode/src/Types/.vscode/taskfile.yml"
     },
     "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
         "obj": true,
-        "bin": true
+        "bin": true,
+        "**/node_modules": true
     },
     "workspace.isHidden": true,
     "docomment.activateOnEnter": true,
