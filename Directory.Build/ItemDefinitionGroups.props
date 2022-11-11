@@ -20,6 +20,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup>
     <!-- Generate "PKG_Package_Id" properties, which point to the package's restored location on disk -->
-    <ProjectReference ExcludeAssets="ContentFiles" />
+    <ProjectReference ExcludeAssets="ContentFiles" SetConfiguration="Configuration=$(Configuration)"  />
   </ItemDefinitionGroup>
 </Project>
