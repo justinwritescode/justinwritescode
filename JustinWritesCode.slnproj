@@ -15,11 +15,12 @@
     <IncludeInSolutionFile>false</IncludeInSolutionFile>
   </PropertyGroup>
   <ItemGroup>
-      <ProjectReference Include="./*.*proj"  />
+      <ProjectReference Include="./*.*proj" />
       <ProjectReference Include="./src/dotnet-search/**/*.*proj" />
       <ProjectReference Include="./src/EntityFrameworkCore/**/*.*proj" />
       <ProjectReference Include="./src/MSBuild.Sdks/**/*.*proj" />
       <ProjectReference Include="./src/nuget-icons/**/*.*proj" />
       <ProjectReference Include="./src/Types/**/*.*proj" />
+      <ProjectReference Include="./src/MSBuild.Sdks/**/*proj" />
   </ItemGroup>
 </Project>
