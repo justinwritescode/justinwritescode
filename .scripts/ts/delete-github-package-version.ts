@@ -2,7 +2,7 @@
 // delete-github-package-version.ts
 // 
 //   Created: 2022-10-29-11:35:39
-//   Modified: 2022-11-05-09:43:48
+//   Modified: 2022-11-11-12:11:01
 // 
 //   Author: Justin Chase <justin@justinwritescode.com>
 //   
@@ -10,15 +10,12 @@
 //      License: MIT (https://opensource.org/licenses/MIT)
 // 
 
-#!/usr/bin/env ts-node
-
 //
 // delete-github-package-version.ts
 // 
 // This script deletes a package version from GitHub Packages.
 // It's needed because the ```dotnet nuget delete``` command doesn't work with GitHub Packages.
 // It calls the GitHub API to delete the package version.
-//
 //
 
 import process from 'process';

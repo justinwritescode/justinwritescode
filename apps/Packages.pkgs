@@ -1,0 +1,15 @@
+<!--
+ * Packages.pkgs
+ * 
+ *   Created: 2022-11-22-12:40:27
+ *   Modified: 2022-11-22-12:40:27
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+	<Import Project="../libs/Packages.pkgs" />
+</Project>

@@ -1,0 +1,22 @@
+<Project>
+ <PropertyGroup>
+    <EnableCentralPackageVersions>true</EnableCentralPackageVersions>
+    <EnableGlobalPackageReferences>true</EnableGlobalPackageReferences>
+    <EnablePackageVersionOverride>true</EnablePackageVersionOverride>
+    <CentralPackagesFile>$([MSBuild]::GetPathOfFileAbove("Packages.pkgs", "$(MSBuildThisFileDirectory)"))</CentralPackagesFile>
+	</PropertyGroup>
+	<Import Project="../libs/Directory.Build/AssemblySigning.props" />
+	<Import Project="../libs/Directory.Build/Authors-Owners.props" />
+	<Import Project="../libs/Directory.Build/BuildConfigurations.props" />
+	<Import Project="../libs/Directory.Build/CodeDocumentation.props" />
+	<Import Project="../libs/Directory.Build/CodeGeneration.props" />
+	<Import Project="../libs/Directory.Build/CompilerVisibleProperties.props" />
+	<Import Project="../libs/Directory.Build/ItemDefinitionGroups.props" />
+	<Import Project="../libs/Directory.Build/NoWarn.props" />
+	<Import Project="../libs/Directory.Build/ProjectTypeInfo.props" />
+	<Import Project="../libs/Directory.Build/SlnGen.props" />
+	<Import Project="../libs/Directory.Build/TargetFrameworks.props" />
+	<Import Project="../libs/Directory.Build/Testing.props" />
+	<Import Project="../libs/Directory.Build/TestingLocal.props" />
+	<Import Project="./Directory.Build/*.props" />
+</Project>

@@ -1,2 +1,14 @@
+# 
+# funding.yml
+# 
+#   Created: 2022-10-21-11:37:52
+#   Modified: 2022-11-12-08:10:52
+# 
+#   Author: Justin Chase <justin@justinwritescode.com>
+#   
+#   Copyright © 2022 Justin Chase, All Rights Reserved
+#      License: MIT (https://opensource.org/licenses/MIT)
+# 
+
 github: justinwritescode
-custom: "https://cash.app/JustinWritesCode"
+custom: ['https://cash.app/JustinWritesCode','https://www.buymeacoffee.com/justinwritescod']

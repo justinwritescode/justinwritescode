@@ -1,0 +1,105 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.fmHighlight": true,
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "boolean"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "string"
+        },
+        {
+          "title": "author_email",
+          "name": "author_email",
+          "type": "string"
+        },
+        {
+          "title": "modified",
+          "name": "modified",
+          "type": "string"
+        },
+        {
+          "title": "created",
+          "name": "created",
+          "type": "string"
+        },
+        {
+          "title": "license",
+          "name": "license",
+          "type": "string"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/src/EntityFrameworkCore/docs"
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    "$",
+    "a",
+    "g",
+    "s",
+    "t"
+  ],
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.data.types": [
+    {
+      "id": "readme",
+      "schema": {
+        "properties": {
+          "project": "string"
+        }
+      }
+    }
+  ],
+  "frontMatter.content.autoUpdateDate": true
+}

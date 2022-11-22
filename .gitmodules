@@ -1,35 +1,35 @@
 [submodule "dotnet-search"]
-	path = src/dotnet-search
+	path = libs/src/dotnet-search
 	url = https://justinwritescode@github.com/justinwritescode/dotnet-search.git
 [submodule "MSBuild.Sdks"]
-	path = src/MSBuild.Sdks
+	path = libs/src/MSBuild.Sdks
 	url = https://github.com/justinwritescode/MSBuild.Sdks.git
-[submodule "Shared"]
-	path = Shared
+[submodule "libs/Shared"]
+	path = libs/Shared
 	url = https://github.com/justinwritescode/Shared.git
 [submodule "nuget-icons"]
-	path = src/nuget-icons
+	path = libs/src/nuget-icons
 	url = https://github.com/justinwritescode/nuget-icons.git
 [submodule "src/MSBuild.XmlDocMd"]
-	path = src/MSBuild.XmlDocMd
+	path = libs/src/MSBuild.XmlDocMd
 	url = https://github.com/justinwritescode/MSBuild.XmlDocMd.git
 [submodule "src/MSBuild.MkDocsProjSdk"]
 	path = src/MSBuild.MkDocsProjSdk
 	url = https://github.com/justinwritescode/MkDocsProjSdk.git
 [submodule "src/Types"]
-	path = src/Types
+	path = libs/src/Types
 	url = https://github.com/justinwritescode/Types.git
 [submodule "src/MSBuild.NuGetPush"]
-	path = src/MSBuild.NuGetPush
+	path = libs/src/MSBuild.NuGetPush
 	url = https://github.com/justinwritescode/MSBuild.NuGetPush.git
 [submodule "src/NuGetUtils"]
-	path = src/NuGetUtils
+	path = libs/src/NuGetUtils
 	url = https://github.com/justinwritescode/NuGetUtils.git
 [submodule "src/MSBuild.Utils"]
-	path = src/MSBuild.Utils
+	path = libs/src/MSBuild.Utils
 	url = https://github.com/justinwritescode/MSBuild.Utils.git
 [submodule "src/EntityFrameworkCore"]
-	path = src/EntityFrameworkCore
+	path = libs/src/EntityFrameworkCore
 	url = https://github.com/justinwritescode/EntityFrameworkCore.git
 [submodule "src/MSBuild.EnsureFileHeaders"]
 	path = src/MSBuild.EnsureFileHeaders
@@ -44,7 +44,7 @@
 	path = src/NuGetUtils/src/NuGet.Client
 	url = https://github.com/NuGet/NuGet.Client.git
 [submodule "src/StringTemplateCodeGenerator"]
-	path = src/StringTemplateCodeGenerator
+	path = libs/src/StringTemplateCodeGenerator
 	url = https://github.com/justinwritescode/StringTemplateCodeGenerator.git
 [submodule "Shared"]
 	path = Shared
@@ -53,11 +53,17 @@
 	path = src/MSBuild.Utils/src/MSBuild.EnsureFileHeaders
 	url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
 [submodule "src/MkDocsProjSdk"]
-	path = src/MkDocsProjSdk
+	path = libs/src/MkDocsProjSdk
 	url = https://github.com/justinwritescode/MkDocsProjSdk.git
 [submodule "src/CodeGeneration"]
-	path = src/CodeGeneration
+	path = libs/src/CodeGeneration
 	url = https://github.com/justinwritescode/CodeGeneration.git
 [submodule "testing/Testing"]
-	path = testing/Testing
+	path = libs/testing/Testing
 	url = https://github.com/justinwritescode/Testing.git
+[submodule "src/Identity"]
+	path = libs/src/Identity
+	url = https://github.com/justinwritescode/Identity.git
+[submodule "lib/aspnetcore"]
+	path = lib/aspnetcore
+	url = https://github.com/dotnet/aspnetcore.git

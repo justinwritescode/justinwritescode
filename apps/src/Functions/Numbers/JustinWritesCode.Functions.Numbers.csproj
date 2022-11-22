@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0</TargetFrameworks>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator" PackageVersionOverrie="4.0.1" />
+    <!-- <PackageReference Include="JustinWritesCode.Payloads" />
+    <PackageReference Include="JustinWritesCode.Http.Extensions" ExcludeAssets="ContentFiles" />
+		<PackageReference Include="Microsoft.CodeAnalysis" VersionOverride="4.3.1" /> -->
+    <!-- <PackageReference Include="JustinWritesCode.AzureFunctions" /> -->
+    <!-- <PackageReference Include="AzureFunctions.Usings" />
+    <PackageReference Include="JustinWritesCode.ComponentModel" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
+    <PackageReference Include="System.Text.Json.Usings" />
+    <PackageReference Include="JustinWritesCode.Http" ExcludeAssets="ContentFiles" />
+     -->
+  </ItemGroup>
+	<ItemGroup>
+		<Using Include="JustinWritesCode.Functions.Numbers.Constants" Static="true" />
+		<Using Include="JustinWritesCode.Functions.Numbers.Constants.Tags" Static="true" />
+		<!-- <Using Include="JustinWritesCode.Http.Extensions" /> -->
+
+    <Using Include="Microsoft.AspNetCore.Http.HttpRequest" Alias="Req" />
+    <Using Include="Microsoft.AspNetCore.Http" />
+    <Using Include="Microsoft.AspNetCore.Mvc" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.Http.AuthorizationLevel" Static="true" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.Http" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiOperationAttribute" Alias="OpAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiParameterAttribute" Alias="ParamAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiRequestBodyAttribute" Alias="BodyAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiRequestBodyAttribute" Alias="ReqBodyAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiRequestBodyAttribute" Alias="RequestAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiRequestBodyAttribute" Alias="RequestBodyAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute" Alias="RespAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute" Alias="ResponseAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiSecurityAttribute" Alias="SecAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiSecurityAttribute" Alias="SecurityAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums.OpenApiSecurityLocationType" Alias="SLoc" />
+    <Using Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums" />
+    <Using Include="Microsoft.Azure.WebJobs.FunctionNameAttribute" Alias="FunctionAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs.HttpTriggerAttribute" Alias="HttpAttribute" />
+    <Using Include="Microsoft.Azure.WebJobs" />
+    <Using Include="Microsoft.OpenApi.Models.ParameterLocation" Alias="PLoc" />
+    <Using Include="Microsoft.OpenApi.Models.ParameterLocation" Static="true" />
+    <Using Include="Microsoft.OpenApi.Models.SecuritySchemeType" Static="true" />
+    <Using Include="System.Net.HttpStatusCode" Static="true" />
+    <Using Include="System.Net.Mime.MediaTypeNames" Static="true" />
+	</ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+	<!-- <Target Name="Compile">
+		<CallTarget Targets="Build" />
+	</Target> -->
+</Project>

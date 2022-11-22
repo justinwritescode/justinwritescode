@@ -1,0 +1,24 @@
+<!--
+ * CompilerVisibleProperties.props
+ * 
+ *   Created: 2022-11-04-10:42:35
+ *   Modified: 2022-11-04-10:42:36
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+<Project>
+  <ItemGroup>
+    <CompilerVisibleProperty Include="Authors" />
+    <CompilerVisibleProperty Include="Owners" />
+    <CompilerVisibleProperty Include="Copyright" />
+    <CompilerVisibleProperty Include="PackageProjectUrl" />
+    <CompilerVisibleProperty Include="PackageLicenseExpression" />
+  </ItemGroup>
+  <ItemGroup>
+    <CompilerVisibleItemMetadata Include="Author" MetadataName="Email" />
+    <CompilerVisibleItemMetadata Include="Author" MetadataName="Identity" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+<!--
+ * Metadata.props
+ * 
+ *   Created: 2022-11-22-01:32:44
+ *   Modified: 2022-11-22-01:32:45
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+
+  <PropertyGroup>
+    <RootNamespace Condition="'$(RootNamespace)' == ''">$(MSBuildProjectName)</RootNamespace>
+    <AssemblyName Condition="'$(AssemblyName)' == ''">$(MSBuildProjectName)</AssemblyName>
+    <AssemblyTitle Condition="'$(AssemblyTitle)' == ''">$(MSBuildProjectName)</AssemblyTitle>
+    <DefaultLanguage>en</DefaultLanguage>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <LangVersion>preview</LangVersion>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <UserSecretsId>f46585c5-564a-6584-1234-eba29ed0cfc7</UserSecretsId>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <DebugType>portable</DebugType>
+    <IsPackagingFile>false</IsPackagingFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseJustinWritesCodeNamespace Condition="'$(UseJustinWritesCodeNamespace)' == ''">true</UseJustinWritesCodeNamespace>
+    <UsePackageReferencesForLocalDependencies>false</UsePackageReferencesForLocalDependencies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GetPackageMetadataDependsOn>
+      $(GetPackageMetadataDependsOn);
+      SetLastMinutePackageMetadata;
+    </GetPackageMetadataDependsOn>
+  </PropertyGroup>
+</Project>

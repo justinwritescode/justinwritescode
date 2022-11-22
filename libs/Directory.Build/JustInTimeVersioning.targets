@@ -1,0 +1,15 @@
+<!--
+ * JustInTimeVersioning.props
+ * 
+ *   Created: 2022-11-10-11:44:37
+ *   Modified: 2022-11-10-11:44:37
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <Sdk Name="JustInTimeVersioningSdk" />
+</Project>
