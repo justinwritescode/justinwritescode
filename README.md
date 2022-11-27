@@ -23,3 +23,6 @@ You can click the Preview link to take a look at your changes.
 --->
 
 <!--START_SECTION:activity-->
+1. ❗️ Closed issue [#1](https://github.com/justinwritescode/MSBuild.Sdks/issues/1) in [justinwritescode/MSBuild.Sdks](https://github.com/justinwritescode/MSBuild.Sdks)
+2. 🗣 Commented on [#1](https://github.com/justinwritescode/MSBuild.Sdks/issues/1) in [justinwritescode/MSBuild.Sdks](https://github.com/justinwritescode/MSBuild.Sdks)
+<!--END_SECTION:activity-->
