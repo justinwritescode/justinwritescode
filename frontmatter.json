@@ -78,11 +78,7 @@
   ],
   "frontMatter.framework.id": "other",
   "frontMatter.content.publicFolder": "",
-  "frontMatter.content.pageFolders": [
-    {
-      "path": "[[workspace]]/src/EntityFrameworkCore/docs"
-    }
-  ],
+  "frontMatter.content.pageFolders": [],
   "frontMatter.taxonomy.tags": [
     "$",
     "a",
