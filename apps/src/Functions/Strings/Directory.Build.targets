@@ -1,0 +1,19 @@
+<!--
+ * Directory.Build.props
+ * 
+ *   Created: 2022-11-28-02:02:06
+ *   Modified: 2022-11-28-02:02:06
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.Build.CentralPackageVersions">
+	<PropertyGroup>
+		<InheritedDirectoryBuildTargets>$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildTargets>
+	</PropertyGroup>
+	<Import Project="$(InheritedDirectoryBuildTargets)" Condition="Exists('$(InheritedDirectoryBuildTargets)')" />
+  <Import Project="./Directory.Build/*.targets" />
+</Project>

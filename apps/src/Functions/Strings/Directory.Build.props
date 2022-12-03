@@ -1,0 +1,46 @@
+<!--
+ * Directory.Build.props
+ * 
+ *   Created: 2022-11-28-02:02:06
+ *   Modified: 2022-11-28-02:02:06
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+	<PropertyGroup>
+		<InheritedDirectoryBuildProps>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildProps>
+	</PropertyGroup>
+	<Import Project="$(InheritedDirectoryBuildProps)" Condition="Exists('$(InheritedDirectoryBuildProps)')" />
+  <Import Project="./Directory.Build/*.props" />
+	<PropertyGroup>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Configurations>Local;Debug;Staging;Release;Testing</Configurations>
+    <Configuration Condition="'$(Configuration)' == ''">Local</Configuration>
+		<CentralPackagesFileName>Packages.$(Configuration).pkgs</CentralPackagesFileName>
+    <CentralPackagesFile>$([MSBuild]::GetDirectoryNameOfFileAbove("$(MSBuildThisFileDirectory)", "Packages/$(CentralPackagesFileName)"))/Packages/$(CentralPackagesFileName)</CentralPackagesFile>
+	</PropertyGroup>   
+	<ItemDefinitionGroup>
+      <Using Visible="false" />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <PackageReference>
+    	<!-- Generate "PKG_Package_Id" properties, which point to the package's restored location on disk -->
+			<GeneratePathProperty>true</GeneratePathProperty>
+			<IncludeAssets>All</IncludeAssets>
+			<ExcludeAssets>None</ExcludeAssets>
+		</PackageReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ProjectReference>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+			<SetConfiguration>Configuration=$(Configuration)</SetConfiguration>
+		</ProjectReference>
+  </ItemDefinitionGroup>
+</Project>
