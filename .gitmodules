@@ -95,8 +95,8 @@
     path = Directory.Build
     url = https://github.com/justinwritescode/Directory.Build.All
 [submodule "libs/Directory.Build"]
-    path = libs/Directory.Build
-    url = https://github.com/justinwritescode/Directory.Build.Libraries
+	path = libs/Directory.Build
+	url = https://github.com/justinwritescode/Directory.Build.Libraries.git
 [submodule "apps/Directory.Build"]
     path = apps/Directory.Build
     url = https://github.com/justinwritescode/Directory.Build.FunctionApps
