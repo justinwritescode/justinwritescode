@@ -1,11 +1,11 @@
 <!--
  * JustinWritesCode.Functions.Arrays.csproj
- * 
+ *
  *   Created: 2022-11-05-12:30:55
  *   Modified: 2022-11-05-12:31:09
- * 
+ *
  *   Author: Justin Chase <justin@justinwritescode.com>
- *   
+ *
  *   Copyright © 2022 Justin Chase, All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
@@ -13,9 +13,53 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <!-- <TargetFrameworks>net6.0</TargetFrameworks> -->
   </PropertyGroup>
   <ItemGroup>
+		<PackageReference Include="AnyOf.Net7.Usings" />
+		<PackageReference Include="AnyOf.System.Text.Json" />
+		<PackageReference Include="Humanizer.Core" />
+		<PackageReference Include="JustinWritesCode.Http.Extensions" ExcludeAssets="ContentFiles" />
+		<PackageReference Include="JustinWritesCode.Http" ExcludeAssets="ContentFiles" />
+		<PackageReference Include="JustinWritesCode.Payloads" ExcludeAssets="ContentFiles" />
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" />
+		<PackageReference Include="Microsoft.CodeAnalysis" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+		<PackageReference Include="System.Net.Mime.MediaTypeNames" ExcludeAssets="ContentFiles" />
     <PackageReference Include="AzureFunctions.Usings" />
-    <PackageReference Include="JustinWritesCode.Payloads" VersionOverride="0.0.1-Local" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" />
+    <PackageReference Include="System.Text.Json.Usings" />
+    <PackageReference Include="Microsoft.Extensions.Logging" VersionOverride="[2.2.0,)" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" VersionOverride="[2.2.0,)" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" VersionOverride="[2.2.0,)" />
+    <!-- <PackageReference Include="Serilog" />
+    <PackageReference Include="Serilog.Extensions.Logging" />
+    <PackageReference Include="Serilog.Sinks.Console" />
+    <PackageReference Include="Serilog.Sinks.File" /> -->
+	</ItemGroup>
+  <!-- <ItemGroup>
+    <FrameworkRefernece Include="netstandardlib" />
+  </ItemGroup> -->
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
   </ItemGroup>
+	<ItemGroup>
+		<FunctionsPreservedDependencies Include="Microsoft.Extensions.Logging.Abstractions.dll" />
+		<FunctionsPreservedDependencies Include="System.Text.Json.dll" />
+		<FunctionsPreservedDependencies Include="JustinWritesCode.Http.dll" />
+		<FunctionsPreservedDependencies Include="Humanizer.Core.dll" />
+		<FunctionsPreservedDependencies Include="Microsoft.Extensions.Primitives.dll" />
+		<FunctionsPreservedDependencies Include="System.Text.Encodings.Web.dll" />
+		<!-- <FunctionsPreservedDependencies Include="mscorlib.dll" />
+		<FunctionsPreservedDependencies Include="netstandard.dll" /> -->
+	</ItemGroup>
 </Project>

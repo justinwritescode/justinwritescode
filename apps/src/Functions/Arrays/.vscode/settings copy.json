@@ -1,0 +1,10 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#0C350A",
+        "titleBar.activeBackground": "#114B0F",
+        "titleBar.activeForeground": "#F2FCF2"
+    },
+    "azureFunctions.projectLanguage": "C#",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.deploySubpath": "bin/Release/net6.0/publish"
+}
