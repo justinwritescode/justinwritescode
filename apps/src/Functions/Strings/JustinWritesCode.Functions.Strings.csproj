@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+<<<<<<< Updated upstream
     <TargetFramework>net6.0</TargetFramework>
     <!-- <TargetFrameworks>net6.0</TargetFrameworks> -->
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
@@ -47,6 +48,40 @@
 		<ProjectReference Include="../../../../libs/src/Types/src/Payloads/JustinWritesCode.Payloads.csproj" />
 		<ProjectReference Include="../../../../libs/src/Types/src/Http/Extensions/JustinWritesCode.Http.Extensions.csproj" />
 		<ProjectReference Include="../../../../libs/src/Types/src/Http/Http/JustinWritesCode.Http.csproj" /> -->
+=======
+		<Configurations>Local;Debug;Staging;Release;Testing</Configurations>
+    <TargetFramework>net6.0</TargetFramework>
+    <!-- <TargetFrameworks>net6.0</TargetFrameworks> -->
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+		 <_FunctionsSkipCleanOutput>true</_FunctionsSkipCleanOutput>
+  </PropertyGroup>	
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup> 
+  <ItemGroup>
+		<PackageReference Include="AzureFunctions.Usings" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" />
+		<!-- <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" /> -->
+		<PackageReference Include="JustinWritesCode.Payloads" ExcludeAssets="ContentFiles" />
+		<PackageReference Include="AnyOf" />
+    <PackageReference Include="System.Text.Json.Usings" />
+		<PackageReference Include="JustinWritesCode.Http.Extensions" ExcludeAssets="ContentFiles" />
+		<PackageReference Include="JustinWritesCode.Http" ExcludeAssets="ContentFiles" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+		<PackageReference Include="Microsoft.Azure.Functions.Extensions" />
+		<PackageReference Include="Humanizer.Core" />
+  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../../../../lib/azure-functions-host/tools/ExtensionsMetadataGenerator/src/ExtensionsMetadataGenerator/ExtensionsMetadataGenerator.csproj" />
+		<ProjectReference Include="../../../../lib/azure-webjobs-sdk-extensions/src/WebJobs.Extensions/WebJobs.Extensions.csproj" />
+		<ProjectReference Include="../../../../lib/azure-webjobs-sdk-extensions/src/WebJobs.Extensions.Http/WebJobs.Extensions.Http.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Using Include="System.Net.Mime.MediaTypeNames" Static="true" />
+		<Using Include="JustinWritesCode.Functions.Strings.Constants.Headers" Static="true" />
+		<Using Include="JustinWritesCode.Functions.Strings.Constants" Static="true" />
+>>>>>>> Stashed changes
 	</ItemGroup>
   <ItemGroup>
     <None Update="host.json">

@@ -1,8 +1,14 @@
 {
   "profiles": {
+<<<<<<< Updated upstream
     "Stringsv3": {
       "commandName": "Project",
       "commandLineArgs": "--port 7074",
+=======
+    "Strings": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7090",
+>>>>>>> Stashed changes
       "launchBrowser": false
     }
   }

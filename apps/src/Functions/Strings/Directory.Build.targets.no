@@ -1,0 +1,21 @@
+<!--
+ * Directory.Build.props
+ * 
+ *   Created: 2022-11-26-05:03:51
+ *   Modified: 2022-11-26-05:03:51
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<!-- <Project Sdk="Microsoft.Build.CentralPackageVersions" /> -->
+<Project>
+	<Target Name="CustomAfterCentralPackageVersions" BeforeTargets="CollectPackageReferences">
+    <Message Text="CentralPackagesFile: $(CentralPackagesFile)" Importance="High" />
+    <Message Text="Build Configuration: $(Configuration)" />
+  	<Error Condition="!Exists($(CentralPackagesFile))" Text="The central packages file '$(CentralPackagesFile)' was not found." Code="CNTLPKGNOTFOUND" File="$(MSBuildThisFileFullPath)" />
+  </Target>
+	<Import Project="$(CentralPackagesFile)" Condition="Exists($(CentralPackagesFile))" />
+</Project>

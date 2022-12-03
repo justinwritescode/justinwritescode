@@ -2,11 +2,32 @@
   "version": "2.0.0",
   "tasks": [
     {
+<<<<<<< Updated upstream
+=======
+      "label": "build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+>>>>>>> Stashed changes
       "label": "clean (functions)",
       "command": "dotnet",
       "args": [
         "clean",
+<<<<<<< Updated upstream
         "-c:Local",
+=======
+>>>>>>> Stashed changes
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -18,7 +39,10 @@
       "command": "dotnet",
       "args": [
         "build",
+<<<<<<< Updated upstream
 				"-c:Local",
+=======
+>>>>>>> Stashed changes
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -61,11 +85,19 @@
       "type": "func",
       "dependsOn": "build (functions)",
       "options": {
+<<<<<<< Updated upstream
         "cwd": "${workspaceFolder}/bin/Local/net6.0"
+=======
+        "cwd": "${workspaceFolder}/bin/Debug/net6.0"
+>>>>>>> Stashed changes
       },
       "command": "host start",
       "isBackground": true,
       "problemMatcher": "$func-dotnet-watch"
     }
   ]
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

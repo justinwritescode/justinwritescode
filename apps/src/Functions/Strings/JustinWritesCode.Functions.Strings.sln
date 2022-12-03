@@ -1,7 +1,19 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< Updated upstream
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinWritesCode.Functions.Strings", "JustinWritesCode.Functions.Strings.csproj", "{263C00DA-16AD-44EE-87DB-B73DC9AE6BD1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{01795AF4-5F59-42F7-8FEE-E517699B26A1}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinWritesCode.Functions.Strings", "JustinWritesCode.Functions.Strings.csproj", "{61E21C80-B099-4C7E-B8CE-44BC56B324C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionsMetadataGenerator", "..\..\..\..\lib\azure-functions-host\tools\ExtensionsMetadataGenerator\src\ExtensionsMetadataGenerator\ExtensionsMetadataGenerator.csproj", "{9C9F1F21-25C8-4A7A-8912-235884815EB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Extensions.Http", "..\..\..\..\lib\azure-webjobs-sdk-extensions\src\WebJobs.Extensions.Http\WebJobs.Extensions.Http.csproj", "{4FBDC782-74F2-464E-8D8E-E84AC1A5FBA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Extensions", "..\..\..\..\lib\azure-webjobs-sdk-extensions\src\WebJobs.Extensions\WebJobs.Extensions.csproj", "{60DFAABA-51F2-4AF7-80FA-D718FA106996}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A60912F0-7A2A-402B-A9B1-C04C49CCBE1E}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,6 +24,7 @@ Global
 		Testing|Any CPU = Testing|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< Updated upstream
 		{263C00DA-16AD-44EE-87DB-B73DC9AE6BD1}.Local|Any CPU.ActiveCfg = Local|Any CPU
 		{263C00DA-16AD-44EE-87DB-B73DC9AE6BD1}.Local|Any CPU.Build.0 = Local|Any CPU
 		{263C00DA-16AD-44EE-87DB-B73DC9AE6BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -22,14 +35,54 @@ Global
 		{263C00DA-16AD-44EE-87DB-B73DC9AE6BD1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{263C00DA-16AD-44EE-87DB-B73DC9AE6BD1}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
 		{263C00DA-16AD-44EE-87DB-B73DC9AE6BD1}.Testing|Any CPU.Build.0 = Testing|Any CPU
+=======
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Local|Any CPU.Build.0 = Local|Any CPU
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{9C9F1F21-25C8-4A7A-8912-235884815EB8}.Local|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9F1F21-25C8-4A7A-8912-235884815EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9F1F21-25C8-4A7A-8912-235884815EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C9F1F21-25C8-4A7A-8912-235884815EB8}.Staging|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9F1F21-25C8-4A7A-8912-235884815EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C9F1F21-25C8-4A7A-8912-235884815EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C9F1F21-25C8-4A7A-8912-235884815EB8}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBDC782-74F2-464E-8D8E-E84AC1A5FBA2}.Local|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBDC782-74F2-464E-8D8E-E84AC1A5FBA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBDC782-74F2-464E-8D8E-E84AC1A5FBA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBDC782-74F2-464E-8D8E-E84AC1A5FBA2}.Staging|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBDC782-74F2-464E-8D8E-E84AC1A5FBA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBDC782-74F2-464E-8D8E-E84AC1A5FBA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBDC782-74F2-464E-8D8E-E84AC1A5FBA2}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DFAABA-51F2-4AF7-80FA-D718FA106996}.Local|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DFAABA-51F2-4AF7-80FA-D718FA106996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DFAABA-51F2-4AF7-80FA-D718FA106996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DFAABA-51F2-4AF7-80FA-D718FA106996}.Staging|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DFAABA-51F2-4AF7-80FA-D718FA106996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DFAABA-51F2-4AF7-80FA-D718FA106996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60DFAABA-51F2-4AF7-80FA-D718FA106996}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+<<<<<<< Updated upstream
 		{263C00DA-16AD-44EE-87DB-B73DC9AE6BD1} = {01795AF4-5F59-42F7-8FEE-E517699B26A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF8A73DA-0B7E-4A5A-8EAE-1257C38EAA6E}
+=======
+		{61E21C80-B099-4C7E-B8CE-44BC56B324C7} = {A60912F0-7A2A-402B-A9B1-C04C49CCBE1E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FFDB975-5F10-41AF-BDA8-F6348B377A1C}
+>>>>>>> Stashed changes
 	EndGlobalSection
 EndGlobal
