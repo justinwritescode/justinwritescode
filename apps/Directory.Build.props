@@ -1,22 +1,24 @@
+<!--
+ * Directory.Build.targets
+ * 
+ *   Created: 2022-11-27-12:09:00
+ *   Modified: 2022-11-27-12:09:00
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
 <Project>
- <PropertyGroup>
-    <EnableCentralPackageVersions>true</EnableCentralPackageVersions>
-    <EnableGlobalPackageReferences>true</EnableGlobalPackageReferences>
-    <EnablePackageVersionOverride>true</EnablePackageVersionOverride>
-    <CentralPackagesFile>$([MSBuild]::GetPathOfFileAbove("Packages.pkgs", "$(MSBuildThisFileDirectory)"))</CentralPackagesFile>
+	<PropertyGroup>
+		<Configurations>Local;Debug;Staging;Release;Testing</Configurations>
+    <Configuration Condition="'$(Configuration)' == ''">Local</Configuration>
+		<CentralPackagesFileName>Packages.$(Configuration).pkgs</CentralPackagesFileName>
+    <CentralPackagesFile>$([MSBuild]::GetDirectoryNameOfFileAbove("$(MSBuildThisFileDirectory)", "Packages/$(CentralPackagesFileName)"))/Packages/$(CentralPackagesFileName)</CentralPackagesFile>
+	</PropertyGroup>  
+	<PropertyGroup>
+		<InheritedDirectoryBuildProps>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildProps>
 	</PropertyGroup>
-	<Import Project="../libs/Directory.Build/AssemblySigning.props" />
-	<Import Project="../libs/Directory.Build/Authors-Owners.props" />
-	<Import Project="../libs/Directory.Build/BuildConfigurations.props" />
-	<Import Project="../libs/Directory.Build/CodeDocumentation.props" />
-	<Import Project="../libs/Directory.Build/CodeGeneration.props" />
-	<Import Project="../libs/Directory.Build/CompilerVisibleProperties.props" />
-	<Import Project="../libs/Directory.Build/ItemDefinitionGroups.props" />
-	<Import Project="../libs/Directory.Build/NoWarn.props" />
-	<Import Project="../libs/Directory.Build/ProjectTypeInfo.props" />
-	<Import Project="../libs/Directory.Build/SlnGen.props" />
-	<Import Project="../libs/Directory.Build/TargetFrameworks.props" />
-	<Import Project="../libs/Directory.Build/Testing.props" />
-	<Import Project="../libs/Directory.Build/TestingLocal.props" />
+	<Import Project="$(InheritedDirectoryBuildProps)" Condition="Exists('$(InheritedDirectoryBuildProps)')" />
 	<Import Project="./Directory.Build/*.props" />
 </Project>
