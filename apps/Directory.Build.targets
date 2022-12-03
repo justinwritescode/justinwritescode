@@ -1,8 +1,8 @@
 <!--
- * Directory.Build copy.props
+ * Directory.Build.targets
  * 
- *   Created: 2022-11-21-11:38:29
- *   Modified: 2022-11-21-11:38:31
+ *   Created: 2022-11-27-12:09:00
+ *   Modified: 2022-11-27-12:09:00
  * 
  *   Author: Justin Chase <justin@justinwritescode.com>
  *   
@@ -11,9 +11,9 @@
 -->
 
 <Project>
-	<Sdk Name="Microsoft.Build.CentralPackageVersions" />
-	<Import Project="../libs/Directory.Build/Authors-Owners.targets" />
-	<Import Project="../libs/Directory.Build/CodeGeneration.targets" />
-	<Import Project="../libs/Directory.Build/CustomAfterCentralPackageVersions.targets" />
-	<Import Project="../libs/Directory.Build/JustInTimeVersioning.targets" />
+	<PropertyGroup>
+		<InheritedDirectoryBuildTargets>$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildTargets>
+	</PropertyGroup>
+	<Import Project="$(InheritedDirectoryBuildTargets)" Condition="Exists('$(InheritedDirectoryBuildTargets)')" />
+	<Import Project="./Directory.Build/*.targets" />
 </Project>
