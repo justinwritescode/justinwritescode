@@ -14,7 +14,7 @@ license: MIT
 - 🌱 I’m currently learning how the fuck to make CI/CD work in Azure
 - 💞️ I’m looking to collaborate on stuff?
 - 😄 Pronouns: I'm a dude.
-- 📫 How to reach me dev@thebackroom.app
+- 📫 How to reach me justin@justinwritescode.com
 - ⚡ Fun fact: I can fit my entire fist inside my anus!
 
 <!---
