@@ -14,68 +14,89 @@
 	path = libs/src/SendPulse
 	url = https://github.com/justinwritescode/SendPulse.git
 [submodule "MSBuild.Sdks"]
-	path = libs/src/MSBuild.Sdks
-	url = https://github.com/justinwritescode/MSBuild.Sdks.git
+    path = libs/src/MSBuild.Sdks
+    url = https://github.com/justinwritescode/MSBuild.Sdks.git
 [submodule "libs/Shared"]
-	path = libs/Shared
-	url = https://github.com/justinwritescode/Shared.git
+    path = libs/Shared
+    url = https://github.com/justinwritescode/Shared.git
 [submodule "nuget-icons"]
-	path = libs/src/nuget-icons
-	url = https://github.com/justinwritescode/nuget-icons.git
+    path = libs/src/nuget-icons
+    url = https://github.com/justinwritescode/nuget-icons.git
 [submodule "src/MSBuild.XmlDocMd"]
-	path = libs/src/MSBuild.XmlDocMd
-	url = https://github.com/justinwritescode/MSBuild.XmlDocMd.git
+    path = libs/src/MSBuild.XmlDocMd
+    url = https://github.com/justinwritescode/MSBuild.XmlDocMd.git
 [submodule "src/MSBuild.MkDocsProjSdk"]
-	path = src/MSBuild.MkDocsProjSdk
-	url = https://github.com/justinwritescode/MkDocsProjSdk.git
+    path = src/MSBuild.MkDocsProjSdk
+    url = https://github.com/justinwritescode/MkDocsProjSdk.git
 [submodule "src/Types"]
-	path = libs/src/Types
-	url = https://github.com/justinwritescode/Types.git
+    path = libs/src/Types
+    url = https://github.com/justinwritescode/Types.git
 [submodule "src/MSBuild.NuGetPush"]
-	path = libs/src/MSBuild.NuGetPush
-	url = https://github.com/justinwritescode/MSBuild.NuGetPush.git
+    path = libs/src/MSBuild.NuGetPush
+    url = https://github.com/justinwritescode/MSBuild.NuGetPush.git
 [submodule "src/NuGetUtils"]
-	path = libs/src/NuGetUtils
-	url = https://github.com/justinwritescode/NuGetUtils.git
+    path = libs/src/NuGetUtils
+    url = https://github.com/justinwritescode/NuGetUtils.git
 [submodule "src/MSBuild.Utils"]
-	path = libs/src/MSBuild.Utils
-	url = https://github.com/justinwritescode/MSBuild.Utils.git
+    path = libs/src/MSBuild.Utils
+    url = https://github.com/justinwritescode/MSBuild.Utils.git
 [submodule "src/EntityFrameworkCore"]
-	path = libs/src/EntityFrameworkCore
-	url = https://github.com/justinwritescode/EntityFrameworkCore.git
+    path = libs/src/EntityFrameworkCore
+    url = https://github.com/justinwritescode/EntityFrameworkCore.git
 [submodule "src/MSBuild.EnsureFileHeaders"]
-	path = src/MSBuild.EnsureFileHeaders
-	url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
+    path = src/MSBuild.EnsureFileHeaders
+    url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
 [submodule "docs"]
-	path = docs/docs
-	url = https://github.com/justinwritescode/docs.git
+    path = docs/docs
+    url = https://github.com/justinwritescode/docs.git
 [submodule "deploy-to-docs"]
-	path = docs/deploy-to-docs
-	url = https://github.com/justinwritescode/deploy-to-docs.git
+    path = docs/deploy-to-docs
+    url = https://github.com/justinwritescode/deploy-to-docs.git
 [submodule "src/NuGetUtils/src/NuGet.Client"]
-	path = src/NuGetUtils/src/NuGet.Client
-	url = https://github.com/NuGet/NuGet.Client.git
-[submodule "src/StringTemplateCodeGenerator"]
-	path = libs/src/StringTemplateCodeGenerator
-	url = https://github.com/justinwritescode/StringTemplateCodeGenerator.git
+    path = src/NuGetUtils/src/NuGet.Client
+    url = https://github.com/NuGet/NuGet.Client.git
 [submodule "Shared"]
-	path = Shared
-	url = https://github.com/justinwritescode/Shared.git
+    path = Shared
+    url = https://github.com/justinwritescode/Shared.git
 [submodule "MSBuild.EnsureFileHeaders"]
-	path = src/MSBuild.Utils/src/MSBuild.EnsureFileHeaders
-	url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
+    path = src/MSBuild.Utils/src/MSBuild.EnsureFileHeaders
+    url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
 [submodule "src/MkDocsProjSdk"]
-	path = libs/src/MkDocsProjSdk
-	url = https://github.com/justinwritescode/MkDocsProjSdk.git
+    path = libs/src/MkDocsProjSdk
+    url = https://github.com/justinwritescode/MkDocsProjSdk.git
 [submodule "src/CodeGeneration"]
-	path = libs/src/CodeGeneration
-	url = https://github.com/justinwritescode/CodeGeneration.git
+    path = libs/src/CodeGeneration
+    url = https://github.com/justinwritescode/CodeGeneration.git
 [submodule "testing/Testing"]
-	path = libs/testing/Testing
-	url = https://github.com/justinwritescode/Testing.git
+    path = libs/testing/Testing
+    url = https://github.com/justinwritescode/Testing.git
 [submodule "src/Identity"]
-	path = libs/src/Identity
-	url = https://github.com/justinwritescode/Identity.git
+    path = libs/src/Identity
+    url = https://github.com/justinwritescode/Identity.git
 [submodule "lib/aspnetcore"]
-	path = lib/aspnetcore
-	url = https://github.com/dotnet/aspnetcore.git
+    path = lib/aspnetcore
+    url = https://github.com/dotnet/aspnetcore.git
+[submodule "apps/src/Functions"]
+    path = apps/src/Functions
+    url = https://github.com/justinwritescode/Functions.Apps.git
+[submodule "libs/src/Functions"]
+    path = libs/src/Functions
+    url = https://github.com/justinwritescode/Functions.git
+[submodule "lib/Dnf.SourceGenerators"]
+    path = lib/Dnf.SourceGenerators
+    url = https://github.com/dominikjeske/Dnf.SourceGenerators.git
+[submodule "lib/azure-functions-dotnet-extensions"]
+    path = lib/azure-functions-dotnet-extensions
+    url = https://github.com/Azure/azure-functions-dotnet-extensions.git
+[submodule "lib/Humanizer"]
+    path = lib/Humanizer
+    url = https://github.com/Humanizr/Humanizer.git
+[submodule "Directory.Build"]
+    path = Directory.Build
+    url = https://github.com/justinwritescode/Directory.Build.All
+[submodule "libs/Directory.Build"]
+    path = libs/Directory.Build
+    url = https://github.com/justinwritescode/Directory.Build.Libraries
+[submodule "apps/Directory.Build"]
+    path = apps/Directory.Build
+    url = https://github.com/justinwritescode/Directory.Build.FunctionApps
