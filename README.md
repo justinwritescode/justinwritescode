@@ -23,6 +23,6 @@ You can click the Preview link to take a look at your changes.
 --->
 
 <!--START_SECTION:activity-->
-1. ❗️ Closed issue [#1](https://github.com/justinwritescode/MSBuild.Sdks/issues/1) in [justinwritescode/MSBuild.Sdks](https://github.com/justinwritescode/MSBuild.Sdks)
-2. 🗣 Commented on [#1](https://github.com/justinwritescode/MSBuild.Sdks/issues/1) in [justinwritescode/MSBuild.Sdks](https://github.com/justinwritescode/MSBuild.Sdks)
+1. 🎉 Merged PR [#2](https://github.com/The-Backroom/Directory.Build.All/pull/2) in [The-Backroom/Directory.Build.All](https://github.com/The-Backroom/Directory.Build.All)
+2. 💪 Opened PR [#2](https://github.com/The-Backroom/Directory.Build.All/pull/2) in [The-Backroom/Directory.Build.All](https://github.com/The-Backroom/Directory.Build.All)
 <!--END_SECTION:activity-->
