@@ -23,6 +23,6 @@ You can click the Preview link to take a look at your changes.
 --->
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2](https://github.com/The-Backroom/Directory.Build.All/pull/2) in [The-Backroom/Directory.Build.All](https://github.com/The-Backroom/Directory.Build.All)
-2. 💪 Opened PR [#2](https://github.com/The-Backroom/Directory.Build.All/pull/2) in [The-Backroom/Directory.Build.All](https://github.com/The-Backroom/Directory.Build.All)
+1. 🎉 Merged PR [#1](https://github.com/justinwritescode/CodeGeneration/pull/1) in [justinwritescode/CodeGeneration](https://github.com/justinwritescode/CodeGeneration)
+2. 💪 Opened PR [#1](https://github.com/justinwritescode/CodeGeneration/pull/1) in [justinwritescode/CodeGeneration](https://github.com/justinwritescode/CodeGeneration)
 <!--END_SECTION:activity-->
