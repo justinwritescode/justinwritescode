@@ -1,0 +1,35 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telegram.Identity", "Telegram.Identity.csproj", "{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{19227485-7CAF-4E46-B4FD-487DDC4094E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Local|Any CPU = Local|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Testing|Any CPU = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Local|Any CPU.Build.0 = Local|Any CPU
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B}.Testing|Any CPU.Build.0 = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7FEA5ED-B751-4072-8CE1-5912ADB52A3B} = {19227485-7CAF-4E46-B4FD-487DDC4094E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0C8607A-3550-456C-A34B-2D04A9C1C360}
+	EndGlobalSection
+EndGlobal

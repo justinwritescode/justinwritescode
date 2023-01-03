@@ -1,0 +1,48 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telegram.Bot.Extensions", "Telegram.Bot.Extensions.csproj", "{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{71D3E407-266A-4524-8205-5ED2FA6F4AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustinWritesCode.Primitives", "..\..\..\Types\src\Primitives\JustinWritesCode.Primitives.csproj", "{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Local|Any CPU = Local|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Testing|Any CPU = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Local|Any CPU.Build.0 = Local|Any CPU
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Local|Any CPU.Build.0 = Local|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{4E1F4A52-7F97-43E1-AAA6-2EEEE07326E6}.Testing|Any CPU.Build.0 = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A32B53C-47BD-4B75-9786-FF6F498EE8D8} = {71D3E407-266A-4524-8205-5ED2FA6F4AB6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED61C5BB-74D6-4E39-BC4F-DCE5F08C9EC5}
+	EndGlobalSection
+EndGlobal

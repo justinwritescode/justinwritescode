@@ -1,0 +1,7 @@
+{
+    "Code": "",
+    "Message": "PUT https://logic-apim-eastus.management.azure-api.net/subscriptions/08ede92e-ba21-4d21-9d7e-3e1a8e63f22b/resourceGroups/apim-logic-eastus/providers/Microsoft.ApiManagement/service/logic-apim-eastus/apis/bccc931c30db400489b87775e978e19a?import=true&protocols=https&protocols=http&path=apim/bccc931c30db400489b87775e978e19a&api-version=2019-01-01 failed with BadRequest, content={\"error\":{\"code\":\"ValidationError\",\"message\":\"One or more fields contain incorrect values:\",\"details\":[{\"code\":\"ValidationError\",\"target\":\"representation\",\"message\":\"Parsing error(s): JSON is valid against no schemas from 'oneOf'. Path 'paths['/{connectionId}/sendMessage'].post.parameters[4]', line 520, position 11.\"},{\"code\":\"ValidationError\",\"target\":\"representation\",\"message\":\"Parsing error(s): JSON is valid against no schemas from 'oneOf'. Path 'paths['/{connectionId}/copyMessage'].post.parameters[6]', line 728, position 11.\"},{\"code\":\"ValidationError\",\"target\":\"representation\",\"message\":\"Parsing error(s): The input OpenAPI file is not valid for the OpenAPI specificate https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md (schema https://github.com/OAI/OpenAPI-Specification/blob/master/schemas/v2.0/schema.json).\"}]}}",
+    "Target": null,
+    "Details": [],
+    "Innererror": null
+}

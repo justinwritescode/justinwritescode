@@ -1,0 +1,24 @@
+<!--
+ * Directory.Build.props
+ * 
+ *   Created: 2022-11-29-01:16:38
+ *   Modified: 2022-11-29-01:16:38
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+	<PropertyGroup>
+		<InheritedDirectoryBuildProps>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildProps>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<PackageVersionOverride>0.0.1</PackageVersionOverride>
+	</PropertyGroup>
+	<Import Project="$(InheritedDirectoryBuildProps)" Condition="Exists('$(InheritedDirectoryBuildProps)')" />
+	<ItemDefinitionGroup>
+		<Compile Link="Patches/%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemDefinitionGroup>
+</Project>

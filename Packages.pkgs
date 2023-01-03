@@ -1,0 +1,18 @@
+<!--
+ * Packages.pkgs
+ * 
+ *   Created: 2022-11-23-05:32:49
+ *   Modified: 2022-11-23-05:32:50
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+	<PropertyGroup>
+		<InheritedPackagesPkgs>$([MSBuild]::GetPathOfFileAbove('Packages.pkgs', "../"))</InheritedPackagesPkgs>
+	</PropertyGroup>
+	<Import Project="$(InheritedPackagesPkgs)" Condition="Exists($(InheritedPackagedPkgs))" />
+</Project>

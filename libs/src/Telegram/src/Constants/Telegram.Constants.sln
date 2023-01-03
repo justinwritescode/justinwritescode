@@ -1,0 +1,35 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telegram.Constants", "Telegram.Constants.csproj", "{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0416D39A-6348-467F-A301-F34AE7CCB052}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Local|Any CPU = Local|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Testing|Any CPU = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Local|Any CPU.Build.0 = Local|Any CPU
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D}.Testing|Any CPU.Build.0 = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8F66B89-F0FC-4C7D-AC1A-1032FC7ADC6D} = {0416D39A-6348-467F-A301-F34AE7CCB052}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D29EA52-0C4D-4517-8E93-1A80C68121DE}
+	EndGlobalSection
+EndGlobal

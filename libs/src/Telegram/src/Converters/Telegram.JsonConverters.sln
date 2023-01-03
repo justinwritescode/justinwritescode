@@ -1,0 +1,35 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telegram.JsonConverters", "Telegram.JsonConverters.csproj", "{5B2945A7-FE13-4180-93D2-4555AEE04FED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{204FDEF4-8214-4375-B93A-028688908C5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Local|Any CPU = Local|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Testing|Any CPU = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Local|Any CPU.Build.0 = Local|Any CPU
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED}.Testing|Any CPU.Build.0 = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B2945A7-FE13-4180-93D2-4555AEE04FED} = {204FDEF4-8214-4375-B93A-028688908C5B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E181043-3DCE-4EF7-B89A-6189A68AABB3}
+	EndGlobalSection
+EndGlobal

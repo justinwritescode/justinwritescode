@@ -1,0 +1,35 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "Humanizer.Patch", "Humanizer.Patch.nuproj", "{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AADE7EC9-B60D-461A-93AE-65C1BE38638C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Local|Any CPU = Local|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Testing|Any CPU = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Local|Any CPU.Build.0 = Local|Any CPU
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE}.Testing|Any CPU.Build.0 = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9AACCFC-83B3-4E04-B10B-CCCCBFA680AE} = {AADE7EC9-B60D-461A-93AE-65C1BE38638C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18ABE119-9616-4E2A-B10E-E2E646FF0F1B}
+	EndGlobalSection
+EndGlobal

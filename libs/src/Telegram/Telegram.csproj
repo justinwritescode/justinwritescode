@@ -1,0 +1,23 @@
+<!--
+ * Telegram.csproj
+ * 
+ *   Created: 2022-12-27-11:33:22
+ *   Modified: 2022-12-27-11:33:22
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.Build.Traversal">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="./src/Constants/Telegram.Constants.csproj" />
+    <ProjectReference Include="./src/Converters/Telegram.JsonConverters.csproj" />
+    <ProjectReference Include="./src/Identity/Telegram.Identity.csproj" />
+    <ProjectReference Include="./src/Telegram/Telegram.Bot.Extensions.csproj" />
+  </ItemGroup>
+</Project>
