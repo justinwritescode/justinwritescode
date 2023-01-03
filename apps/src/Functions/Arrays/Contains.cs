@@ -30,6 +30,6 @@ public class Contains
         var accept = req.Headers.TryGetValue(HReqH.Accept, out var acceptHeader)
             ? acceptHeader.ToString()
             : ApplicationMediaTypeNames.Json;
-        return req.HttpContext.FormatResponse<bool>(contains, accept);
+        return req.HttpContext.FormatResponse<bool>(contains);
     }
 }

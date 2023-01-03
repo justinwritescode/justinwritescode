@@ -26,11 +26,11 @@ public static class ReadArrayPayloadExtensions
             try
             {
                 var payload = await request.ReadFromJsonAsync<ArrayPayload<T>>();
-                return payload?.Values ?? System.Array.Empty<T>();
+                return payload?.Values ?? Empty<T>();
             }
             catch
             {
-                return System.Array.Empty<T>();
+                return Empty<T>();
             }
         }
     }

@@ -1,54 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-<<<<<<< Updated upstream
-    <TargetFramework>net6.0</TargetFramework>
-    <!-- <TargetFrameworks>net6.0</TargetFrameworks> -->
-    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
-    <Configurations>Local;Debug;Staging;Release;Testing</Configurations>
-		 <_FunctionsSkipCleanOutput>true</_FunctionsSkipCleanOutput>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" />
-    <PackageReference Include="AzureFunctions.Usings" />		
-		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" />
-		<PackageReference Include="JustinWritesCode.Payloads" ExcludeAssets="ContentFiles" />
-    <PackageReference Include="System.Text.Json.Usings" />
-    <PackageReference Include="System.Text.RegularExpressions.Usings" />
-		<PackageReference Include="JustinWritesCode.Http.Extensions" ExcludeAssets="ContentFiles" />
-		<PackageReference Include="JustinWritesCode.Http" ExcludeAssets="ContentFiles" />
-		<PackageReference Include="JustinWritesCode.Abstractions" ExcludeAssets="ContentFiles" />
-		<PackageReference Include="Humanizer.Core" />
-		<PackageReference Include="AnyOf.Net7.Usings" />
-		<PackageReference Include="AnyOf.System.Text.Json" />
-		<PackageReference Include="Microsoft.CodeAnalysis" />
-		<PackageReference Include="Microsoft.Azure.Webjobs.Script.ExtensionsMetadataGenerator" />
-		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" />
-		<PackageReference Include="System.Net.Mime.MediaTypeNames" ExcludeAssets="ContentFiles"/>
-		<PackageReference Include="Microsoft.Extensions.Logging" VersionOverride="[6.0.0,)" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" VersionOverride="[6.0.0,)" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Configuration" VersionOverride="[6.0.0,)" />
-		<PackageReference Include="Microsoft.Extensions.Configuration" VersionOverride="[6.0.0,)" />
-		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" VersionOverride="[6.0.0,)" />
-  </ItemGroup>
-	<ItemGroup>
-		<Using Include="System.Net.Mime.MediaTypeNames" Static="true" />
-		<Using Include="JustinWritesCode.Functions.Strings.Constants.Headers" Static="true" />
-		<Using Include="JustinWritesCode.Functions.Strings.Constants" Static="true" />
-		<Using Include="JustinWritesCode.Functions.Strings.Constants.Routes" Static="true" />
-		<Using Include="JustinWritesCode.Functions.Strings.Constants.Tags" Static="true" />
-	</ItemGroup>
-	<ItemGroup>
-		<!-- <ProjectReference Include="../../../../lib/azure-functions-host/tools/ExtensionsMetadataGenerator/src/ExtensionsMetadataGenerator/ExtensionsMetadataGenerator.csproj" />
-		<ProjectReference Include="../../../../lib/azure-webjobs-sdk-extensions/src/WebJobs.Extensions.Http/WebJobs.Extensions.Http.csproj" />
-		<ProjectReference Include="../../../../lib/azure-functions-dotnet-extensions/src/Extensions/Extensions.csproj" />
-		<ProjectReference Include="../../../../lib/azure-functions-openapi-extension/src/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.csproj" />
-		<ProjectReference Include="../../../../lib/azure-functions-openapi-extension/src/Microsoft.Azure.WebJobs.Extensions.OpenApi/Microsoft.Azure.WebJobs.Extensions.OpenApi.csproj" />
-		<ProjectReference Include="../../../../lib/Humanizer/src/Humanizer/Humanizer.csproj" />
-		<ProjectReference Include="../../../../libs/src/Types/src/Payloads/JustinWritesCode.Payloads.csproj" />
-		<ProjectReference Include="../../../../libs/src/Types/src/Http/Extensions/JustinWritesCode.Http.Extensions.csproj" />
-		<ProjectReference Include="../../../../libs/src/Types/src/Http/Http/JustinWritesCode.Http.csproj" /> -->
-=======
 		<Configurations>Local;Debug;Staging;Release;Testing</Configurations>
     <TargetFramework>net6.0</TargetFramework>
     <!-- <TargetFrameworks>net6.0</TargetFrameworks> -->
@@ -62,7 +13,7 @@
 		<PackageReference Include="AzureFunctions.Usings" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" />
 		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" />
-		<!-- <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" /> -->
+		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" />
 		<PackageReference Include="JustinWritesCode.Payloads" ExcludeAssets="ContentFiles" />
 		<PackageReference Include="AnyOf" />
     <PackageReference Include="System.Text.Json.Usings" />
@@ -71,17 +22,17 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
 		<PackageReference Include="Microsoft.Azure.Functions.Extensions" />
 		<PackageReference Include="Humanizer.Core" />
+		<PackageReference Include="System.Text.RegularExpressions.Usings" />
   </ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="../../../../lib/azure-functions-host/tools/ExtensionsMetadataGenerator/src/ExtensionsMetadataGenerator/ExtensionsMetadataGenerator.csproj" />
+		<!-- <ProjectReference Include="../../../../lib/azure-functions-host/tools/ExtensionsMetadataGenerator/src/ExtensionsMetadataGenerator/ExtensionsMetadataGenerator.csproj" />
 		<ProjectReference Include="../../../../lib/azure-webjobs-sdk-extensions/src/WebJobs.Extensions/WebJobs.Extensions.csproj" />
-		<ProjectReference Include="../../../../lib/azure-webjobs-sdk-extensions/src/WebJobs.Extensions.Http/WebJobs.Extensions.Http.csproj" />
+		<ProjectReference Include="../../../../lib/azure-webjobs-sdk-extensions/src/WebJobs.Extensions.Http/WebJobs.Extensions.Http.csproj" /> -->
 	</ItemGroup>
 	<ItemGroup>
 		<Using Include="System.Net.Mime.MediaTypeNames" Static="true" />
 		<Using Include="JustinWritesCode.Functions.Strings.Constants.Headers" Static="true" />
 		<Using Include="JustinWritesCode.Functions.Strings.Constants" Static="true" />
->>>>>>> Stashed changes
 	</ItemGroup>
   <ItemGroup>
     <None Update="host.json">

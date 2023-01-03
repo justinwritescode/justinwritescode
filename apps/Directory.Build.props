@@ -11,8 +11,6 @@
 -->
 <Project>
 	<PropertyGroup>
-		<Configurations>Local;Debug;Staging;Release;Testing</Configurations>
-    <Configuration Condition="'$(Configuration)' == ''">Local</Configuration>
 		<CentralPackagesFileName>Packages.$(Configuration).pkgs</CentralPackagesFileName>
     <CentralPackagesFile>$([MSBuild]::GetDirectoryNameOfFileAbove("$(MSBuildThisFileDirectory)", "Packages/$(CentralPackagesFileName)"))/Packages/$(CentralPackagesFileName)</CentralPackagesFile>
 	</PropertyGroup>  

@@ -10,7 +10,8 @@
       License: MIT (https://opensource.org/licenses/MIT)
 -->
 
-<Project>
+<!-- <Project Sdk="Directory.Build.targets.Sdk/0.0.1-Local" /> -->
+<Project>	
 	<PropertyGroup>
 		<InheritedDirectoryBuildTargets>$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildTargets>
 	</PropertyGroup>

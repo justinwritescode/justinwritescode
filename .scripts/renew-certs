@@ -1,0 +1,36 @@
+# 
+# renew-certs
+# 
+#   Created: 2022-11-29-09:26:48
+#   Modified: 2022-11-29-09:26:48
+# 
+#   Author: Justin Chase <justin@justinwritescode.com>
+#   
+#   Copyright © 2022 Justin Chase, All Rights Reserved
+#      License: MIT (https://opensource.org/licenses/MIT)
+# 
+
+#!/bin/zsh
+
+sudo certbot certonly --manual \
+    -d "*.thebackroom.app" \
+    -d "*.thebackroom.bot" \
+    -d "*.bakrm.app" \
+    -d "*.brapi.app" \
+    -d "*.whatruin2.com" \
+    -d "*.thefuckruin2.com" \
+    -d "*.justinwritescode.com" \
+    -d "*.justinchase.dev" \
+    -d "*.justinchase.xyz" \
+    -d "*.backroom.rocks" \
+    -d "thebackroom.app" \
+    -d "thebackroom.bot" \
+    -d "bakrm.app" \
+    -d "brapi.app" \
+    -d "whatruin2.com" \
+    -d "thefuckruin2.com" \
+    -d "justinwritescode.com" \
+    -d "justinchase.dev" \
+    -d "justinchase.xyz" \
+    -d "backroom.rocks" 
+    

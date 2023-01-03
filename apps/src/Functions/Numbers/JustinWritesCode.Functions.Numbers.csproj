@@ -1,27 +1,44 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <TargetFrameworks>net6.0</TargetFrameworks>
+    <!-- <TargetFrameworks>net6.0</TargetFrameworks> -->
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
-  </PropertyGroup>
+		<ExtensionsMetadataGeneratorVersion>4.0.1</ExtensionsMetadataGeneratorVersion>
+		<_ExtensionsMetadataGeneratorTargetsPath>$(PkgMicrosoft_Azure_WebJobs_Script_ExtensionsMetadataGenerator)/build/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.targets</_ExtensionsMetadataGeneratorTargetsPath>
+		<ExcludeRestorePackageImports>false</ExcludeRestorePackageImports>
+	</PropertyGroup>
+	<!-- <ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup> -->
   <ItemGroup>
+		<PackageReference Include="AnyOf.Net7.Usings" />
+		<PackageReference Include="JustinWritesCode.Http" />
+		<PackageReference Include="Microsoft.Azure.Functions.Extensions" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" VersionOverride="[3.2.0,)" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator" PackageVersionOverride="$(ExtensionsMetadataGeneratorVersion)" />
+		<PackageReference Include="Microsoft.CodeAnalysis" VersionOverride="3.11.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
 	  <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" />
+    <PackageReference Include="JustinWritesCode.Payloads" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" />
-		<PackageReference Include="Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator" PackageVersionOverrie="4.0.1" />
+    <PackageReference Include="System.Text.Json.Usings" />
+		<!-- <PackageReference Include="System.Net.Mime.MediaTypeNames.netstandard2.0Patch" IncludeAssets="ContentFiles" /> -->
     <!-- <PackageReference Include="JustinWritesCode.Payloads" />
     <PackageReference Include="JustinWritesCode.Http.Extensions" ExcludeAssets="ContentFiles" />
 		<PackageReference Include="Microsoft.CodeAnalysis" VersionOverride="4.3.1" /> -->
     <!-- <PackageReference Include="JustinWritesCode.AzureFunctions" /> -->
     <!-- <PackageReference Include="AzureFunctions.Usings" />
     <PackageReference Include="JustinWritesCode.ComponentModel" />
-    <PackageReference Include="Microsoft.Extensions.Logging" />
     <PackageReference Include="System.Text.Json.Usings" />
     <PackageReference Include="JustinWritesCode.Http" ExcludeAssets="ContentFiles" />
-     -->
+     --> 
   </ItemGroup>
 	<ItemGroup>
 		<Using Include="JustinWritesCode.Functions.Numbers.Constants" Static="true" />
 		<Using Include="JustinWritesCode.Functions.Numbers.Constants.Tags" Static="true" />
+		<Using Include="System.Net.Http.HttpRequestMethodNames" Static="true" />
 		<!-- <Using Include="JustinWritesCode.Http.Extensions" /> -->
 
     <Using Include="Microsoft.AspNetCore.Http.HttpRequest" Alias="Req" />
@@ -60,7 +77,19 @@
       <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
   </ItemGroup>
-	<!-- <Target Name="Compile">
-		<CallTarget Targets="Build" />
-	</Target> -->
+	<Target Name="CopyDllsToOutputDir" AfterTargets="Clean;Build;">
+		<ItemGroup>
+			<CopyDll Include="$(OutputPath)/refs/*.dll" />
+		</ItemGroup>
+		<Copy SourceFiles="@(CopyDll)" DestinationFolder="$(OutputPath)" />
+		<Copy SourceFiles="@(CopyDll)" DestinationFolder="$(OutputPath)" Condition="Exists(@(CopyDll))" />
+		<Copy SourceFiles="./refs/Microsoft.Extensions.Logging.Abstractions.dll" DestinationFolder="$(OutputPath)" />
+		<!-- <Copy SourceFiles="$(OutputPath)/refs" DestinationFolder="$(OutputPath)" /> -->
+		<!-- <Copy SourceFiles="./refs/Microsoft.Azure.WebJobs.Extensions.Http.dll" DestinationFolder="$(OutputPath)" />
+		<Copy SourceFiles="./refs/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.dll" DestinationFolder="$(OutputPath)" />
+		<Copy SourceFiles="./refs/Microsoft.OpenApi.dll" DestinationFolder="$(OutputPath)" />-->
+	</Target>
+	<Target Name="ShowNuGetPackageRoot" AfterTargets="Build">
+		<Message Text="NuGetPackageRoot: $(NuGetPackageRoot)" Importance="high" />
+	</Target>
 </Project>

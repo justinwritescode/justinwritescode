@@ -13,15 +13,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <Version>0.0.1</Version>
     <!-- <TargetFrameworks>net6.0</TargetFrameworks> -->
+    <RepositoryUrl>https://github.com/justinwritescode/Functions</RepositoryUrl>
+    <TermsOfServiceUrl>https://github.com/justinwritescode/Functions</TermsOfServiceUrl>
   </PropertyGroup>
   <ItemGroup>
 		<PackageReference Include="AnyOf.Net7.Usings" />
 		<PackageReference Include="AnyOf.System.Text.Json" />
 		<PackageReference Include="Humanizer.Core" />
 		<PackageReference Include="JustinWritesCode.Http.Extensions" ExcludeAssets="ContentFiles" />
+		<PackageReference Include="JustinWritesCode.Abstractions" ExcludeAssets="ContentFiles" />
 		<PackageReference Include="JustinWritesCode.Http" ExcludeAssets="ContentFiles" />
 		<PackageReference Include="JustinWritesCode.Payloads" ExcludeAssets="ContentFiles" />
+		<PackageReference Include="JustinWritesCode.AzureFunctions" ExcludeAssets="ContentFiles" />
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" />
 		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" />
 		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" />
@@ -32,9 +37,11 @@
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" />
     <PackageReference Include="System.Text.Json.Usings" />
-    <PackageReference Include="Microsoft.Extensions.Logging" VersionOverride="[2.2.0,)" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" VersionOverride="[2.2.0,)" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" VersionOverride="[2.2.0,)" />
+    <PackageReference Include="Microsoft.Extensions.Logging" VersionOverride="[6.0.0,)" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" VersionOverride="[6.0.0,)" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" VersionOverride="[6.0.0,)" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core"  />
+    <PackageReference Include="MSBuild.Usings" />
     <!-- <PackageReference Include="Serilog" />
     <PackageReference Include="Serilog.Extensions.Logging" />
     <PackageReference Include="Serilog.Sinks.Console" />
@@ -59,6 +66,7 @@
 		<FunctionsPreservedDependencies Include="Humanizer.Core.dll" />
 		<FunctionsPreservedDependencies Include="Microsoft.Extensions.Primitives.dll" />
 		<FunctionsPreservedDependencies Include="System.Text.Encodings.Web.dll" />
+		<FunctionsPreservedDependencies Include="Microsoft.Build.Utilities.Core.dll" />
 		<!-- <FunctionsPreservedDependencies Include="mscorlib.dll" />
 		<FunctionsPreservedDependencies Include="netstandard.dll" /> -->
 	</ItemGroup>

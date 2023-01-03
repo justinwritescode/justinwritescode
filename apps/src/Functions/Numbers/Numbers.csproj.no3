@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" VersionOverride="4.1.1" />
+	  <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" />
+    <PackageReference Include="JustinWritesCode.Http" ExcludeAssets="ContentFiles" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+		<PackageReference Include="System.Net.Mime.MediaTypeNames.netstandard2.0Patch" IncludeAssets="ContentFiles" ExcludeAssets="None" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+		<Using Include="JustinWritesCode.Functions.Numbers.Constants" Static="true" />
+		<Using Include="JustinWritesCode.Functions.Numbers.Constants.Tags" Static="true" />
+  </ItemGroup>
+	<Target Name="CopyMicrosofAzureExtensionsHttpDllToOutput" AfterTargets="Clean;Build">
+		<Copy SourceFiles="./refs/Microsoft.Azure.WebJobs.Extensions.Http.dll" DestinationFolder="$(OutputPath)" />
+		<Copy SourceFiles="./refs/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.dll" DestinationFolder="$(OutputPath)" />
+		<Copy SourceFiles="./refs/Microsoft.OpenApi.dll" DestinationFolder="$(OutputPath)" />
+		<Copy SourceFiles="$(PkgMicrosoft_Extensions_Logging_Abstractions)/lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll" DestinationFolder="$(OutputPath)" />
+	</Target>
+</Project>

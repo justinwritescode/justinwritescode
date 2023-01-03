@@ -1,0 +1,43 @@
+<!--
+ * Numbers.csproj
+ * 
+ *   Created: 2022-11-22-04:48:57
+ *   Modified: 2022-11-22-04:48:59
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" />
+    <PackageReference Include="Microsoft.Azure.WebJobs" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+		<Using Include="JustinWritesCode.Functions.Numbers.Constants" Static="true" />
+		<Using Include="JustinWritesCode.Functions.Numbers.Constants.Tags" Static="true" />
+  </ItemGroup>
+	<Target Name="CopyMicrosofAzureExtensionsHttpDllToOutput" AfterTargets="Clean;Build">
+		<Copy SourceFiles="./refs/Microsoft.Azure.WebJobs.Extensions.Http.dll" DestinationFolder="$(OutputPath)" />
+		<Copy SourceFiles="./refs/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.dll" DestinationFolder="$(OutputPath)" />
+		<Copy SourceFiles="./refs/Microsoft.OpenApi.dll" DestinationFolder="$(OutputPath)" />
+	</Target>
+</Project>

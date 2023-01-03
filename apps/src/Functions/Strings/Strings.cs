@@ -13,7 +13,7 @@ using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using static System.Text.RegularExpressions.Regex;
-using Errors =  JustinWritesCode.Payloads.ErrorResponses;
+using Errors =  JustinWritesCode.Payloads.ErrorResponse;
 using Regex = System.Text.RegularExpressions.Regex;
 
 public class RegexMatch
@@ -34,7 +34,7 @@ public class RegexMatch
 			return new BadRequestObjectResult(Errors.ArgumentNullResponse(Headers.Value));
 		}
 
-        var payload = await req.ReadRequestBodyAsAsync<StringWithRegexPayload>().ConfigureAwait(false);
+        var payload = await req.ReadFromJsonAsync<StringWithRegexPayload>().ConfigureAwait(false);
         return new OkObjectResult(new BooleanPayload(Regex.IsMatch(payload.Value, payload.Regex)));
     }
 

@@ -1,0 +1,13 @@
+<!--
+ * Directory.Build.props
+ * 
+ *   Created: 2022-11-25-08:16:02
+ *   Modified: 2022-11-25-08:16:02
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="NuGetPush" />

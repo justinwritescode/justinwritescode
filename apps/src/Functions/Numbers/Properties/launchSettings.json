@@ -2,7 +2,7 @@
   "profiles": {
     "Numbers": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7257",
+      "commandLineArgs": "--port 7164",
       "launchBrowser": false
     }
   }

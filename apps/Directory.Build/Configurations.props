@@ -1,0 +1,18 @@
+<!--
+ * Foo.props
+ * 
+ *   Created: 2022-12-03-09:38:20
+ *   Modified: 2022-12-03-09:38:20
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+	<PropertyGroup>
+		<Configurations>Local;Debug;Staging;Release;Testing</Configurations>
+    <Configuration Condition="'$(Configuration)' == ''">Local</Configuration>
+	</PropertyGroup>   
+</Project>

@@ -100,3 +100,30 @@
 [submodule "apps/Directory.Build"]
     path = apps/Directory.Build
     url = https://github.com/justinwritescode/Directory.Build.FunctionApps
+[submodule "lib/ThisAssembly"]
+	path = lib/ThisAssembly
+	url = https://github.com/devlooped/ThisAssembly.git
+[submodule "lib/Vogen"]
+	path = lib/Vogen
+	url = https://github.com/SteveDunn/Vogen.git
+[submodule "lib/Telegram.Bot"]
+	path = lib/Telegram.Bot
+	url = https://github.com/TelegramBots/Telegram.Bot.git
+[submodule "lib/swagger-ui-themes"]
+	path = lib/swagger-ui-themes
+	url = https://github.com/ostranme/swagger-ui-themes.git
+[submodule "libs/src/AspNetCore/src/Startup/swagger-ui-themes"]
+	path = libs/src/AspNetCore/src/Startup/swagger-ui-themes
+	url = https://github.com/ostranme/swagger-ui-themes.git
+[submodule "lib/libphonenumber"]
+	path = lib/libphonenumber
+	url = https://github.com/twcclegg/libphonenumber-csharp.git
+[submodule "libs/src/AspNetCore"]
+	path = libs/src/AspNetCore
+	url = https://github.com/justinwritescode/Jwc.AspNetCore.git
+[submodule "lib/AspNetCore.Hashids"]
+	path = lib/AspNetCore.Hashids
+	url = https://github.com/Xabaril/AspNetCore.Hashids.git
+[submodule "lib/MediatR"]
+	path = lib/MediatR
+	url = https://github.com/jbogard/MediatR.git
