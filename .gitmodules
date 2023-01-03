@@ -127,3 +127,12 @@
 [submodule "lib/MediatR"]
 	path = lib/MediatR
 	url = https://github.com/jbogard/MediatR.git
+[submodule "lib/SlnGen"]
+	path = lib/SlnGen
+	url = https://github.com/microsoft/slngen.git
+[submodule "lib/azure-webjobs-sdk-extensions"]
+	path = lib/azure-webjobs-sdk-extensions
+	url = https://github.com/Azure/azure-webjobs-sdk-extensions.git
+[submodule "libs/src/MediatR"]
+	path = libs/src/MediatR
+	url = https://github.com/justinwritescode/MediatR.git
