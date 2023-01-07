@@ -23,6 +23,6 @@ You can click the Preview link to take a look at your changes.
 --->
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#1](https://github.com/justinwritescode/CodeGeneration/pull/1) in [justinwritescode/CodeGeneration](https://github.com/justinwritescode/CodeGeneration)
-2. 💪 Opened PR [#1](https://github.com/justinwritescode/CodeGeneration/pull/1) in [justinwritescode/CodeGeneration](https://github.com/justinwritescode/CodeGeneration)
+1. 🗣 Commented on [#150](https://github.com/devlooped/ThisAssembly/issues/150) in [devlooped/ThisAssembly](https://github.com/devlooped/ThisAssembly)
+2. ❗️ Opened issue [#156](https://github.com/devlooped/ThisAssembly/issues/156) in [devlooped/ThisAssembly](https://github.com/devlooped/ThisAssembly)
 <!--END_SECTION:activity-->
