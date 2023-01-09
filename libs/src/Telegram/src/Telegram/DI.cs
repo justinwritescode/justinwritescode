@@ -1,32 +1,10 @@
-/*
- * DI.cs
- *
- *   Created: 2022-12-15-01:46:44
- *   Modified: 2022-12-15-01:46:45
- *
- *   Author: Justin Chase <justin@justinwritescode.com>
- *
- *   Copyright © 2022 Justin Chase, All Rights Reserved
- *      License: MIT (https://opensource.org/licenses/MIT)
- */
 
-/*
- * DI.cs
- *
- *   Created: 2022-12-14-02:03:20
- *   Modified: 2022-12-14-02:03:20
- *
- *   Author: Justin Chase <justin@justinwritescode.com>
- *
- *   Copyright © 2022 Justin Chase, All Rights Reserved
- *      License: MIT (https://opensource.org/licenses/MIT)
- */
 namespace Microsoft.Extensions.DependencyInjection;
 
-using Microsoft.OpenApi.Any;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerGen;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Telegram.Bot;
 using Telegram.Bot.Types;
+using System.Linq;
 
 #if NET6_0_OR_GREATER
 using Microsoft.AspNetCore.Builder;
@@ -34,28 +12,9 @@ using Microsoft.AspNetCore.Builder;
 
 public static class TelegramBotDIExtensions
 {
-    // public static readonly Action<SwaggerGenOptions> ConfigureSwaggerGen = options =>
-    //    {
-    //        try
-    //        {
-    //            options.MapType<BotApiToken>(() => new OpenApiSchema
-    //            {
-    //                Type = "string",
-    //                Pattern = BotApiToken.RegexString,
-    //                Format = nameof(BotApiToken),
-    //                Description
-    //                        = "A BotApiToken is a 64-bit integer value with a 35-character alphanumeric string separated by a colon.",
-    //                Example = new OpenApiString("1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
-    //            });
-    //        }
-    //        catch (ArgumentException)
-    //        {
-    //            // ignore
-    //        }
-    //    };
-
 #if NET6_0_OR_GREATER
 
+    /// <summary>Adds OpenAPI description for the <see cref="BotApiToken" /></summary>
     public static WebApplicationBuilder DescribeBotApiToken(this WebApplicationBuilder builder)
     {
         builder.Services.Describe<BotApiToken>();//.ConfigureSwaggerGen(ConfigureSwaggerGen);
@@ -64,9 +23,33 @@ public static class TelegramBotDIExtensions
 
 #endif
 
+    /// <summary>Adds OpenAPI description for the <see cref="BotApiToken" /></summary>
     public static IServiceCollection DescribeBotApiToken(this IServiceCollection services)
     {
         services.Describe<BotApiToken>();
         return services;
+    }
+
+    public static IServiceCollection AddBot(this IServiceCollection services, BotApiToken token, Uri? baseUri = default, bool useTestEnvironment = false, string botName = "Bot")
+    {
+        services.TryAddEnumerable(new ServiceDescriptor(typeof(KeyValuePair<string, ITelegramBotClient>),
+            y => new KeyValuePair<string, ITelegramBotClient>(
+                botName,
+                new TelegramBotClient(
+                    new TelegramBotClientOptions(token.ToString(), baseUri?.ToString(), useTestEnvironment),
+                    y.GetService<HttpClient>()
+                )
+            ),
+            ServiceLifetime.Singleton
+        ));
+        services.TryAddSingleton(y => y.GetBot(botName));
+        return services;
+    }
+
+    public static ITelegramBotClient GetBot(this IServiceProvider services, string botName = "Bot")
+    {
+        return services.GetRequiredService<IEnumerable<KeyValuePair<string, ITelegramBotClient>>>()
+            .SingleOrDefault(x => x.Key == botName)
+            .Value;
     }
 }

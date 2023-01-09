@@ -6,13 +6,13 @@
  *
  *   Author: Justin Chase <justin@justinwritescode.com>
  *
- *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *   Copyright © 2022-2023 Justin Chase, All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
  */
 
 namespace Telegram.Identity;
 
-public static class ClaimTypes
+public static partial class ClaimTypes
 {
     /// <summary>The base URI for Telegram - <inheritdoc cref="BaseUri" path="/value/text()" /></summary>
     /// <value>https://telegram.org/</value>
