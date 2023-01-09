@@ -108,7 +108,7 @@
 	url = https://github.com/SteveDunn/Vogen.git
 [submodule "lib/Telegram.Bot"]
 	path = lib/Telegram.Bot
-	url = https://github,com/justinwritescode/Telegram.Bot.git
+	url = https://github.com/justinwritescode/Telegram.Bot.git
 [submodule "lib/swagger-ui-themes"]
 	path = lib/swagger-ui-themes
 	url = https://github.com/ostranme/swagger-ui-themes.git
