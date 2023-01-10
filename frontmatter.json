@@ -1,10 +1,43 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.git.enabled": true,
+  "frontMatter.content.wysiwyg": true,
+  "frontMatter.content.defaultFileType": "md",
+  "frontMatter.file.preserveCasing": true,
+  "frontMatter.data.files": [
+    {
+      "title": "Projects",
+      "singleEntry": false,
+      "type": "project",
+      "id": "projects",
+      "file": "[[workspace]]/.frontmatter/data/projects.json",
+      "fileType": "json",
+      "labelField": "name",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "url": {
+            "type": "string",
+            "title": "Repository URL"
+          }
+        }
+      }
+    }
+  ],
   "frontMatter.content.fmHighlight": true,
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
       "pageBundle": false,
+      "previewPath": null,
       "fields": [
         {
           "title": "Title",
@@ -31,7 +64,7 @@
         {
           "title": "Is in draft",
           "name": "draft",
-          "type": "boolean"
+          "type": "draft"
         },
         {
           "title": "Tags",
@@ -69,8 +102,82 @@
           "type": "string"
         },
         {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "string"
+        },
+        {
+          "title": "lastmod",
+          "name": "lastmod",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "name": "readme",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "string"
+        },
+        {
+          "title": "author_email",
+          "name": "author_email",
+          "type": "string"
+        },
+        {
+          "title": "modified",
+          "name": "modified",
+          "type": "string"
+        },
+        {
+          "title": "created",
+          "name": "created",
+          "type": "string"
+        },
+        {
+          "title": "license",
+          "name": "license",
+          "type": "string"
+        },
+        {
           "title": "type",
           "name": "type",
+          "type": "string"
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
           "type": "string"
         }
       ]
@@ -78,15 +185,36 @@
   ],
   "frontMatter.framework.id": "other",
   "frontMatter.content.publicFolder": "",
-  "frontMatter.content.pageFolders": [],
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "JustinWritesCode Docs",
+      "path": "[[workspace]]/docs/docs/docs"
+    },
+    {
+      "title": "JustinWritesCode Projects",
+      "contentTypes": [
+        "readme"
+      ],
+      "path": "[[workspace]]"
+    }
+  ],
   "frontMatter.taxonomy.tags": [
     "$",
+    "MIT",
     "a",
     "g",
+    "license",
+    "readme",
     "s",
     "t"
   ],
-  "frontMatter.taxonomy.categories": [],
+  "frontMatter.taxonomy.categories": [
+    "IP",
+    "copyright",
+    "documentation",
+    "license",
+    "readme"
+  ],
   "frontMatter.data.types": [
     {
       "id": "readme",
