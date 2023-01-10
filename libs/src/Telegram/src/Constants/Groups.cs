@@ -14,10 +14,22 @@ namespace Telegram.Constants;
 
 public static class GroupsAndChannels
 {
+    /// <summary>The minimum length of a group title.</summary>
+    /// <value>5</value>
     public const int TitleMinLength = 5;
+    /// <summary>The maximum length of a group title.</summary>
+    /// <value>128</value>
     public const int TitleMaxLength = 128;
+    /// <summary>The minimum length of a group description.</summary>
+    /// <value>0</value>
     public const int DescriptionMinLength = 0;
+    /// <summary>The maximum length of a group description.</summary>
+    /// <value>255</value>
     public const int DescriptionMaxLength = 255;
+    /// <summary>The minimum length of a group username.</summary>
+    /// <value>5</value>
     public const int UsernameMinLength = 5;
+    /// <summary>The maximum length of a group username.</summary>
+    /// <value>32</value>
     public const int UsernameMaxLength = 32;
 }

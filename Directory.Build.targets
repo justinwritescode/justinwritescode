@@ -10,11 +10,10 @@
       License: MIT (https://opensource.org/licenses/MIT)
 -->
 
-<!-- <Project Sdk="Directory.Build.targets.Sdk/0.0.1-Local" /> -->
 <Project>	
+  <Import Project="Sdk.targets" Sdk="JustinWritesCodeSdk" Condition="'$(JustinWritesCodeSdkTargets)' == ''" />
 	<PropertyGroup>
 		<InheritedDirectoryBuildTargets>$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildTargets>
 	</PropertyGroup>
 	<Import Project="$(InheritedDirectoryBuildTargets)" Condition="Exists('$(InheritedDirectoryBuildTargets)')" />
-  <Import Project="./Directory.Build/*.targets" />
 </Project>

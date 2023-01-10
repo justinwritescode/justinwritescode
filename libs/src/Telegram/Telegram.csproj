@@ -10,9 +10,10 @@
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
-<Project Sdk="Microsoft.Build.Traversal">
+<Project Sdk="Microsoft.NET.Sdk">
+  <Sdk Name="MetapackageSdk" />
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="./src/Constants/Telegram.Constants.csproj" />

@@ -16,10 +16,22 @@ namespace Telegram.Constants;
 
 public static class Account
 {
+    /// <summary>The minimum length of a username.</summary>
+    /// <value>5</value>
     public const int UsernameMinLength = 5;
+    /// <summary>The maximum length of a username.</summary>
+    /// <value>32</value>
     public const int UsernameMaxLength = 32;
+    /// <summary>The minimum length of a given name.</summary>
+    /// <value>0</value>
     public const int GivenNameMinLength = 0;
+    /// <summary>The maximum length of a given name.</summary>
+    /// <value>64</value>
     public const int GivenNameMaxLength = 64;
+    /// <summary>The minimum length of a surname.</summary>
+    /// <value>0</value>
     public const int SurnameMinLength = 0;
-    public const int SurnameMaxLength = 0;
+    /// <summary>The maximum length of a surname.</summary>
+    /// <value><inheritdoc cref="GivenNameMaxLength" /></value>
+    public const int SurnameMaxLength = GivenNameMaxLength;
 }

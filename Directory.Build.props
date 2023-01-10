@@ -10,11 +10,10 @@
       License: MIT (https://opensource.org/licenses/MIT)
 -->
 
-<!-- <Project Sdk="Directory.Build.props.Sdk/0.0.1-Local" /> -->
 <Project>	
+  <Import Project="Sdk.props" Sdk="JustinWritesCodeSdk" Condition="'$(JustinWritesCodeSdkProps)' == ''" />
   <PropertyGroup>
 		<InheritedDirectoryBuildProps>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildProps>
 	</PropertyGroup>
 	<Import Project="$(InheritedDirectoryBuildProps)" Condition="Exists('$(InheritedDirectoryBuildProps)')" />
-  <Import Project="./Directory.Build/*.props" />
 </Project>
