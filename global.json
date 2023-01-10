@@ -12,9 +12,8 @@
     "RestoreProjSdk": "0.0.3",
     "JustInTimeVersioningSdk": "0.0.3",
     "MSBuild.Usings": "0.0.1-Local",
-    "NuGetPush": "0.0.1",
-    "Directory.Build.Sdk": "0.0.1-Local",
-    "GenerateMarkdownDocsSdk": "0.0.1-Local",
-    "MetapackageSdk": "0.0.1-Local"
+    "NuGetPush": "0.0.2",
+    "MetapackageSdk": "0.0.2",
+    "JustinWritesCodeSdk": "0.0.3"
   }
 }
