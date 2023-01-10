@@ -25,6 +25,7 @@
     <PackageReference Include="Vogen" />
     <PackageReference Include="System.Text.RegularExpressions.Usings" />
     <PackageReference Include="System.Text.Json.Usings" />
+    <PackageReference Include="System.ComponentModel.Usings" />
     <PackageReference Include="JustinWritesCode.Primitives" />
   </ItemGroup>
 </Project>
