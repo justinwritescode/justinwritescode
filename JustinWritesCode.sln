@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinWritesCode.AspNetCore
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinWritesCode.AspNetCore.Exceptions", "libs\src\AspNetCore\src\Exceptions\JustinWritesCode.AspNetCore.Exceptions.csproj", "{E8DC6813-3F11-4049-B6A8-90B1CC32861C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinWrritesCode.AspNetCore.Hosting.Extensions", "libs\src\AspNetCore\src\Hosting.Extensions\JustinWrritesCode.AspNetCore.Hosting.Extensions.csproj", "{ED1DAD0B-721C-42C8-9CBE-CDBA32704817}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinWritesCode.AspNetCore.Hosting.Extensions", "libs\src\AspNetCore\src\Hosting.Extensions\JustinWritesCode.AspNetCore.Hosting.Extensions.csproj", "{ED1DAD0B-721C-42C8-9CBE-CDBA32704817}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinWritesCode.Http.Extensions", "libs\src\AspNetCore\src\Http\Extensions\JustinWritesCode.Http.Extensions.csproj", "{5291EC8D-9A25-494B-9250-665EF6062DF8}"
 EndProject
