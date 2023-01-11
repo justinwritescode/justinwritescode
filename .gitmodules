@@ -1,9 +1,6 @@
 [submodule "dotnet-search"]
 	path = libs/src/dotnet-search
 	url = https://justinwritescode@github.com/justinwritescode/dotnet-search.git
-[submodule "Directory.Build"]
-	path = Directory.Build
-	url = https://justinwritescode@github.com/justinwritescode/Directory.Build.All.git
 [submodule "lib/Humanizer"]
 	path = lib/Humanizer
 	url = https://github.com/justinwritescode/Humanizer.git
@@ -91,9 +88,6 @@
 [submodule "lib/Humanizer"]
     path = lib/Humanizer
     url = https://github.com/Humanizr/Humanizer.git
-[submodule "Directory.Build"]
-    path = Directory.Build
-    url = https://github.com/justinwritescode/Directory.Build.All
 [submodule "libs/Directory.Build"]
 	path = libs/Directory.Build
 	url = https://github.com/justinwritescode/Directory.Build.Libraries.git
