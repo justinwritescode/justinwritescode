@@ -1,0 +1,22 @@
+<!--
+ JustinWritesCode.Shared.slnproj
+ 
+   Created: 2022-10-29-06:17:38
+   Modified: 2022-11-02-04:06:37
+ 
+   Author: Justin Chase <justin@justinwritescode.com>
+   
+   Copyright © 2022-2023 Justin Chase, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.Build.Traversal">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <IncludeInSolutionFile>false</IncludeInSolutionFile>
+    <EnableCentralPackageVersions>false</EnableCentralPackageVersions>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="./**/*.*proj" />
+  </ItemGroup>
+</Project>
