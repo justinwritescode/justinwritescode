@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "name": "JustinWritesCode.EntityFrameworkCore",
+    "description": "Entity Framework Core for .NET Core",
+    "url": "https://github.com/justinwritescode/EntityFrameworkCore.git"
+  }
+]
