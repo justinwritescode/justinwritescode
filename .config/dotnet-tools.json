@@ -31,6 +31,12 @@
       "commands": [
         "dotnet-csharpier"
       ]
+    },
+    "dotnet-file": {
+      "version": "1.4.1",
+      "commands": [
+        "dotnet-file"
+      ]
     }
   }
 }
