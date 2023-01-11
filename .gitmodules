@@ -1,5 +1,5 @@
 [submodule "dotnet-search"]
-	path = libs/src/dotnet-search
+	path = src/src/dotnet-search
 	url = https://justinwritescode@github.com/justinwritescode/dotnet-search.git
 [submodule "lib/Humanizer"]
 	path = lib/Humanizer
@@ -8,37 +8,37 @@
 	path = libs/src/Functions
 	url = https://github.com/justinwritescode/Functions.git
 [submodule "libs/src/SendPulse"]
-	path = libs/src/SendPulse
+	path = src/src/SendPulse
 	url = https://github.com/justinwritescode/SendPulse.git
 [submodule "MSBuild.Sdks"]
-    path = libs/src/MSBuild.Sdks
+	path = src/src/MSBuild.Sdks
     url = https://github.com/justinwritescode/MSBuild.Sdks.git
 [submodule "libs/Shared"]
     path = libs/Shared
     url = https://github.com/justinwritescode/Shared.git
 [submodule "nuget-icons"]
-    path = libs/src/nuget-icons
+	path = src/src/nuget-icons
     url = https://github.com/justinwritescode/nuget-icons.git
 [submodule "src/MSBuild.XmlDocMd"]
-    path = libs/src/MSBuild.XmlDocMd
+	path = src/src/MSBuild.XmlDocMd
     url = https://github.com/justinwritescode/MSBuild.XmlDocMd.git
 [submodule "src/MSBuild.MkDocsProjSdk"]
     path = src/MSBuild.MkDocsProjSdk
     url = https://github.com/justinwritescode/MkDocsProjSdk.git
 [submodule "src/Types"]
-    path = libs/src/Types
+	path = src/src/Types
     url = https://github.com/justinwritescode/Types.git
 [submodule "src/MSBuild.NuGetPush"]
-    path = libs/src/MSBuild.NuGetPush
+	path = src/src/MSBuild.NuGetPush
     url = https://github.com/justinwritescode/MSBuild.NuGetPush.git
 [submodule "src/NuGetUtils"]
-    path = libs/src/NuGetUtils
+	path = src/src/NuGetUtils
     url = https://github.com/justinwritescode/NuGetUtils.git
 [submodule "src/MSBuild.Utils"]
-    path = libs/src/MSBuild.Utils
+	path = src/src/MSBuild.Utils
     url = https://github.com/justinwritescode/MSBuild.Utils.git
 [submodule "src/EntityFrameworkCore"]
-    path = libs/src/EntityFrameworkCore
+	path = src/src/EntityFrameworkCore
     url = https://github.com/justinwritescode/EntityFrameworkCore.git
 [submodule "src/MSBuild.EnsureFileHeaders"]
     path = src/MSBuild.EnsureFileHeaders
@@ -59,16 +59,16 @@
     path = src/MSBuild.Utils/src/MSBuild.EnsureFileHeaders
     url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
 [submodule "src/MkDocsProjSdk"]
-    path = libs/src/MkDocsProjSdk
+	path = src/src/MkDocsProjSdk
     url = https://github.com/justinwritescode/MkDocsProjSdk.git
 [submodule "src/CodeGeneration"]
-    path = libs/src/CodeGeneration
+	path = src/src/CodeGeneration
     url = https://github.com/justinwritescode/CodeGeneration.git
 [submodule "testing/Testing"]
-    path = libs/testing/Testing
+	path = src/testing/Testing
     url = https://github.com/justinwritescode/Testing.git
 [submodule "src/Identity"]
-    path = libs/src/Identity
+	path = src/src/Identity
     url = https://github.com/justinwritescode/Identity.git
 [submodule "lib/aspnetcore"]
     path = lib/aspnetcore
@@ -113,7 +113,7 @@
 	path = lib/libphonenumber
 	url = https://github.com/twcclegg/libphonenumber-csharp.git
 [submodule "libs/src/AspNetCore"]
-	path = libs/src/AspNetCore
+	path = src/src/AspNetCore
 	url = https://github.com/justinwritescode/Jwc.AspNetCore.git
 [submodule "lib/AspNetCore.Hashids"]
 	path = lib/AspNetCore.Hashids
@@ -128,8 +128,11 @@
 	path = lib/azure-webjobs-sdk-extensions
 	url = https://github.com/Azure/azure-webjobs-sdk-extensions.git
 [submodule "libs/src/MediatR"]
-	path = libs/src/MediatR
+	path = src/src/MediatR
 	url = https://github.com/justinwritescode/MediatR.git
 [submodule "JwcRepoInitSdk"]
-	path = libs/Shared/src/JwcRepoInitSdk
+	path = src/Shared/src/JwcRepoInitSdk
 	url = https://github.com/justinwritescode/Common.git
+[submodule "libs/Shared/src/JustinWritesCodeSdk"]
+	path = src/Shared/src/JustinWritesCodeSdk
+	url = https://github.com/justinwritescode/JustinWritesCodeSdk.git
