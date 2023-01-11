@@ -130,3 +130,6 @@
 [submodule "libs/src/MediatR"]
 	path = libs/src/MediatR
 	url = https://github.com/justinwritescode/MediatR.git
+[submodule "Common"]
+	path = Common
+	url = https://github.com/justinwritescode/Common.git
