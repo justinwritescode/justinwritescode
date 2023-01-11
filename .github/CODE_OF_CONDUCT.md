@@ -1,3 +1,17 @@
+---
+author: Justin Chase
+author_email: justin@justinwritescode.com
+title: The JustinWriteCode Contributor Covenant Code of Conduct
+license: MIT
+created: 2022-10-21-11:24:06
+lastmod: 2023-01-11T01:52:21.843Z
+categories:
+  - documentation
+  - support
+  - security
+  - code of conduct
+---
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge

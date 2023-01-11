@@ -8,8 +8,10 @@
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
         "file:///Users/david/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+        "file:///Users/david/.vscode/extensions/docsmsft.docs-yaml-0.2.9/out/yaml-support/toc.schema.json": "/toc\\.yml/i",
         "https://appsemble.app/api.json": "file:///Users/david/GitHub/justinwritescode/mkdocs.yml",
-        "https://taskfile.dev/schema.json": "file:///Users/david/GitHub/justinwritescode/src/Types/.vscode/taskfile.yml"
+        "https://taskfile.dev/schema.json": "file:///Users/david/GitHub/justinwritescode/src/Types/.vscode/taskfile.yml",
+        "https://json.schemastore.org/github-issue-config.json": "file:///Users/justin/GitHub/justinwritescode/Common/.github/ISSUE_TEMPLATE/config.yml"
     },
     "files.exclude": {
         "**/.git": true,

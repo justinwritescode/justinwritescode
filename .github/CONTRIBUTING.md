@@ -1,3 +1,15 @@
+---
+author: Justin Chase
+author_email: justin@justinwritescode.com
+title: Contributing to JustinWritesCode
+license: MIT
+created: 2022-10-21-11:24:06
+lastmod: 2023-01-11T01:50:57.708Z
+categories:
+  - documentation
+  - support
+---
+
 # All contributions, however small are valued
 
 # Steps to contribute
