@@ -14,7 +14,7 @@
     "MSBuild.Usings": "0.0.1-Local",
     "NuGetPush": "0.0.4",
     "MetapackageSdk": "0.0.2",
-    "JustinWritesCodeSdk": "0.0.6",
+    "JustinWritesCodeSdk": "0.0.7",
     "JwcRepoSdk": "0.0.3"
   }
 }
