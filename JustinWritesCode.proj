@@ -1,0 +1,29 @@
+<!--
+ JustinWritesCode.slnproj
+ 
+   Created: 2022-10-24-08:10:51
+   Modified: 2022-10-29-02:52:25
+ 
+   Author: Justin Chase <justin@justinwritescode.com>
+   
+   Copyright © 2022-2023 Justin Chase, All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <PropertyGroup>
+    <IncludeInSolutionFile>false</IncludeInSolutionFile>
+  </PropertyGroup>
+  <ItemGroup>
+      <ProjectReference Include="./src/AspNetCore/JustinWritesCode.AspNetCore.All.csproj" />
+      <ProjectReference Include="./src/CodeGeneration/JustinWritesCode.CodeGeneration.slnproj" />
+      <ProjectReference Include="./src/dotnet-search/dotnet-search.slnproj" />
+      <ProjectReference Include="./src/EntityFrameworkCore/JustinWritesCode.EntityFrameworkCore.slnproj" />
+      <ProjectReference Include="./src/Identity/JustinWritesCode.Identity.All.slnproj" />
+      <ProjectReference Include="./src/MediatR/MediatR.csproj" />
+      <ProjectReference Include="./src/MSBuild.Sdks/MSBuild.Sdks.slnproj" />
+      <ProjectReference Include="./src/MSBuild.Utils/MSBuild.Utils.csproj" />
+      <ProjectReference Include="./src/nuget-icons/nuget-icons.csproj" />
+      <ProjectReference Include="./src/Types/JustinWritesCode.Types.slnproj" />
+  </ItemGroup>
+</Project>

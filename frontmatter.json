@@ -4,6 +4,12 @@
   "frontMatter.content.wysiwyg": true,
   "frontMatter.content.defaultFileType": "md",
   "frontMatter.file.preserveCasing": true,
+  "frontMatter.content.supportedFileTypes": [
+    "md",
+    "mdx",
+    "markdown"
+  ],
+  "frontMatter.templates.enabled": true,
   "frontMatter.data.files": [
     {
       "title": "Projects",
@@ -205,11 +211,8 @@
   ],
   "frontMatter.taxonomy.tags": [
     "MIT",
-    "g",
     "license",
-    "readme",
-    "s",
-    "t"
+    "readme"
   ],
   "frontMatter.taxonomy.categories": [
     "IP",

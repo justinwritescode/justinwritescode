@@ -10,8 +10,7 @@
       License: MIT (https://opensource.org/licenses/MIT)
 -->
 
-<Project Sdk="Microsoft.NET.Sdk">
-  <Sdk Name="MetapackageSdk" />
+<Project Sdk="Microsoft.Build.Traversal">
   <PropertyGroup>
     <IncludeInSolutionFile>false</IncludeInSolutionFile>
   </PropertyGroup>
