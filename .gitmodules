@@ -132,7 +132,7 @@
 	url = https://github.com/justinwritescode/MediatR.git
 [submodule "JwcRepoInitSdk"]
 	path = src/Shared/src/JwcRepoInitSdk
-	url = https://github.com/justinwritescode/Common.git
+	url = https://github.com/justinwritescode/JwcRepoInitSdk.git
 [submodule "libs/Shared/src/JustinWritesCodeSdk"]
 	path = src/Shared/src/JustinWritesCodeSdk
 	url = https://github.com/justinwritescode/JustinWritesCodeSdk.git
