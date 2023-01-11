@@ -4,17 +4,17 @@
 [submodule "lib/Humanizer"]
 	path = lib/Humanizer
 	url = https://github.com/justinwritescode/Humanizer.git
-[submodule "libs/src/Functions"]
-	path = libs/src/Functions
+[submodule "src/src/Functions"]
+	path = src/src/Functions
 	url = https://github.com/justinwritescode/Functions.git
-[submodule "libs/src/SendPulse"]
+[submodule "src/src/SendPulse"]
 	path = src/SendPulse
 	url = https://github.com/justinwritescode/SendPulse.git
 [submodule "MSBuild.Sdks"]
 	path = src/MSBuild.Sdks
     url = https://github.com/justinwritescode/MSBuild.Sdks.git
-[submodule "libs/Shared"]
-    path = libs/Shared
+[submodule "src/Shared"]
+    path = src/Shared
     url = https://github.com/justinwritescode/Shared.git
 [submodule "nuget-icons"]
 	path = src/nuget-icons
@@ -76,8 +76,8 @@
 [submodule "apps/src/Functions"]
     path = apps/src/Functions
     url = https://github.com/justinwritescode/Functions.Apps.git
-[submodule "libs/src/Functions"]
-    path = libs/src/Functions
+[submodule "src/src/Functions"]
+    path = src/src/Functions
     url = https://github.com/justinwritescode/Functions.git
 [submodule "lib/Dnf.SourceGenerators"]
     path = lib/Dnf.SourceGenerators
@@ -88,8 +88,8 @@
 [submodule "lib/Humanizer"]
     path = lib/Humanizer
     url = https://github.com/Humanizr/Humanizer.git
-[submodule "libs/Directory.Build"]
-	path = libs/Directory.Build
+[submodule "src/Directory.Build"]
+	path = src/Directory.Build
 	url = https://github.com/justinwritescode/Directory.Build.Libraries.git
 [submodule "apps/Directory.Build"]
     path = apps/Directory.Build
@@ -106,13 +106,13 @@
 [submodule "lib/swagger-ui-themes"]
 	path = lib/swagger-ui-themes
 	url = https://github.com/ostranme/swagger-ui-themes.git
-[submodule "libs/src/AspNetCore/src/Startup/swagger-ui-themes"]
-	path = libs/src/AspNetCore/src/Startup/swagger-ui-themes
+[submodule "src/src/AspNetCore/src/Startup/swagger-ui-themes"]
+	path = src/src/AspNetCore/src/Startup/swagger-ui-themes
 	url = https://github.com/ostranme/swagger-ui-themes.git
 [submodule "lib/libphonenumber"]
 	path = lib/libphonenumber
 	url = https://github.com/twcclegg/libphonenumber-csharp.git
-[submodule "libs/src/AspNetCore"]
+[submodule "src/src/AspNetCore"]
 	path = src/AspNetCore
 	url = https://github.com/justinwritescode/Jwc.AspNetCore.git
 [submodule "lib/AspNetCore.Hashids"]
@@ -127,12 +127,12 @@
 [submodule "lib/azure-webjobs-sdk-extensions"]
 	path = lib/azure-webjobs-sdk-extensions
 	url = https://github.com/Azure/azure-webjobs-sdk-extensions.git
-[submodule "libs/src/MediatR"]
+[submodule "src/src/MediatR"]
 	path = src/MediatR
 	url = https://github.com/justinwritescode/MediatR.git
 [submodule "JwcRepoInitSdk"]
 	path = src/Shared/src/JwcRepoInitSdk
 	url = https://github.com/justinwritescode/JwcRepoInitSdk.git
-[submodule "libs/Shared/src/JustinWritesCodeSdk"]
+[submodule "src/Shared/src/JustinWritesCodeSdk"]
 	path = src/Shared/src/JustinWritesCodeSdk
 	url = https://github.com/justinwritescode/JustinWritesCodeSdk.git
