@@ -179,6 +179,11 @@
           "title": "keywords",
           "name": "keywords",
           "type": "string"
+        },
+        {
+          "title": "lastmod",
+          "name": "lastmod",
+          "type": "datetime"
         }
       ]
     }
