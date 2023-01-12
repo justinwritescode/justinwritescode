@@ -44,10 +44,10 @@
     path = src/MSBuild.EnsureFileHeaders
     url = https://github.com/justinwritescode/MSBuild.EnsureFileHeaders.git
 [submodule "docs"]
-    path = docs/docs
-    url = https://github.com/justinwritescode/docs.git
+	path = docs
+	url = https://github.com/justinwritescode/docs.git
 [submodule "deploy-to-docs"]
-    path = docs/deploy-to-docs
+	path = src/deploy-to-docs
     url = https://github.com/justinwritescode/deploy-to-docs.git
 [submodule "src/NuGetUtils/src/NuGet.Client"]
     path = src/NuGetUtils/src/NuGet.Client
