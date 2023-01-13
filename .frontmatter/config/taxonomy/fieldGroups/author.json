@@ -1,0 +1,25 @@
+{
+  "$schema": "https://beta.frontmatter.codes/config/taxonomy.contenttype.fieldGroup.json",
+  "id": "author",
+  "labelField": "Author",
+  "fields": [
+    {
+      "id": "name",
+      "labelField": "Name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "email",
+      "labelField": "Email",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "url",
+      "labelField": "URL",
+      "type": "text",
+      "required": false
+    }
+  ]
+}

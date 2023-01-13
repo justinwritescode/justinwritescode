@@ -1,0 +1,49 @@
+{
+  "$schema": "https://beta.frontmatter.codes/config/taxonomy.contenttype.schema.json",
+  "name": "default",
+  "pageBundle": true,
+  "previewPath": null,
+  "fields": [
+    {
+      "title": "Title",
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "title": "Description",
+      "name": "description",
+      "type": "string"
+    },
+    {
+      "title": "Authors",
+      "name": "authors",
+      "type": "block",
+      "fieldGroup": [
+        "author"
+      ]
+    },
+    {
+      "title": "Publishing date",
+      "name": "date",
+      "type": "datetime",
+      "default": "{{now}}",
+      "isPublishDate": true
+    },
+    {
+      "title": "Content preview",
+      "name": "preview",
+      "type": "image",
+      "default": "https://github.com/justinwritescode/Assets/raw/main/logo.png"
+    },
+    {
+      "title": "Tags",
+      "name": "tags",
+      "type": "tags"
+    },
+    {
+      "title": "Categories",
+      "name": "categories",
+      "type": "categories"
+    }
+  ]
+}

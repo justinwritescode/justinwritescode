@@ -1,0 +1,7 @@
+{
+  "$schema": "https://beta.frontmatter.codes/config/content.snippets.schema.json",
+  "body": [
+    "{{< video \"[[&mediaUrl]]\" \"[[caption]]\" >}}"
+  ],
+  "isMediaSnippet": true
+}
