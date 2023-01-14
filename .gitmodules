@@ -76,9 +76,6 @@
 [submodule "apps/src/Functions"]
     path = apps/src/Functions
     url = https://github.com/justinwritescode/Functions.Apps.git
-[submodule "src/Functions"]
-    path = src/src/Functions
-    url = https://github.com/justinwritescode/Functions.git
 [submodule "lib/Dnf.SourceGenerators"]
     path = lib/Dnf.SourceGenerators
     url = https://github.com/dominikjeske/Dnf.SourceGenerators.git
