@@ -13,6 +13,7 @@
 <Project>	
   <Import Project="Sdk.props" Sdk="JustinWritesCodeSdk" Condition="'$(JustinWritesCodeSdkProps)' == ''" />
   <PropertyGroup>
+    <JustinWritesCodeSdkProps>$(MSBuildThisFileDirectory)Sdk.props</JustinWritesCodeSdkProps>
 		<InheritedDirectoryBuildProps>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildProps>
 	</PropertyGroup>
 	<Import Project="$(InheritedDirectoryBuildProps)" Condition="Exists('$(InheritedDirectoryBuildProps)')" />
