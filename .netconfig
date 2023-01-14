@@ -1,0 +1,10 @@
+[file "Init.proj"]
+	url = https://github.com/justinwritescode/justinwritescode/blob/main/Init.proj
+	sha = fc5e59cb7b19859cb3baab7c272a463986b23b1a
+	etag = feefd1c69885c3251e802c81ab3827f9599485099da1801200a1c42a55ebfa66
+	weak
+[file "global.json"]
+	url = https://github.com/justinwritescode/justinwritescode/blob/main/global.json
+	sha = c0070d19d2003ab8df66769c401fa661f61319a2
+	etag = 4f40af513e61195eb2a91aace32c05f370e5bff0345285a587e84bfc382e08eb
+	weak
