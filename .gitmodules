@@ -4,8 +4,8 @@
 [submodule "lib/Humanizer"]
 	path = lib/Humanizer
 	url = https://github.com/justinwritescode/Humanizer.git
-[submodule "src/src/Functions"]
-	path = src/src/Functions
+[submodule "src/Functions"]
+	path = src/Functions
 	url = https://github.com/justinwritescode/Functions.git
 [submodule "src/src/SendPulse"]
 	path = src/SendPulse
