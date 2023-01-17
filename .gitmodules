@@ -136,3 +136,6 @@
 [submodule "src/Telegram"]
 	path = src/Telegram
 	url = https://github.com/justinwritescode/Telegram.git
+[submodule "assets"]
+	path = assets
+	url = https://github.com/justinwritescode/Assets.git
