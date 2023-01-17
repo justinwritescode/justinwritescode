@@ -14,8 +14,8 @@
 	path = src/MSBuild.Sdks
     url = https://github.com/justinwritescode/MSBuild.Sdks.git
 [submodule "src/Shared"]
-    path = src/Shared
-    url = https://github.com/justinwritescode/Shared.git
+	path = src/Shared
+	url = https://github.com/justinwritescode/Shared.git
 [submodule "nuget-icons"]
 	path = src/nuget-icons
     url = https://github.com/justinwritescode/nuget-icons.git
