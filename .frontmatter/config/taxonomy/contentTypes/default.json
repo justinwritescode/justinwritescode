@@ -40,6 +40,15 @@
       "title": "Categories",
       "name": "categories",
       "type": "categories"
+    },
+    {
+      "title": "Authors",
+      "name": "authors",
+      "type": "dataFile",
+      "dataFileKey": "slug",
+      "dataFileId":"authors",
+      "dataFileValue": "name",
+      "multiple": true
     }
   ]
 }

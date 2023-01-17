@@ -33,11 +33,11 @@ features:
   - announce.dismiss
 plugins:
   - rss:
-      categories: 
+      categories:
         - tags
       enabled: true
       feed_ttl: 1440
-      image:  https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png
+      image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png
       length: 20
       pretty_print: false
       comments_path: "#__comments"
@@ -61,7 +61,7 @@ plugins:
       fallback_to_build_date: true
   - macros
   - categories
-#  - literate-nav      
+  #  - literate-nav
   - codeinclude:
       title_mode: pymdownx.tabbed
   - section-index
@@ -71,17 +71,17 @@ plugins:
       cleanup: false
       repos:
         - section: nuget-icons
-          import_url: 'https://github.com/justinwritescode/nuget-icons?edit_uri=tree/main/docs'
+          import_url: "https://github.com/justinwritescode/nuget-icons?edit_uri=tree/main/docs"
         - section: commmon
-          import_url: 'https://github.com/justinwritescode/common?edit_uri=tree/main/docs'
+          import_url: "https://github.com/justinwritescode/common?edit_uri=tree/main/docs"
         - section: dotnet-search
-          import_url: 'https://github.com/justinwritescode/dotnet-search?edit_uri=tree/main/docs'
+          import_url: "https://github.com/justinwritescode/dotnet-search?edit_uri=tree/main/docs"
         - section: MSBuild.XmlDocMd
-          import_url: 'https://github.com/justinwritescode/MSBuild.XmlDocMd?edit_uri=tree/main/docs'
+          import_url: "https://github.com/justinwritescode/MSBuild.XmlDocMd?edit_uri=tree/main/docs"
         - section: MSBuild.IncludeSdk
-          import_url: 'https://github.com/justinwritescode/MSBuild.IncludeSdk?edit_uri=tree/main/docs'
+          import_url: "https://github.com/justinwritescode/MSBuild.IncludeSdk?edit_uri=tree/main/docs"
         - section: Types
-          import_url: 'https://github.com/justinwritescode/Types?edit_uri=tree/main/docs'
+          import_url: "https://github.com/justinwritescode/Types?edit_uri=tree/main/docs"
 extra:
   homepage: https://justinwritescode.com
   social:
@@ -105,7 +105,7 @@ extra:
           data: 1
           note: >-
             Thanks for your feedback!
-        - icon: justinwritescode/man-shrugging-2
+        - icon: fontawesome/regular/face-meh-blank
           name: Meh
           data: 0
           note: >-
@@ -119,6 +119,7 @@ extra:
 
 copyright: Copyright &copy; 2022 Justin Chase
 markdown_extensions:
+  - footnotes
   - meta
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -141,7 +142,6 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.smartsymbols
   - pymdownx.details
-  - footnotes
   - toc:
       permalink: true
       title: On this page

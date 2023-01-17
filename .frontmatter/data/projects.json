@@ -1,6 +1,7 @@
 [
   {
     "name": "JustinWritesCode.EntityFrameworkCore",
+    "slug": "justinwritescode-entityframeworkcore",
     "description": "Entity Framework Core for .NET Core",
     "url": "https://github.com/justinwritescode/EntityFrameworkCore.git"
   }

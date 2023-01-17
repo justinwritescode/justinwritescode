@@ -133,3 +133,6 @@
 [submodule "src/Shared/src/JustinWritesCodeSdk"]
 	path = src/Shared/src/JustinWritesCodeSdk
 	url = https://github.com/justinwritescode/JustinWritesCodeSdk.git
+[submodule "src/Telegram"]
+	path = src/Telegram
+	url = https://github.com/justinwritescode/Telegram.git

@@ -17,6 +17,10 @@
         "type": "string",
         "title": "Last name"
       },
+      "slug": {
+        "type": "string",
+        "title": "slug"
+      },
       "website": {
         "type": "string",
         "title": "Website URL"

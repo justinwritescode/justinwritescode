@@ -1,0 +1,35 @@
+{
+  "$schema": "https://beta.frontmatter.codes/config/data.files.schema.json",
+  "id": "authors",
+  "title": "Authors",
+  "file": "[[workspace]]/.frontmatter/data/authors.json",
+  "fileType": "json",
+  "labelField": "name",
+  "type": "author",
+  "fields": [
+    {
+      "id": "name",
+      "title": "Name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "id": "email",
+      "title": "Email",
+      "type": "string",
+      "required": true
+    },
+    {
+      "id": "bio",
+      "title": "Bio",
+      "type": "string",
+      "required": true
+    },
+    {
+      "id": "avatar",
+      "title": "Avatar",
+      "type": "image",
+      "required": true
+    }
+  ]
+}

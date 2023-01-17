@@ -1,0 +1,35 @@
+{
+  "$schema": "https://beta.frontmatter.codes/config/data.files.schema.json",
+  "id": "projects",
+  "title": "Projects",
+  "file": "[[workspace]]/.frontmatter/data/projects.json",
+  "fileType": "json",
+  "labelField": "name",
+  "type": "project",
+  "fields": [
+    {
+      "id": "name",
+      "title": "Name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "id":"description",
+      "title":"Description",
+      "type":"string",
+      "required":false
+    },
+    {
+      "id": "bio",
+      "title": "Bio",
+      "type": "string",
+      "required": true
+    },
+    {
+      "id": "url",
+      "title": "Project Repo URL",
+      "type": "url",
+      "required": true
+    }
+  ]
+}

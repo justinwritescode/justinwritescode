@@ -1,0 +1,16 @@
+[
+  {
+    "firstName": "Justin",
+    "lastName": "Chase",
+    "slug": "justin",
+    "email": "justin@justinwritescode.com",
+    "website": "https://justinwritescode.com"
+  },
+  {
+    "firstName": "Municipal",
+    "lastName": "Drew",
+    "email": "drew@wheatleythecat.com",
+    "slug": "drew",
+    "website": "https://wheatleythecat.com"
+  }
+]

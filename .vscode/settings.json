@@ -34,5 +34,6 @@
         "editor.fontSize": 14,
         "editor.lineHeight": 26,
         "editor.wordWrap": "wordWrapColumn"
-    }
+    },
+    "editor.formatOnSave": true
 }
