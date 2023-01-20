@@ -139,3 +139,9 @@
 [submodule "assets"]
 	path = assets
 	url = https://github.com/justinwritescode/Assets.git
+[submodule "lib/azure-sdk-for-net"]
+	path = lib/azure-sdk-for-net
+	url = https://github.com/Azure/azure-sdk-for-net.git
+[submodule "lib/microsoft.azure.autorest"]
+	path = lib/microsoft.azure.autorest
+	url = https://github.com/Azure/autorest.csharp.git
