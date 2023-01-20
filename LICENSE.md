@@ -3,15 +3,17 @@ author: Justin Chase
 author_email: justin@justinwritescode.com
 title: MIT License
 license: MIT
-created: 2023-01-09-07:05:28
-lastmod: 2023-01-11T02:45:34.204Z
+lastmod: 2023-01-20T21:24:24.143Z
 tags:
-  - license
   - MIT
-categories:
   - license
-  - IP
-  - copyright
+categories: []
+authors:
+  - drew
+  - justin
+date: 2023-01-20T20:39:26.744Z
+type: license
+description: Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files yadda yadda yadda...
 ---
 # MIT License
 

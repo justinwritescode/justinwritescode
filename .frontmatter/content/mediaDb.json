@@ -1,1 +1,16 @@
-{}
+{
+  "docs": {
+    "assets": {
+      "logo.png": {
+        "caption": "The JWC Logo!",
+        "alt": "The JWC Logo!",
+        "title": "JustinWritesCode Logo"
+      },
+      "video.mp4": {
+        "caption": "Blue Bailey, the former twink porn star turned lawyer, chariot races, i.e., fists two men at the same time!",
+        "alt": "Blue Bailey chariot racing",
+        "title": "Blue Chariot Racing!"
+      }
+    }
+  }
+}

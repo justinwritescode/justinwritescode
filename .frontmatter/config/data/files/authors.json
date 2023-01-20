@@ -4,32 +4,43 @@
   "title": "Authors",
   "file": "[[workspace]]/.frontmatter/data/authors.json",
   "fileType": "json",
-  "labelField": "name",
   "type": "author",
-  "fields": [
-    {
-      "id": "name",
-      "title": "Name",
-      "type": "string",
-      "required": true
-    },
-    {
-      "id": "email",
-      "title": "Email",
-      "type": "string",
-      "required": true
-    },
-    {
-      "id": "bio",
-      "title": "Bio",
-      "type": "string",
-      "required": true
-    },
-    {
-      "id": "avatar",
-      "title": "Avatar",
-      "type": "image",
-      "required": true
+  "schema": {
+    "type": "object",
+    "title": "Author",
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name"      
+      },
+      "email": {
+        "type": "string",
+        "title": "Email"
+      },
+      "website": {
+        "type": "string",
+        "title": "Website"
+      },
+      "twitter": {
+        "type": "string",
+        "title": "Twitter URL"
+      },
+      "github": {
+        "type": "string",
+        "title": "GitHub Username"
+      },
+      "linkedin": {
+        "type": "string",
+        "title": "LinkedIn URL"
+      },
+      "bio": {
+        "type": "string",
+        "title": "Biography"
+      },
+      "avatar": {
+        "type": "string",
+        "title": "Avatar"
+      }
     }
-  ]
+  }
 }

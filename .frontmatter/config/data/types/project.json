@@ -1,0 +1,37 @@
+{
+  "$schema": "https://beta.frontmatter.codes/config/data.types.schema.json",
+  "id": "author",
+  "schema": {
+    "title": "Project",
+    "type": "object",
+    "required": [
+      "name",
+      "slug"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name"
+      },
+      "lastNtitleame": {
+        "type": "string",
+        "title": "Title"
+      },
+      "slug": {
+        "type": "string",
+        "title": "slug"
+      },
+      "repoUrl": {
+        "type": "string",
+        "title": "Repository URL"
+      },
+      "bio": {
+        "avatar": {
+          "type": "image",
+          "title": "Icon",
+          "required": false
+        }
+      }
+    }
+  }
+}
