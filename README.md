@@ -23,6 +23,6 @@ You can click the Preview link to take a look at your changes.
 --->
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#150](https://github.com/devlooped/ThisAssembly/issues/150) in [devlooped/ThisAssembly](https://github.com/devlooped/ThisAssembly)
-2. ❗️ Opened issue [#156](https://github.com/devlooped/ThisAssembly/issues/156) in [devlooped/ThisAssembly](https://github.com/devlooped/ThisAssembly)
+1. 🎉 Merged PR [#2](https://github.com/justinwritescode/Types/pull/2) in [justinwritescode/Types](https://github.com/justinwritescode/Types)
+2. 💪 Opened PR [#2](https://github.com/justinwritescode/Types/pull/2) in [justinwritescode/Types](https://github.com/justinwritescode/Types)
 <!--END_SECTION:activity-->
