@@ -1,10 +1,11 @@
 [
   {
     "firstName": "Justin",
-    "lastName": "Chase",
-    "slug": "justin",
+    "lastName": "Chase2",
+    "slug": "justin2",
     "email": "justin@justinwritescode.com",
-    "website": "https://justinwritescode.com"
+    "website": "https://justinwritescode.com",
+    "bio": "Justin is a gay man living in New York City, NY.  Fun fact: he can fit his entire fist inside his anus!"
   },
   {
     "firstName": "Municipal",
