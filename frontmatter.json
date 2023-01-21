@@ -1,7 +1,6 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
   "frontMatter.framework.id": "other",
-  "frontMatter.content.publicFolder": "static",
   "fontMatter.content.fmHighlight": true,
   "frontMatter.content.autoUpdateDate": true,
   "frontMatter.content.defaultFileType": "md",
