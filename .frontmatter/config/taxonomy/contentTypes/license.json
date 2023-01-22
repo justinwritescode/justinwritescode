@@ -46,8 +46,8 @@
       "name": "authors",
       "type": "dataFile",
       "dataFileKey": "slug",
-      "dataFileId":"authors",
-      "dataFileValue": "firstName",
+      "dataFileId": "authors",
+      "dataFileValue": "firame",
       "multiple": true
     }
   ]
