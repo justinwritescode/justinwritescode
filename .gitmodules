@@ -148,3 +148,6 @@
 [submodule "src/ImplausibleTranslatorBot"]
 	path = src/ImplausibleTranslatorBot
 	url = https://gitgub.com/justinwritescode/ImplausibleTranslatorBot.git
+[submodule "src/MiniApps"]
+	path = src/MiniApps
+	url = https://justinwritescode.com/MiniApps.git
