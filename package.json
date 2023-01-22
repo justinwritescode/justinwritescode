@@ -1,5 +1,12 @@
 {
   "devDependencies": {
-    "@types/node": "^18.11.10"
+    "@types/node": "^18.11.18",
+    "@types/node-fetch": "^2.6.2"
+  },
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "node-fetch": "^2.6.8",
+    "process": "^0.11.10",
+    "ts-fetch": "^1.1.4"
   }
 }
