@@ -9,4 +9,4 @@
    Copyright © 2022-2023 Justin Chase, All Rights Reserved
       License: MIT (https://opensource.org/licenses/MIT)
 -->
-<Project Sdk="JwcRepoInitSdk/0.0.4" />
+<Project Sdk="JwcRepoInitSdk" />
