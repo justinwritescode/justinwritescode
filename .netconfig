@@ -1,5 +1,10 @@
 [file "Init.proj"]
-	url = https://github.com/justinwritescode/justinwritescode/blob/main/Init.proj
-	sha = fc5e59cb7b19859cb3baab7c272a463986b23b1a
-	etag = feefd1c69885c3251e802c81ab3827f9599485099da1801200a1c42a55ebfa66
+	url = https://github.com/justinwritescode/JwcRepoInitSdk/blob/main/Init.proj
+	sha = 84e3932f0f94865381de98310e1750a30aaf9f73
+	etag = 8df8995836e1219d18fb9ae0ef4b024c6d2f57a0700b0fe97c6a11dc453b8786
+	weak
+[file "global.json"]
+	url = https://github.com/justinwritescode/JwcRepoInitSdk/blob/main/global.json
+	sha = 7e24f2730534b0201ae77a0de8cd3720cdcb31b0
+	etag = e4f43102dd01de4fcfd3d494f4bffab66eb684cb477113c64c9b6aef06d4a9e8
 	weak
