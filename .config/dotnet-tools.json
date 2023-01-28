@@ -21,7 +21,7 @@
       ]
     },
     "dotnet-format": {
-      "version": "6.0.240501",
+      "version": "5.1.250801",
       "commands": [
         "dotnet-format"
       ]

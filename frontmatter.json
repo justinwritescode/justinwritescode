@@ -8,131 +8,27 @@
   "frontMatter.content.defaultFileType": "md",
   "frontMatter.taxonomy.tags": [
     "IP",
+    "MIT",
     "copyright",
     "documentation",
+    "justinwritescode",
     "license",
     "readme",
-    "support"
+    "support",
+    "tags"
   ],
-  "frontMatter.taxonomy.categories": [],
+  "frontMatter.taxonomy.categories": [
+    "IP",
+    "copyright",
+    "justinwritescode",
+    "license",
+    "tags"
+  ],
   "frontMatter.content.pageFolders": [
     {
       "$schema": "https://beta.frontmatter.codes/config/content.pagefolders.schema.json",
       "title": "docs",
       "path": "[[workspace]]/docs"
     }
-<<<<<<< HEAD
   ]
 }
-=======
-  ],
-  "frontMatter.taxonomy.contentTypes": [
-    {
-      "$schema": "https://beta.frontmatter.codes/config/taxonomy.contenttype.schema.json",
-      "name": "default",
-      "pageBundle": true,
-      "previewPath": null,
-      "fields": [
-        {
-          "title": "Title",
-          "name": "title",
-          "type": "string"
-        },
-        {
-          "title": "Description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "Publishing date",
-          "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
-        },
-        {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
-        },
-        {
-          "title": "Authors",
-          "name": "authors",
-          "type": "block",
-          "fieldGroup": [
-            "author"
-          ]
-        },
-        {
-          "title": "author_email",
-          "name": "author_email",
-          "type": "string"
-        },
-        {
-          "title": "license",
-          "name": "license",
-          "type": "string"
-        },
-        {
-          "title": "created",
-          "name": "created",
-          "type": "string"
-        },
-        {
-          "title": "lastmod",
-          "name": "lastmod",
-          "type": "datetime"
-        },
-        {
-          "title": "keywords",
-          "name": "keywords",
-          "type": "choice",
-          "choices": [
-            "license",
-            "mit"
-          ]
-        },
-        {
-          "title": "author",
-          "name": "author",
-          "type": "string"
-        },
-        {
-          "title": "type",
-          "name": "type",
-          "type": "string"
-        }
-      ]
-    },
-    {
-      "$schema": "https://beta.frontmatter.codes/config/taxonomy.contenttype.schema.json",
-      "name": "post",
-      "pageBundle": false,
-      "previewPath": null,
-      "fields": [
-        {
-          "title": "Title",
-          "name": "title",
-          "type": "string"
-        },
-        {
-          "title": "Description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        }
-      ]
-    }
-  ],
-  "frontMatter.framework.startCommand": "mkdocs serve "
-}
->>>>>>> ec8cf3c (FrontMatter changes)

@@ -1,19 +1,6 @@
-<!--
- JustinWritesCode.slnproj
- 
-   Created: 2022-10-24-08:10:51
-   Modified: 2022-10-29-02:52:25
- 
-   Author: Justin Chase <justin@justinwritescode.com>
-   
-   Copyright © 2022-2023 Justin Chase, All Rights Reserved
-      License: MIT (https://opensource.org/licenses/MIT)
--->
-
 <Project Sdk="Microsoft.NET.Sdk">
-  <Sdk Name="MetapackageSdk" />
-  <PropertyGroup>
-    <IncludeInSolutionFile>false</IncludeInSolutionFile>
-  </PropertyGroup>
+  <Sdk Name="MetapackageSdk">
+  
   <Import Project="JustinWritesCode.proj" />
+
 </Project>

@@ -151,3 +151,6 @@
 [submodule "src/MiniApps"]
 	path = src/MiniApps
 	url = https://justinwritescode.com/MiniApps.git
+[submodule "src/PowerShell"]
+	path = src/PowerShell
+	url = https://github.com/jujstinwritescode/PowerShell.git

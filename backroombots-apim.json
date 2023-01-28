@@ -1,0 +1,140 @@
+
+        {
+    "swagger": "2.0",
+    "info": {
+        "title": "Bot Message Logger",
+        "version": "1.0",
+        "description": "Azure Logic App."
+    },
+    "host": "helpers-api.brapi.app",
+    "basePath": "/logmessages",
+    "schemes": ["https"],
+    "paths": {
+        "/": {
+            "post": {
+                "description": "Trigger a run of the logic app.",
+                "operationId": "manual-invoke",
+                "summary": "Log Message",
+                "parameters": [{
+                    "name": "request-manual",
+                    "in": "body",
+                    "schema": {
+                        "$ref": "#/definitions/request-manual"
+                    },
+                    "description": "The request body."
+                }],
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "responses": {
+                    "201": {
+                        "description": "The Logic App Response.",
+                        "schema": {
+                            "$ref": "#/definitions/ManualPathsInvokePost201ApplicationJsonResponse"
+                        },
+                        "examples": {
+                            "application/json": {}
+                        }
+                    },
+                    "500": {
+                        "description": "The Logic App Response.",
+                        "schema": {
+                            "$ref": "#/definitions/ManualPathsInvokePost500ApplicationJsonResponse"
+                        },
+                        "examples": {
+                            "application/json": {}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "request-manual": {
+            "items": {
+                "properties": {
+                    "bot": {
+                        "properties": {
+                            "external_id": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": ["string", "null"]
+                            },
+                            "url": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "contact": {
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": ["string", "null"]
+                            },
+                            "telegram_id": {
+                                "type": "string"
+                            },
+                            "username": {
+                                "type": ["string", "null"]
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "date": {
+                        "type": "integer"
+                    },
+                    "info": {
+                        "properties": {
+                            "message": {
+                                "properties": {
+                                    "channel_data": {
+                                        "properties": {
+                                            "chat_id": {
+                                                "type": "integer"
+                                            },
+                                            "message": {
+                                                "properties": {},
+                                                "type": "object"
+                                            },
+                                            "message_id": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "id": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "service": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "ManualPathsInvokePost201ApplicationJsonResponse": {
+            "type": "object"
+        },
+        "ManualPathsInvokePost500ApplicationJsonResponse": {
+            "type": "object"
+        }
+    },
+    "tags": []
+}
+        

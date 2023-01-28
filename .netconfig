@@ -5,6 +5,6 @@
 	weak
 [file "global.json"]
 	url = https://github.com/justinwritescode/JwcRepoInitSdk/blob/main/global.json
-	sha = 7e24f2730534b0201ae77a0de8cd3720cdcb31b0
-	etag = e4f43102dd01de4fcfd3d494f4bffab66eb684cb477113c64c9b6aef06d4a9e8
+	sha = 04e06925be069f31a1523bcc870e0b3dd1603033
+	etag = 6e338994a7293e2392440d5cb037d48a82daffbf6e8d37ad07c953538265609a
 	weak
