@@ -23,6 +23,6 @@ You can click the Preview link to take a look at your changes.
 --->
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2](https://github.com/justinwritescode/Types/pull/2) in [justinwritescode/Types](https://github.com/justinwritescode/Types)
-2. 💪 Opened PR [#2](https://github.com/justinwritescode/Types/pull/2) in [justinwritescode/Types](https://github.com/justinwritescode/Types)
+1. 🎉 Merged PR [#1](https://github.com/justinwritescode/pystark/pull/1) in [justinwritescode/pystark](https://github.com/justinwritescode/pystark)
+2. 💪 Opened PR [#1](https://github.com/justinwritescode/pystark/pull/1) in [justinwritescode/pystark](https://github.com/justinwritescode/pystark)
 <!--END_SECTION:activity-->
