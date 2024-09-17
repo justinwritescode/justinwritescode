@@ -7,6 +7,8 @@ created: 2022-10-29-05:57:21
 license: MIT
 ---
 
+<a rel="me" href="https://poz.world/@chaser" style='display:none'></a>
+
 # Welcome to JustinWritesCode!
 
 - 👋 Hi, I’m Justin!
