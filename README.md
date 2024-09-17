@@ -7,7 +7,7 @@ created: 2022-10-29-05:57:21
 license: MIT
 ---
 
-<a rel="me" href="https://poz.world/@chaser" style='display:none'></a>
+<a rel="me" href="https://poz.world/@chaser" style='display:none'>Mastodon</a>
 
 # Welcome to JustinWritesCode!
 
